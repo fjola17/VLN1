@@ -1,0 +1,81 @@
+	○ Einn vallisti sem býður upp á þá möguleika sem í boði eru
+		-> Controller :
+			Reads user input 
+		-> Model :
+			Gets the menu #data 
+		-> View :
+			Displays #data
+
+	○ Skrá verð á grunnpizzu 
+		-> Controller :
+			Reads user input, such as int, name and so on
+		-> Model :
+			Writes data to file
+		-> View :
+			Displays success message
+
+	○ Skrá áleggstegundir og verð á hverri
+		-> Controller :
+			Reads user input, such as int, name and so on
+		-> Model :
+			Writes data to file
+		-> View :
+			Displays success message
+
+	○ Skrá pantaða pizzu (fá upp heildarverð)
+		-> Controller :
+			Reads user input, such as int, name and so on
+		-> Model :
+			Writes data to file
+		-> View :
+			Displays success message + time (When finished)
+
+	○ Merkja pizzu greidda
+		-> Controller :
+			Reads user input, such as int, name and so on
+		-> Model :
+			Retrieves time + data from file, checks and returns whether it has finished
+		-> View :
+			Displays message based on data
+
+	○ Fá upp pantaða pizzu
+		-> Controller :
+			Reads user input, such as int, name and so on
+		-> Model :
+			Retrieves time + data from file, checks and returns whether it has finished
+		-> View :
+			Displays message based on data
+	○ Merkja í vinnslu
+		-> Controller :
+			Reads user input, such as int, name and so on
+		-> Model :
+			Changes state of progress
+		-> View :
+			Displays message based on data
+	○ Merkja tilbúna
+		Idea:
+			Look into making it asynchoronous
+		-> Controller :
+			Reads user input, such as int, name and so on
+		-> Model :
+			Changes state of progress
+		-> View :
+			Displays message based on data
+	○ Merkja afhenta
+		-> Controller :
+			Reads user input, such as int, name and so on
+		-> Model :
+			Changes state of progress
+		-> View :
+			Displays message based on data
+	○ Allar​ ​upplýsingar​ ​
+		Idea :
+			Only avaliable to admin users
+		-> Controller :
+			Recieves confirmation
+		-> Model :
+			Gets all legacy data
+		-> View :
+			Displays message based on data
+
+	
