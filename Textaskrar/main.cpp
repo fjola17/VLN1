@@ -40,6 +40,6 @@ int main()
 
     }while(input != 'n');
 
-
+    fin.close();
     return 0;
 }
