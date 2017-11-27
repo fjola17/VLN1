@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1511788539 source:c:\users\halldór valberg\documents\codeblocks\textaskrar\main.cpp
+	<iostream>
+	<fstream>
+
