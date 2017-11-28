@@ -16,19 +16,22 @@ SuperHero::SuperHero(string name, int age, char power){
     this->age = age;
     this->power = power;
 }
+
 istream& operator >> (istream& in, SuperHero& hero){
+    hero.fin.open("heroes.txt", ios::app);
 
-    in >> hero.name;
-
-    in >> hero.age;
-
-    in >> hero.power;
-    return in;
+    in >> hero.name >> hero.age >> hero.power;
+    hero.fin.close();
+    return hero.fin;
 }
 
 ostream& operator << (ostream& out, SuperHero& hero){
-    out << hero.name << " ";
-    out << "("<< hero.age << ") ";
+    string str;
+    hero.fout.open("heroes.txt", ios::app);
+//    getline(hero.fout, str);
+
+    out << hero.name << endl;
+    out << hero.age << endl;
 
     if (hero.power == 'f'){
         out << "flying" << endl;
@@ -48,6 +51,6 @@ ostream& operator << (ostream& out, SuperHero& hero){
     else{
         out << "Weakling" << endl;
     }
-
+    hero.fout.close();
     return out;
 }

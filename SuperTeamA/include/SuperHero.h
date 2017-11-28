@@ -14,13 +14,15 @@ class SuperHero
         SuperHero(string name,int age, char power);
         friend ostream& operator << (ostream& out, SuperHero& hero);
         friend istream& operator >> (istream& in, SuperHero& hero);
-
-        virtual ~SuperHero();
+        ~SuperHero();
 
     private:
         string name;
         int age;
         char power;
+        ifstream fin;
+        ofstream fout;
+
 };
 
 #endif // SUPERHERO_H

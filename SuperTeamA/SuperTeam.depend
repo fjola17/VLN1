@@ -1,40 +1,14 @@
 # depslib dependency file v1.0
-1511875107 source:c:\users\notandi\desktop\hr\verklegt námskeið 1\superteam\main.cpp
+1511884164 source:c:\users\notandi\desktop\hr\verklegt námskeið 1\superteam\main.cpp
 	<iostream>
 	<fstream>
 	"SuperHero.h"
 
-1511863445 c:\users\notandi\desktop\hr\verklegt námskeið 1\superteam\include\superhero.h
+1511883966 c:\users\notandi\desktop\hr\verklegt námskeið 1\superteam\include\superhero.h
 	<fstream>
 	<string>
 	<iostream>
 
-1511875049 source:c:\users\notandi\desktop\hr\verklegt námskeið 1\superteam\src\superhero.cpp
-	"SuperHero.h"
-
-1511879535 source:c:\users\halldór valberg\documents\github\vln1\superteam\main.cpp
-	<iostream>
-	<fstream>
-	"SuperHero.h"
-
-1511879535 c:\users\halldór valberg\documents\github\vln1\superteam\include\superhero.h
-	<fstream>
-	<string>
-	<iostream>
-
-1511879535 source:c:\users\halldór valberg\documents\github\vln1\superteam\src\superhero.cpp
-	"SuperHero.h"
-
-1511879535 source:c:\users\halldór valberg\documents\github\vln1\superteama\main.cpp
-	<iostream>
-	<fstream>
-	"SuperHero.h"
-
-1511879535 c:\users\halldór valberg\documents\github\vln1\superteama\include\superhero.h
-	<fstream>
-	<string>
-	<iostream>
-
-1511879535 source:c:\users\halldór valberg\documents\github\vln1\superteama\src\superhero.cpp
+1511884079 source:c:\users\notandi\desktop\hr\verklegt námskeið 1\superteam\src\superhero.cpp
 	"SuperHero.h"
 

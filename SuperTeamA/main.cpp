@@ -4,27 +4,41 @@
 
 using namespace std;
 
+
 int main()
 {
-    SuperHero hero("Bjorgvin", 27, 'h');
+    SuperHero hero;
+  /*  string name;
+    int age;
+    char power, input;
+   */ cout << "Please enter hero name, age and power: ";
     cin >> hero;
-
+/*
     ofstream fout;
     fout.open("heroes.txt", ios::app);
     if(fout.is_open()){
         fout << hero;
-
         fout.close();
     }
-    cout << hero;
+
     ifstream fin;
     fin.open("heroes.txt");
     if(fin.is_open()){
         fin >> hero;
-        fin.close();
         }
     else{
         cout << "File does not exist" << endl;
     }
+string str;
+char input;
+    do{
+        getline(fin, str);
+        cout << str;
+        cout << "another hero?" << endl;
+        cin >> input;
+    }while (input == 'y');
+    fin.close();
+*/
+    cout << hero;
     return 0;
 }
