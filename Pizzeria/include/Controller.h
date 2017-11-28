@@ -17,6 +17,8 @@ class Controller : private Model
 
         void checkState(){
 
+            //Tracks users location, similiar to a web page URL
+            //main.cpp pre-sets this value to 99
             switch(this->int_in){
                 case 0:
                     this->exit = true;
@@ -31,13 +33,18 @@ class Controller : private Model
                 break;
                 case 3:
                     mdl.displayAllPizza();
+                    
                     mdl.throwAttention_FromController("Press any key to continue...");
+                    //Pauses console, awaiting next input
                     system("pause");
+                    //Clears command console
                     system("cls");
+                    //Re-prints the menu
                     mdl.parseToView_MenuText(this->mainMenuText);
                     cin >> this->int_in;
                     break;
                 case 99:
+                    // default code for menu print
                     mdl.parseToView_MenuText(this->mainMenuText);
                     cin >> this->int_in;
                     break;
@@ -53,10 +60,15 @@ class Controller : private Model
         }
 
     private:
+        //Living, breathing child of Controller
         Model mdl;
+        //I control when the program should die a horrible death
         bool exit = false;
+        //I'm the users input
         int int_in;
-
+        //Static storage for Main Menu
+        //Be very careful changing this!
+        //Order in the Switch and this Vector Matter!
         vector<string> mainMenuText = {"Exit the program","Register New Pizza", "Order Pizza", "Display All Pizza"};
 };
 
