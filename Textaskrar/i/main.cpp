@@ -24,8 +24,6 @@ int main()
         break;
     }
 
-
-
     do{
         cout << "Do you wish to continue (y/n)?";
         cin >> input;
