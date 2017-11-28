@@ -1,4 +1,4 @@
-	○ Einn vallisti sem býður upp á þá möguleika sem í boði eru
+DONE	○ Einn vallisti sem býður upp á þá möguleika sem í boði eru
 		-> Controller :
 			Reads user input 
 		-> Model :
