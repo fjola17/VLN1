@@ -11,6 +11,10 @@ class View
         View();
 
         virtual ~View();
+    
+    /*
+    This is where everything is formatted from data into user-friendly messages
+    */
 
     void displayMM(vector<string> data){
         for(int i = 0; i < data.size(); i++){
