@@ -18,6 +18,7 @@ int main()
         else
             break;
     }
+    cout << endl;
 
     if(fin.eof()== true){
         break;
@@ -37,6 +38,8 @@ int main()
         }
 
     }while(1);
+
+    cout << endl;
 
     }while(input != 'n');
 

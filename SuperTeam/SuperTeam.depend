@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1511875107 source:c:\users\notandi\desktop\hr\verklegt námskeiğ 1\superteam\main.cpp
+	<iostream>
+	<fstream>
+	"SuperHero.h"
+
+1511863445 c:\users\notandi\desktop\hr\verklegt námskeiğ 1\superteam\include\superhero.h
+	<fstream>
+	<string>
+	<iostream>
+
+1511875049 source:c:\users\notandi\desktop\hr\verklegt námskeiğ 1\superteam\src\superhero.cpp
+	"SuperHero.h"
+
