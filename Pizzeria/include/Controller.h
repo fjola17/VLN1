@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Model.h"
 #include <stdlib.h>
+#include <vector>
 
 class Controller : private Model
 {
@@ -33,7 +34,7 @@ class Controller : private Model
                 break;
                 case 3:
                     mdl.displayAllPizza();
-                    
+
                     mdl.throwAttention_FromController("Press any key to continue...");
                     //Pauses console, awaiting next input
                     system("pause");
@@ -55,9 +56,7 @@ class Controller : private Model
             }
         }
 
-        bool getExit(){
-            return this->exit;
-        }
+        bool getExit();
 
     private:
         //Living, breathing child of Controller

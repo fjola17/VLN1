@@ -11,6 +11,12 @@ Controller::Controller(int val)
     this->checkState();
 }
 
+void Controller::checkState();
+
+bool Controller::getExit(){
+    return this->exit;
+}
+
 Controller::~Controller()
 {
 
