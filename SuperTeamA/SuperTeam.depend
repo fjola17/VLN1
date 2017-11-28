@@ -25,3 +25,16 @@
 1511879535 source:c:\users\halldór valberg\documents\github\vln1\superteam\src\superhero.cpp
 	"SuperHero.h"
 
+1511879535 source:c:\users\halldór valberg\documents\github\vln1\superteama\main.cpp
+	<iostream>
+	<fstream>
+	"SuperHero.h"
+
+1511879535 c:\users\halldór valberg\documents\github\vln1\superteama\include\superhero.h
+	<fstream>
+	<string>
+	<iostream>
+
+1511879535 source:c:\users\halldór valberg\documents\github\vln1\superteama\src\superhero.cpp
+	"SuperHero.h"
+
