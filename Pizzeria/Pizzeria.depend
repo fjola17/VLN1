@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1511875114 source:c:\users\danilkant\desktop\pizzeria\main.cpp
+	<iostream>
+	"Controller.h"
+
+1511877280 c:\users\danilkant\desktop\pizzeria\include\controller.h
+	<iostream>
+	"Model.h"
+	<stdlib.h>
+
+1511876416 c:\users\danilkant\desktop\pizzeria\include\model.h
+	<iostream>
+	<fstream>
+	<vector>
+	"View.h"
+
+1511875530 c:\users\danilkant\desktop\pizzeria\include\view.h
+	<iostream>
+	<vector>
+
+1511873713 source:c:\users\danilkant\desktop\pizzeria\src\controller.cpp
+	"Controller.h"
+
+1511870791 source:c:\users\danilkant\desktop\pizzeria\src\model.cpp
+	"Model.h"
+
+1511867948 source:c:\users\danilkant\desktop\pizzeria\src\view.cpp
+	"View.h"
+
