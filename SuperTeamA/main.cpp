@@ -10,7 +10,7 @@ int main()
 
     SuperHero hero;
 
-    cout << "Please enter hero name, age and power: ";
+    cout << "Enter details for your hero" << endl;
     cin >> hero;
     ofstream fout;
     fout.open("heroes.txt", ios::app);
@@ -24,13 +24,13 @@ int main()
     if(fin.is_open()){
         while(!fin.eof()){
             getline(fin, str);
-            cout << str << endl;
+            cout << str << endl; //print out every hero like it is in the heroes file
 
         }
         fin.close();
     }
     else{
-        cout << "File does not exist" << endl;
+        cout << "File is not open" << endl;
     }
 
     return 0;

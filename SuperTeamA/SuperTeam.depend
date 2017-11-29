@@ -12,3 +12,13 @@
 1511968822 source:c:\users\notandi\desktop\hr\verklegt námskeið 1\superteam\src\superhero.cpp
 	"SuperHero.h"
 
+1511970790 source:c:\users\notandi\documents\github\vln1\superteama\main.cpp
+	<iostream>
+	<fstream>
+	"SuperHero.h"
+
+1511970790 c:\users\notandi\documents\github\vln1\superteama\include\superhero.h
+	<fstream>
+	<string>
+	<iostream>
+

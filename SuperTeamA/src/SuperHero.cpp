@@ -18,14 +18,20 @@ SuperHero::SuperHero(string name, int age, char power){
 }
 
 istream& operator >> (istream& in, SuperHero& hero){
-
-    in >> hero.name >> hero.age >> hero.power;
+    //menu does only print on the screen, not in the file
+    cout << "Please enter a name: ";
+    in >> hero.name;
+    cout << "Please enter age: ";
+    in >> hero.age;
+    cout << "Please enter a superpower" << endl;
+    cout << "f for flying" << endl << "g for giant" << endl << "h for hacker" << endl << "n for none: ";
+    in >> hero.power;
     return in;
 }
 
 ostream& operator << (ostream& out, SuperHero& hero){
 
-    out << hero.name << " (" << hero.age << ") ";
+    out << hero.name << " (" << hero.age << "): ";
 
     if (hero.power == 'f'){
         out << "flying" << endl;
@@ -46,13 +52,4 @@ ostream& operator << (ostream& out, SuperHero& hero){
         out << "Weakling" << endl;
     }
     return out;
-}
-string SuperHero::getname(){
-    return this->name;
-}
-int SuperHero::getage(){
-    return this->age;
-}
-char SuperHero::getpower(){
-    return this->power;
 }
