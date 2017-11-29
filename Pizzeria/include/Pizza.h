@@ -14,8 +14,7 @@ class Pizza
         Pizza();
         virtual ~Pizza();
 
-        int getsize();
-        double getprize();
+        void addTopping();
 
     protected:
 

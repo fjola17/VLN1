@@ -7,13 +7,10 @@ Pizza::Pizza()
     this->name = "";
 }
 
-int Pizza::getsize(){
-    return size;
+void Pizza::addTopping(){ //function to make space for new topping in vector
+    topArr.push_back();
 }
-double getprize(){
-    return prize;
-}
-
 Pizza::~Pizza()
 {
+    //blablabla
 }

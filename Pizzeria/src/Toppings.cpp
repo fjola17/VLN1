@@ -3,13 +3,14 @@
 Toppings::Toppings()
 {
     this->prize = 0;
-    this->name[0] ='\0';
+    this->name = "";
 }
 
 Toppings::~Toppings()
 {
     //dtor
 }
+
 
 istream& operator >> (istream& in, Toppings& topping){
     in >> topping.name;
@@ -18,12 +19,7 @@ istream& operator >> (istream& in, Toppings& topping){
 }
 
 ostream& operator << (ostream& out, Toppings& topping){
-    for (int i = 0; i< 20; i++){ //print out the character array
-        out << topping.name[i];
-        if (name[i] =='\0'){
-            break;
-        }
-    }
+    out << topping.name;
     out << topping.prize;
     return out;
 }

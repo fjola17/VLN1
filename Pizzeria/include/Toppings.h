@@ -14,7 +14,7 @@ class Toppings
     protected:
 
     private:
-        char name[20];
+        string name;
         double prize;
 
 };

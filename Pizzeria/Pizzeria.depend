@@ -27,30 +27,31 @@
 1511867948 source:c:\users\danilkant\desktop\pizzeria\src\view.cpp
 	"View.h"
 
-1511877845 source:c:\users\notandi\documents\github\vln1\pizzeria\main.cpp
+1511963289 source:c:\users\notandi\documents\github\vln1\pizzeria\main.cpp
 	<iostream>
 	"Controller.h"
 
-1511960584 c:\users\notandi\documents\github\vln1\pizzeria\include\controller.h
+1511963289 c:\users\notandi\documents\github\vln1\pizzeria\include\controller.h
 	<iostream>
 	"Model.h"
 	<stdlib.h>
 	<vector>
 
-1511877845 c:\users\notandi\documents\github\vln1\pizzeria\include\model.h
+1511963289 c:\users\notandi\documents\github\vln1\pizzeria\include\model.h
 	<iostream>
 	<fstream>
 	<vector>
 	"View.h"
+	"Pizza.h"
 
-1511884994 c:\users\notandi\documents\github\vln1\pizzeria\include\view.h
+1511963289 c:\users\notandi\documents\github\vln1\pizzeria\include\view.h
 	<iostream>
 	<vector>
 
-1511877845 source:c:\users\notandi\documents\github\vln1\pizzeria\src\model.cpp
+1511963289 source:c:\users\notandi\documents\github\vln1\pizzeria\src\model.cpp
 	"Model.h"
 
-1511877845 source:c:\users\notandi\documents\github\vln1\pizzeria\src\view.cpp
+1511963289 source:c:\users\notandi\documents\github\vln1\pizzeria\src\view.cpp
 	"View.h"
 
 1511957571 source:c:\users\danilkant\documents\github\vln1\pizzeria\main.cpp
@@ -96,4 +97,15 @@
 
 1511962105 source:c:\users\danilkant\documents\github\vln1\pizzeria\src\view.cpp
 	"View.h"
+
+1511964920 c:\users\notandi\documents\github\vln1\pizzeria\include\pizza.h
+	"Toppings.h"
+	<iostream>
+	<fstream>
+	<vector>
+
+1511964921 c:\users\notandi\documents\github\vln1\pizzeria\include\toppings.h
+
+1511963289 source:c:\users\notandi\documents\github\vln1\pizzeria\src\controller.cpp
+	"Controller.h"
 
