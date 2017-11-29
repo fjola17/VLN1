@@ -1,0 +1,60 @@
+# depslib dependency file v1.0
+1511981357 source:c:\users\danilkant\desktop\gamex\pizzeriaremastered\controllers\maincontroller.cpp
+	"maincontroller.h"
+	<iostream>
+
+1511980585 c:\users\danilkant\desktop\gamex\pizzeriaremastered\controllers\maincontroller.h
+	"pizzamodel.h"
+	"ordermodel.h"
+	"toppingmodel.h"
+	"mainmodel.h"
+
+1511979855 c:\users\danilkant\desktop\gamex\pizzeriaremastered\models\pizzamodel.h
+	"mainview.h"
+
+1511981120 c:\users\danilkant\desktop\gamex\pizzeriaremastered\views\mainview.h
+	<string>
+	<vector>
+
+1511980130 c:\users\danilkant\desktop\gamex\pizzeriaremastered\models\ordermodel.h
+	"mainview.h"
+
+1511980145 c:\users\danilkant\desktop\gamex\pizzeriaremastered\models\toppingmodel.h
+	"mainview.h"
+
+1511980394 c:\users\danilkant\desktop\gamex\pizzeriaremastered\models\mainmodel.h
+	<string>
+	<mainview.h>
+
+1511980033 source:c:\users\danilkant\desktop\gamex\pizzeriaremastered\main.cpp
+	<iostream>
+	<maincontroller.h>
+
+1511980404 source:c:\users\danilkant\desktop\gamex\pizzeriaremastered\models\mainmodel.cpp
+	"mainmodel.h"
+
+1511979365 source:c:\users\danilkant\desktop\gamex\pizzeriaremastered\models\ordermodel.cpp
+	"ordermodel.h"
+
+1511980924 source:c:\users\danilkant\desktop\gamex\pizzeriaremastered\models\pizzamodel.cpp
+	"pizzamodel.h"
+
+1511979351 source:c:\users\danilkant\desktop\gamex\pizzeriaremastered\models\toppingmodel.cpp
+	"toppingmodel.h"
+
+1511979359 source:c:\users\danilkant\desktop\gamex\pizzeriaremastered\templates\pizza.cpp
+	"pizza.h"
+
+1511976870 c:\users\danilkant\desktop\gamex\pizzeriaremastered\templates\pizza.h
+
+1511979354 source:c:\users\danilkant\desktop\gamex\pizzeriaremastered\templates\topping.cpp
+	"topping.h"
+
+1511976973 c:\users\danilkant\desktop\gamex\pizzeriaremastered\templates\topping.h
+
+1511981288 source:c:\users\danilkant\desktop\gamex\pizzeriaremastered\views\mainview.cpp
+	"mainview.h"
+	<iostream>
+	<vector>
+	<stdlib.h>
+
