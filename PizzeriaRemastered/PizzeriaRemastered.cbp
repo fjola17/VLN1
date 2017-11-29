@@ -13,6 +13,10 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="Controllers" />
+					<Add directory="Models" />
+					<Add directory="Views" />
+					<Add directory="Templates" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +26,10 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="Controllers" />
+					<Add directory="Models" />
+					<Add directory="Views" />
+					<Add directory="Templates" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,6 +40,22 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Controllers/maincontroller.cpp" />
+		<Unit filename="Controllers/maincontroller.h" />
+		<Unit filename="Models/mainmodel.cpp" />
+		<Unit filename="Models/mainmodel.h" />
+		<Unit filename="Models/ordermodel.cpp" />
+		<Unit filename="Models/ordermodel.h" />
+		<Unit filename="Models/pizzamodel.cpp" />
+		<Unit filename="Models/pizzamodel.h" />
+		<Unit filename="Models/toppingmodel.cpp" />
+		<Unit filename="Models/toppingmodel.h" />
+		<Unit filename="Templates/pizza.cpp" />
+		<Unit filename="Templates/pizza.h" />
+		<Unit filename="Templates/topping.cpp" />
+		<Unit filename="Templates/topping.h" />
+		<Unit filename="Views/mainview.cpp" />
+		<Unit filename="Views/mainview.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
