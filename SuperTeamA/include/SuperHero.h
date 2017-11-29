@@ -15,13 +15,14 @@ class SuperHero
         friend ostream& operator << (ostream& out, SuperHero& hero);
         friend istream& operator >> (istream& in, SuperHero& hero);
         ~SuperHero();
+        string getname();
+        int getage();
+        char getpower();
 
     private:
         string name;
         int age;
         char power;
-        ifstream fin;
-        ofstream fout;
 
 };
 
