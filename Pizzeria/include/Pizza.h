@@ -1,6 +1,7 @@
 #ifndef PIZZA_H
 #define PIZZA_H
 
+#include "Toppings.h"
 #include <iostream>
 #include <fstream>
 
@@ -20,7 +21,7 @@ class Pizza
     private:
         int size;
         double prize;
-        char[20] toppings; //character array to get the name of a topping
+        string name;
 };
 
 #endif // PIZZA_H
