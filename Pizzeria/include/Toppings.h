@@ -1,6 +1,9 @@
 #ifndef TOPPINGS_H
 #define TOPPINGS_H
 
+#include <string>
+#include <iostream>
+using namespace std;
 
 class Toppings
 {
