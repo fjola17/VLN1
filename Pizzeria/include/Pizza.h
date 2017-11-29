@@ -4,6 +4,7 @@
 #include "Toppings.h"
 #include <iostream>
 #include <fstream>
+#include <vector>
 
 using namespace std;
 
@@ -12,9 +13,13 @@ class Pizza
     public:
         Pizza();
         virtual ~Pizza();
-        int getsize();
-        double getprize();
-        //need to put something about overloading operators here???
+
+        int getsize(){
+            return this->size;
+        }
+        double getprize(){
+            return this->prize;
+        }
 
     protected:
 
@@ -22,6 +27,7 @@ class Pizza
         int size;
         double prize;
         string name;
+        vector<Toppings> topArr;
 };
 
 #endif // PIZZA_H

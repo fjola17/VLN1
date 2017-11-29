@@ -7,14 +7,6 @@ Pizza::Pizza()
     this->name = "";
 }
 
-
-int getsize(){
-    return size;
-}
-double getprize(){
-    return prize;
-}
-
 Pizza::~Pizza()
 {
     //dtor

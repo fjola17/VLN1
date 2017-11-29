@@ -11,24 +11,16 @@ class View
         View();
 
         virtual ~View();
-    
+
     /*
     This is where everything is formatted from data into user-friendly messages
     */
 
-    void displayMM(vector<string> data){
-        for(int i = 0; i < data.size(); i++){
-            cout << i << ". " << data[i] << endl;
-        }
-    }
+    void displayMM(vector<string> data);
 
-    void throwError(string e){
-        cout << "ERROR: " << e << endl;
-    }
+    void throwError(string e);
 
-    void throwAttention(string e){
-        cout << "ATTENTION: " << e << endl;
-    }
+    void throwAttention(string e);
 
     protected:
 

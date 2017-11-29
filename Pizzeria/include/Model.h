@@ -5,6 +5,7 @@
 #include <fstream>
 #include <vector>
 #include "View.h"
+#include "Pizza.h"
 
 class Model : private View
 {
@@ -13,37 +14,27 @@ class Model : private View
 
         virtual ~Model();
 
-        void parseToView_MenuText(vector<string> dat){
-            vw.displayMM(dat);
-        }
+        void parseToView_MenuText(vector<string> dat);
 
-        void registerNewPizza(){
-            //REPLACE ME
-            vw.throwAttention("I do nothing, replace me");
-        }
+        void registerNewPizza();
 
-        void orderPizza(){
-            //REPLACE ME
-            vw.throwAttention("I do nothing, replace me");
-        }
+        void orderPizza();
 
-        void displayAllPizza(){
-            //REPLACE ME
-            vw.throwAttention("I do nothing, replace me");
-        }
+        void displayAllPizza();
 
-        void throwError_FromController(string e){
-            vw.throwError(e);
-        }
+        void throwError_FromController(string e);
 
-        void throwAttention_FromController(string a){
-            vw.throwAttention(a);
-        }
+        void throwAttention_FromController(string a);
+
+        void loadPizzaData();
+
+        void writePizzaData();
 
     protected:
 
     private:
         View vw;
+        Pizza *pizzaMenu;
 };
 
 #endif // MODEL_H

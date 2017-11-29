@@ -53,3 +53,47 @@
 1511877845 source:c:\users\notandi\documents\github\vln1\pizzeria\src\view.cpp
 	"View.h"
 
+1511957571 source:c:\users\danilkant\documents\github\vln1\pizzeria\main.cpp
+	<iostream>
+	"Controller.h"
+
+1511961949 c:\users\danilkant\documents\github\vln1\pizzeria\include\controller.h
+	<iostream>
+	"Model.h"
+	<stdlib.h>
+	<vector>
+
+1511961349 c:\users\danilkant\documents\github\vln1\pizzeria\include\model.h
+	<iostream>
+	<fstream>
+	<vector>
+	"View.h"
+	"Pizza.h"
+
+1511962089 c:\users\danilkant\documents\github\vln1\pizzeria\include\view.h
+	<iostream>
+	<vector>
+
+1511959452 c:\users\danilkant\documents\github\vln1\pizzeria\include\pizza.h
+	"Toppings.h"
+	<iostream>
+	<fstream>
+	<vector>
+
+1511958069 c:\users\danilkant\documents\github\vln1\pizzeria\include\toppings.h
+
+1511962010 source:c:\users\danilkant\documents\github\vln1\pizzeria\src\controller.cpp
+	"Controller.h"
+
+1511962033 source:c:\users\danilkant\documents\github\vln1\pizzeria\src\model.cpp
+	"Model.h"
+
+1511959333 source:c:\users\danilkant\documents\github\vln1\pizzeria\src\pizza.cpp
+	"Pizza.h"
+
+1511958069 source:c:\users\danilkant\documents\github\vln1\pizzeria\src\toppings.cpp
+	"Toppings.h"
+
+1511962105 source:c:\users\danilkant\documents\github\vln1\pizzeria\src\view.cpp
+	"View.h"
+
