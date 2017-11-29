@@ -7,6 +7,9 @@ class Toppings
     public:
         Toppings();
         virtual ~Toppings();
+        friend istream& operator >> (istream& in, Toppings& topping);
+        friend ostream& operator << (ostream& out, Toppings& topping);
+
 
     protected:
 
