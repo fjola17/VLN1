@@ -15,6 +15,9 @@ class Pizza
         int getsize();
         double getprize();
         //need to put something about overloading operators here???
+        friend istream& operator >> (istream& in, Pizza& pizza);
+        friend ostream& operator << (ostream& out, Pizza& pizza);
+
 
     protected:
 
@@ -22,6 +25,7 @@ class Pizza
         int size;
         double prize;
         string name;
+        Toppings* topping;
 };
 
 #endif // PIZZA_H

@@ -50,7 +50,7 @@ class Controller : private Model
                     cin >> this->int_in;
                     break;
                 default:
-                    mdl.throwError_FromController("Your input does't match with the options");
+                    mdl.throwError_FromController("Your input doesn't match with the options");
                     cin >> this->int_in;
                     break;
             }
