@@ -37,11 +37,13 @@
 		<Unit filename="include/Controller.h" />
 		<Unit filename="include/Model.h" />
 		<Unit filename="include/Pizza.h" />
+		<Unit filename="include/Toppings.h" />
 		<Unit filename="include/View.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Controller.cpp" />
 		<Unit filename="src/Model.cpp" />
 		<Unit filename="src/Pizza.cpp" />
+		<Unit filename="src/Toppings.cpp" />
 		<Unit filename="src/View.cpp" />
 		<Extensions>
 			<code_completion />
