@@ -15,7 +15,7 @@
 class Pizza
 {
     public:
-        Pizza();
+        Pizza(string n, int p, vector<Topping> t);
         virtual ~Pizza();
 
     protected:

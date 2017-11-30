@@ -2,11 +2,12 @@
 #define ORDER_H
 
 #include <ctime>
+#include <vector>
 
 class Order
 {
     public:
-        Order();
+        Order(time_t val1, vector<Pizza> val2);
         virtual ~Order();
 
     protected:

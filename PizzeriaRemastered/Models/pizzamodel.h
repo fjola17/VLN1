@@ -2,6 +2,8 @@
 #define PIZZAMODEL_H
 
 #include "mainview.h"
+#include "pizza.h"
+#include <vector>
 
 class PizzaModel : private MainView
 {
@@ -14,6 +16,7 @@ class PizzaModel : private MainView
     protected:
 
     private:
+        vector<Pizza> types = { new Pizza(), new Pizza()}
 };
 
 #endif // PIZZAMODEL_H

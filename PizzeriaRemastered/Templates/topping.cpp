@@ -2,10 +2,10 @@
 
 using namespace std;
 
-Topping::Topping()
+Topping::Topping(string n, int p)
 {
-    name = "";
-    price = 0;
+    name = n;
+    price = p;
 }
 
 Topping::~Topping()

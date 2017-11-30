@@ -2,10 +2,11 @@
 
 using namespace std;
 
-Pizza::Pizza()
+Pizza::Pizza(string n, int p, vector<Topping> t)
 {
-    name = "";
-    price = 0;
+    this->name = n;
+    this->price = p;
+    this->toppings.swap(t);
 }
 
 Pizza::~Pizza()

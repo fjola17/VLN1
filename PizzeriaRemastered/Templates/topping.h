@@ -14,7 +14,7 @@ using namespace std;
 class Topping
 {
     public:
-        Topping();
+        Topping(string n, int p);
         virtual ~Topping();
 
     protected:
