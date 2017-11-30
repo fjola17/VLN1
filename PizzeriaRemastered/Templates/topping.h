@@ -2,7 +2,8 @@
 #define TOPPING_H
 
 #include <string>
-
+#include <iostream>
+using namespace std;
 /*
 
     This is a Topping template
