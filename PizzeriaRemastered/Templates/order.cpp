@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Order::Order(time_t val1, vector<Pizza> val2)
+Order::Order(vector<Pizza> val)
 {
     this->state = 0;
     this->id;

@@ -12,8 +12,10 @@ PizzaModel::~PizzaModel()
     //dtor
 }
 
-void PizzaModel::processRegisterPizza(){
-    MainView::throwWarning("I do nothing, replace me");
-    MainView::printPressAnyKey();
-    MainView::consoleClear();
+Pizza PizzaModel::processRegisterPizza(int in){
+    return PizzaModel::types[(in - 1)];
+}
+
+void PizzaModel::processPizzaMenu(){
+    PizzaModel::printPizzaOrder(PizzaModel::types);
 }

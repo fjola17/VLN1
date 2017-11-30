@@ -50,6 +50,10 @@ void MainController::requestMainMenu(){
     MainModel::processMainMenu();
 }
 
+void MainController::requestPizzaMenu(){
+    PizzaModel::processPizzaMenu();
+}
+
 void MainController::requestError(string e){
     MainModel::processError(e);
 }
@@ -63,6 +67,14 @@ void MainController::requestWarning(string e){
 }
 
 void MainController::requestRegisterPizza(){
+    int input;
+    bool exit = false;
+    while(!exit){
+        MainController::requestPizzaMenu();
+        cin >> input;
+        OrderModel::PizzaModel::processRegisterPizza()
+    }
+
     PizzaModel::processRegisterPizza();
 }
 

@@ -23,6 +23,21 @@ void MainView::printMainMenu(vector<string> m){
     }
 }
 
+void MainView::printPizzaMenu(std::vector<Pizza> p){
+    for(int a = 0; a < p.size();a++){
+        cout << a << ". " << p[a].name << "\t" << p[a].price << "kr." endl << "Toppings: ";
+        for(int b = 0; b < p[a].toppings.size();b++){
+            cout << " - " << p[a].toppings[b].name;
+        }
+    }
+}
+
+void MainView::printToppingsChoice(std::vector<Topping> t){
+    for(int i = 0; i < t.size();i++){
+        cout << i << ". " << t[i].name << "\t" << t[i].price << "kr." << endl;
+    }
+}
+
 void MainView::printPressAnyKey(){
     system("pause");
 }

@@ -3,6 +3,8 @@
 
 #include <string>
 #include <vector>
+#include "pizza.h"
+#include "topping.h"
 
 class MainView
 {
@@ -11,6 +13,10 @@ class MainView
         virtual ~MainView();
 
         void printMainMenu(std::vector<std::string> m);
+
+        void printPizzaMenu(std::vector<Pizza> p);
+
+        void printToppingsChoice(std::vector<Topping> t);
 
         void printPressAnyKey();
 

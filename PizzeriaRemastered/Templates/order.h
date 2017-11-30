@@ -7,7 +7,7 @@
 class Order
 {
     public:
-        Order(time_t val1, vector<Pizza> val2);
+        Order(vector<Pizza> val);
         virtual ~Order();
 
     protected:
