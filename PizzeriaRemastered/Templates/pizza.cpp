@@ -6,7 +6,7 @@ Pizza::Pizza(string n, int p, vector<Topping> t)
 {
     this->name = n;
     this->price = p;
-    this->toppings.swap(t);
+    this->toppings.swap()
 }
 
 Pizza::~Pizza()

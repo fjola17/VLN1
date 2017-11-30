@@ -14,7 +14,7 @@
 */
 
 
-class MainController : private PizzaModel, private OrderModel, private ToppingModel, private MainModel
+class MainController : private PizzaModel, private OrderModel, private MainModel
 {
     public:
         MainController();
