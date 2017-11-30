@@ -12,6 +12,7 @@ class PizzaModel : private MainView
         virtual ~PizzaModel();
 
         void processRegisterPizza();
+        //void newPizza();
 
     protected:
 

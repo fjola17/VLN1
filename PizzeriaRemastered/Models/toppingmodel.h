@@ -8,6 +8,7 @@ class ToppingModel : private MainView
     public:
         ToppingModel();
         virtual ~ToppingModel();
+        //void addNewTopping()
 
     protected:
 
