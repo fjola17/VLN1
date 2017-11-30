@@ -51,6 +51,7 @@
 		<Unit filename="Models/toppingmodel.cpp" />
 		<Unit filename="Models/toppingmodel.h" />
 		<Unit filename="Templates/order.cpp" />
+		<Unit filename="Templates/order.h" />
 		<Unit filename="Templates/pizza.cpp" />
 		<Unit filename="Templates/pizza.h" />
 		<Unit filename="Templates/topping.cpp" />

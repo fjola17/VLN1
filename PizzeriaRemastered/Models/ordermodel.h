@@ -11,6 +11,7 @@ class OrderModel : private MainView
         OrderModel();
         virtual ~OrderModel();
         void newOrder(vector<Pizza> order);
+        void newPizza();
 
     protected:
 

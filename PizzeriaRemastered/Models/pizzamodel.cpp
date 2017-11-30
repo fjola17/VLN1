@@ -24,11 +24,11 @@ void PizzaModel::processPizzaMenu(){
     (unless you do a better version of this function)
     Purpose of this function is to register a new pizza
     most likely this belongs to the order class
+    Some function needed to add this into a file
 
 void PizzaModel::newPizza(){
     Pizza myPizza;
     cout << "Enter details for your pizza;
     cin >> myPizza;
 }
-Some function needed to add this into a file
-/*
+*/

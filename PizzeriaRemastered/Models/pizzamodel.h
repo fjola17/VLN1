@@ -19,7 +19,7 @@ class PizzaModel : private MainView
     protected:
 
     private:
-        //Random pizza toppings and types in the vecors
+        //Random pizza toppings and types in the vecors are in here
         vector<Topping> toppings = {new Topping("Hair", 300), new Topping("Potion", 300)};
         vector<Pizza> types = { new Pizza("Super Saiyan", 9001, {this->toppings[0]}), new Pizza("Crazy Scientist", 1337, {this->toppings[1]})};
 };

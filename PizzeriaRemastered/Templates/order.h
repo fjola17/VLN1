@@ -4,6 +4,8 @@
 #include <ctime>
 #include <vector>
 
+#include "pizza.h"
+
 class Order
 {
     public:

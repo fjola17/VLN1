@@ -24,5 +24,4 @@ void ToppingModel::addNewTopping(){
     cin >> newtopping;
     cout << "Your topping has been added" << endl
 }
-
 */
