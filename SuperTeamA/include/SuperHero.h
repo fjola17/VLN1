@@ -20,8 +20,6 @@ class SuperHero
         string name;
         int age;
         char power;
-        ifstream fin;
-        ofstream fout;
 
 };
 

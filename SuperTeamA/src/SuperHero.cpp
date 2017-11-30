@@ -18,20 +18,19 @@ SuperHero::SuperHero(string name, int age, char power){
 }
 
 istream& operator >> (istream& in, SuperHero& hero){
-    hero.fin.open("heroes.txt", ios::app);
-
-    in >> hero.name >> hero.age >> hero.power;
-    hero.fin.close();
-    return hero.fin;
+    cout << "Please enter a name: ";
+    in >> hero.name;
+    cout << "Please enter age: ";
+    in >> hero.age;
+    cout << "Please enter a superpower" << endl;
+    cout << "f for flying" << endl << "g for giant" << endl << "h for hacker" << endl << "n for none: ";
+    in >> hero.power;
+    return in;
 }
 
 ostream& operator << (ostream& out, SuperHero& hero){
-    string str;
-    hero.fout.open("heroes.txt", ios::app);
-//    getline(hero.fout, str);
 
-    out << hero.name << endl;
-    out << hero.age << endl;
+    out << hero.name << " (" << hero.age << "): ";
 
     if (hero.power == 'f'){
         out << "flying" << endl;
@@ -51,6 +50,5 @@ ostream& operator << (ostream& out, SuperHero& hero){
     else{
         out << "Weakling" << endl;
     }
-    hero.fout.close();
     return out;
 }
