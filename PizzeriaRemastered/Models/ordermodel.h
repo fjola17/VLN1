@@ -2,16 +2,20 @@
 #define ORDERMODEL_H
 
 #include "mainview.h"
+#include "order.h"
+#include "pizza.h"
 
 class OrderModel : private MainView
 {
     public:
         OrderModel();
         virtual ~OrderModel();
+        void newOrder(vector<Pizza> order);
 
     protected:
 
     private:
+        vector<Order> orders;
 };
 
 #endif // ORDERMODEL_H

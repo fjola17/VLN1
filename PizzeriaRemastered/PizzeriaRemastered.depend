@@ -72,7 +72,7 @@
 	"toppingmodel.h"
 	"mainmodel.h"
 
-1512047496 c:\users\notandi\documents\github\vln1\pizzeriaremastered\models\pizzamodel.h
+1512050868 c:\users\notandi\documents\github\vln1\pizzeriaremastered\models\pizzamodel.h
 	"mainview.h"
 	"pizza.h"
 	<vector>
@@ -81,8 +81,10 @@
 	<string>
 	<vector>
 
-1512045816 c:\users\notandi\documents\github\vln1\pizzeriaremastered\models\ordermodel.h
+1512050993 c:\users\notandi\documents\github\vln1\pizzeriaremastered\models\ordermodel.h
 	"mainview.h"
+	"order.h"
+	"pizza.h"
 
 1512047496 c:\users\notandi\documents\github\vln1\pizzeriaremastered\models\toppingmodel.h
 	"mainview.h"
@@ -186,4 +188,8 @@
 1512043670 c:\users\danilkant\documents\github\vln1\pizzeriaremastered\templates\topping.h
 	<string>
 	<iostream>
+
+1512045816 c:\users\notandi\documents\github\vln1\pizzeriaremastered\templates\order.h
+	<ctime>
+	<vector>
 

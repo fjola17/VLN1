@@ -12,12 +12,13 @@ PizzaModel::~PizzaModel()
     //dtor
 }
 
-void PizzaModel::processRegisterPizza(){
-    MainView::throwWarning("Registering a pizza. ");
-    MainView::printPressAnyKey(); //need to add some code here to be able to register a pizza
-    MainView::consoleClear();
+Pizza PizzaModel::processRegisterPizza(int in){
+    return PizzaModel::types[(in - 1)];
 }
 
+void PizzaModel::processPizzaMenu(){
+    PizzaModel::printPizzaOrder(PizzaModel::types);
+}
 /*
     idea for a funcion, feel free to include, change or not include this  somewhere
     (unless you do a better version of this function)

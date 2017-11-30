@@ -11,6 +11,7 @@ using namespace std;
     checkState function is what tells Models what data is required;
 
 */
+
 MainController::MainController()
 {
     this->state = 99;
@@ -62,7 +63,16 @@ void MainController::requestWarning(string e){
     MainModel::processWarning(e);
 }
 
+
 void MainController::requestRegisterPizza(){
+    int input;
+    bool exit = false;
+    while(!exit){
+        MainController::requestPizzaMenu();
+        cin >> input;
+        OrderModel::PizzaModel::processRegisterPizza();
+    }
+
     PizzaModel::processRegisterPizza();
 }
 
