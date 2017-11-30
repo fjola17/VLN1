@@ -21,9 +21,9 @@ class Pizza
     protected:
 
     private:
-        std::string name;
+        string name;
         int price;
-        std::vector<Topping> toppings;
+        vector<Topping> toppings;
 };
 
 #endif // PIZZA_H

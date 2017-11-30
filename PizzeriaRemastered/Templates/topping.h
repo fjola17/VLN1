@@ -20,7 +20,7 @@ class Topping
     protected:
 
     private:
-        std::string name;
+        string name;
         int price;
 };
 

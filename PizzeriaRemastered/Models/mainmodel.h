@@ -2,7 +2,7 @@
 #define MAINMODEL_H
 
 #include <string>
-#include <mainview.h>
+#include "mainview.h"
 
 using namespace std;
 
@@ -14,16 +14,16 @@ class MainModel : private MainView
 
     void processMainMenu();
 
-    void processError(std::string e);
+    void processError(string e);
 
-    void processAttention(std::string e);
+    void processAttention(string e);
 
-    void processWarning(std::string e);
+    void processWarning(string e);
 
     protected:
 
     private:
-        vector<string> mainMenuText = {"Exit", "Register Pizza"};
+        vector<string> mainMenuText = {"Exit", "Register Pizza", "Order pizza", "Baking the pizza", "Pizza check out"};
 };
 
 #endif // MAINMODEL_H

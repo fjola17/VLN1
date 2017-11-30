@@ -4,23 +4,26 @@
 #include <string>
 #include <vector>
 
+#include <iostream>
+using namespace std;
+
 class MainView
 {
     public:
         MainView();
         virtual ~MainView();
 
-        void printMainMenu(std::vector<std::string> m);
+        void printMainMenu(vector<string> m);
 
         void printPressAnyKey();
 
-        void printGenericMessage(std::string m);
+        void printGenericMessage(string m);
 
-        void throwError(std::string e);
+        void throwError(string e);
 
-        void throwWarning(std::string e);
+        void throwWarning(string e);
 
-        void throwAttention(std::string e);
+        void throwAttention(string e);
 
         void consoleClear();
 

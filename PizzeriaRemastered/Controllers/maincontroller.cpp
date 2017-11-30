@@ -33,11 +33,27 @@ void MainController::checkState(){
         MainController::exit = true;
         break;
     case 1:
+        cout << "Register a new pizza / topping / place ";
+        //Make a pizza/álegg/stærð/stað eða e-h
         MainController::requestRegisterPizza();
         MainController::requestMainMenu();
         MainController::setState_input();
         break;
-    case 99:
+    case 2:
+        cout << "Make an order" << endl;
+        //make order for pizza, put some code here
+        break;
+    case 3:
+        cout << "Enter your current work location";
+        //bakari, pizza in progress/tilbuin
+        cout << "Displayed pizzas";
+        //þarf að vita stað og leita af þeim pizzum sem eru á þeim stað
+        break;
+    case 4:
+        cout << "Your current location";
+        //pizza sótt og greitt fyrir, fer út úr
+        //þarf að vita á hvaða stað maður er á til að bara pizzur á þeim stað byrtast
+    case 99: //goes back to main menu
         MainController::requestMainMenu();
         MainController::setState_input();
         break;
