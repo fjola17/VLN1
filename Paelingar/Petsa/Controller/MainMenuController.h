@@ -1,10 +1,13 @@
 #ifndef MAINMENUCONTROLLER_H
 #define MAINMENUCONTROLLER_H
 
-#include <iostrem>
+#include "MainMenuView.h"
+
+#include <iostream>
 #include <string>
 
 using namespace std;
+using namespace MainMenuView;
 
 
 class MainMenuController

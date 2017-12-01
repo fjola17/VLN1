@@ -1,12 +1,12 @@
 #include <iostream>
-#include "MainMenuControler.h"
+#include "MainMenuController.h"
 
 using namespace std;
 
 int main()
 {
 
-    MainMenueControler mmc;
+    MainMenuController mmc;
 
 
     return 0;

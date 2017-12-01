@@ -1,16 +1,6 @@
 #include "GlobalView.h"
 
-GlobalView::GlobalView()
-{
-    //ctor
-}
-
-GlobalView::~GlobalView()
-{
-    //dtor
-}
-
-GlobalView::displayHeader(){
+void GlobalView::displayHeader(){
     cout << "   ___ _           __                _           "      << endl;
     cout << "  /___| |__     /\\ \\ \\___  _ __ ___ (_)_ __   ___  ___ " << endl;
     cout << " //  /| '_ \\   /  \\/ / _ \\| '_ ` _ \\| | '_ \\ / _ \\/ __|" << endl;

@@ -2,8 +2,8 @@
 
 MainMenuController::MainMenuController()
 {
-    displaymenu();
-    init();
+    displayMenu();
+
 }
 
 MainMenuController::~MainMenuController()
@@ -11,8 +11,3 @@ MainMenuController::~MainMenuController()
     //dtor
 }
 
-MainMenuController::init()
-{
-
-    cout <<
-}

@@ -1,17 +1,13 @@
 #ifndef GLOBALVIEW_H
 #define GLOBALVIEW_H
 
+#include <iostream>
 
-class GlobalView
+using namespace std;
+
+namespace GlobalView
 {
-    public:
-        GlobalView();
-        virtual ~GlobalView();
-        void displayHeader();
-
-    protected:
-
-    private:
+   void displayHeader();
 };
 
 #endif // GLOBALVIEW_H
