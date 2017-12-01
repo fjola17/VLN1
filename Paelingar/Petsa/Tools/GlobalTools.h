@@ -4,7 +4,7 @@
 
 namespace GlobalTools
 {
-
+    exitApplication();
 };
 
 #endif // GLOBALTOOLS_H
