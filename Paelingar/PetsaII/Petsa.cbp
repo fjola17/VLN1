@@ -54,6 +54,8 @@
 		<Unit filename="Controller/SalesmanMenuController.h" />
 		<Unit filename="Model/Pizza.cpp" />
 		<Unit filename="Model/Pizza.h" />
+		<Unit filename="Model/Toppings.cpp" />
+		<Unit filename="Model/Toppings.h" />
 		<Unit filename="Tools/GlobalTools.cpp" />
 		<Unit filename="Tools/GlobalTools.h" />
 		<Unit filename="View/AdminMenuView.cpp" />
