@@ -1,7 +1,7 @@
 #include "GlobalTools.h"
 
 
-void GlobalTools::exitApplication(){
-
-
+void GlobalTools::exitApplication()
+{
+    exit(0);
 }

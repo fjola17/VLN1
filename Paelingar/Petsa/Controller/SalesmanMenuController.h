@@ -2,11 +2,11 @@
 #define SALESMANMENUCOTROLLER_H
 
 
-class SalesmanMenuCotroller
+class SalesmanMenuController
 {
     public:
-        SalesmanMenuCotroller();
-        virtual ~SalesmanMenuCotroller();
+        SalesmanMenuController();
+        virtual ~SalesmanMenuController();
 
     protected:
 

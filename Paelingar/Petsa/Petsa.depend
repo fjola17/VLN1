@@ -4,12 +4,17 @@
 
 1512130808 c:\users\notandi\documents\github\vln1\paelingar\petsa\controller\mainmenucontroler.h
 
-1512132705 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\mainmenucontroller.cpp
+1512133746 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\mainmenucontroller.cpp
 	"MainMenuController.h"
 
-1512132175 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\mainmenucontroller.h
+1512133675 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\mainmenucontroller.h
 	"MainMenuView.h"
 	"GlobalView.h"
+	"GlobalTools.h"
+	"AdminMenuController.h"
+	"BakerMenuController.h"
+	"SalesmanMenuController.h"
+	"CostumerMenuController.h"
 	<iostream>
 	<string>
 
@@ -20,10 +25,12 @@
 	<iostream>
 	"MainMenuController.h"
 
-1512131993 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\tools\globaltools.cpp
+1512133613 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\tools\globaltools.cpp
 	"GlobalTools.h"
 
-1512130617 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\tools\globaltools.h
+1512133807 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\tools\globaltools.h
+	<stdlib.h>
+	<cstdlib>
 
 1512132483 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\view\globalview.cpp
 	"GlobalView.h"
@@ -33,4 +40,31 @@
 
 1512132483 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\view\mainmenuview.cpp
 	"MainMenuView.h"
+
+1512132756 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\adminmenucontroller .cpp
+	"AdminMenuController .h"
+
+1512132756 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\adminmenucontroller .h
+
+1512132785 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\bakermenucontroller.cpp
+	"BakerMenuController.h"
+
+1512132785 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\bakermenucontroller.h
+
+1512132803 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\salesmanmenucotroller.h
+
+1512132756 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\adminmenucontroller.cpp
+	"AdminMenuController .h"
+
+1512132756 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\adminmenucontroller.h
+
+1512133294 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\costumermenucontroller.h
+
+1512133294 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\costumermenucontroller.cpp
+	"CostumerMenuController.h"
+
+1512133742 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\salesmanmenucontroller.h
+
+1512133742 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\salesmanmenucontroller.cpp
+	"SalesmanMenuController.h"
 

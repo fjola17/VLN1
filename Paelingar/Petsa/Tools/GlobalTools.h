@@ -1,10 +1,13 @@
 #ifndef GLOBALTOOLS_H
 #define GLOBALTOOLS_H
 
+#include <stdlib.h>
+#include <cstdlib>
 
 namespace GlobalTools
 {
-    exitApplication();
+
+    void exitApplication();
 };
 
 #endif // GLOBALTOOLS_H
