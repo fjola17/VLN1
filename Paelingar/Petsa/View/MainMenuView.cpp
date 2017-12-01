@@ -2,6 +2,12 @@
 
 void MainMenuView::displayMenu()
 {
-    cout << "This is a menu" << endl;
+    cout << "a: Admin menu" << endl;
+    cout << "b: Baker menu" << endl;
+    cout << "c: Custumer menu" << endl;
+    cout << "s: Sales menu" << endl;
+    cout << "q: Quit application " << endl;
+
+
 }
 

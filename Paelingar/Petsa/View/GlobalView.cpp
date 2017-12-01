@@ -8,7 +8,7 @@ void GlobalView::displayHeader(){
     cout << "\\___/ |_| |_| \\_\\ \\/ \\___/|_| |_| |_|_|_| |_|\\___/|___/" << endl;
     cout << endl;
     cout << "\t Bringing the No back to pizza" << endl << endl;
-    cout << "\t Pizza ordering system" << endl;
+    cout << "\t Pizza ordering system" << endl << endl;
 
 
 

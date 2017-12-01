@@ -4,11 +4,12 @@
 
 1512130808 c:\users\notandi\documents\github\vln1\paelingar\petsa\controller\mainmenucontroler.h
 
-1512131957 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\mainmenucontroller.cpp
+1512132175 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\mainmenucontroller.cpp
 	"MainMenuController.h"
 
-1512131832 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\mainmenucontroller.h
+1512132175 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\mainmenucontroller.h
 	"MainMenuView.h"
+	"GlobalView.h"
 	<iostream>
 	<string>
 
@@ -24,12 +25,12 @@
 
 1512130617 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\tools\globaltools.h
 
-1512132049 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\view\globalview.cpp
+1512132483 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\view\globalview.cpp
 	"GlobalView.h"
 
 1512132071 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\view\globalview.h
 	<iostream>
 
-1512132086 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\view\mainmenuview.cpp
+1512132483 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\view\mainmenuview.cpp
 	"MainMenuView.h"
 

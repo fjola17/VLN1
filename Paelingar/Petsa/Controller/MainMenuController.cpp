@@ -2,8 +2,8 @@
 
 MainMenuController::MainMenuController()
 {
+    displayHeader();
     displayMenu();
-
 }
 
 MainMenuController::~MainMenuController()
