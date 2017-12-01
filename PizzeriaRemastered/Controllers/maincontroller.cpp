@@ -85,6 +85,7 @@ void MainController::requestRegisterPizza(){
     bool exit = false; //til að fara út úr falli
     while(!exit){
         MainController::requestPizzaMenu(); //need to add this
+
         cin >> input;
         OrderModel::PizzaModel::processRegisterPizza();
     }
