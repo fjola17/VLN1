@@ -2,7 +2,7 @@
 
 BakerMenuController::BakerMenuController()
 {
-    clearScreen();
+    clearScrean();
     displayHeader();
     init();
 }
