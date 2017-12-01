@@ -49,13 +49,15 @@
 1512151703 c:\users\user\documents\github\vln1\paelingar\petsaii\view\mainmenuview.h
 	<iostream>
 
-1512151703 c:\users\user\documents\github\vln1\paelingar\petsaii\controller\bakermenucontroller.h
+1512157552 c:\users\user\documents\github\vln1\paelingar\petsaii\controller\bakermenucontroller.h
 	<iostream>
 	<string>
 	"GlobalTools.h"
 	"GlobalView.h"
 
-1512152717 c:\users\user\documents\github\vln1\paelingar\petsaii\controller\salesmanmenucontroller.h
+1512157552 c:\users\user\documents\github\vln1\paelingar\petsaii\controller\salesmanmenucontroller.h
+	<iostream>
+	"SalesmanMenuView.h"
 
 1512151703 c:\users\user\documents\github\vln1\paelingar\petsaii\controller\costumermenucontroller.h
 	"GlobalTools.h"

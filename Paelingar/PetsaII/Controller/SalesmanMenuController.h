@@ -1,6 +1,10 @@
 #ifndef SALESMANMENUCOTROLLER_H
 #define SALESMANMENUCOTROLLER_H
+#include <iostream>
+#include "SalesmanMenuView.h"
 
+using namespace std;
+using namespace SalesmanMenuView
 
 class SalesmanMenuController
 {
@@ -8,7 +12,6 @@ class SalesmanMenuController
         SalesmanMenuController();
         virtual ~SalesmanMenuController();
         string getlocation();
-        void SalesmanMenu();
 
     protected:
 

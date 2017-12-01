@@ -12,13 +12,7 @@ SalesmanMenuController::~SalesmanMenuController()
 {
     //dtor
 }
-void SalesmanMenuController::SalesmanMenu(){
-    cout << "Salesman menu" << endl << endl;
-    cout << "What do you want to do? " << endl;
-    cout << "d: Display all pizzas" << endl;
-    cout << "c: Checkout a pizza order" << endl;
-    cout << "q: Go back to main menu" << endl;
-}
+
 string SalesmanMenuController::getlocation(){
     string location;
     cout << "Please enter your location" << endl;
