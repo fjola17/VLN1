@@ -4,7 +4,7 @@
 
 1512130808 c:\users\notandi\documents\github\vln1\paelingar\petsa\controller\mainmenucontroler.h
 
-1512133746 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\mainmenucontroller.cpp
+1512134134 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\mainmenucontroller.cpp
 	"MainMenuController.h"
 
 1512133675 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\mainmenucontroller.h
@@ -53,14 +53,17 @@
 
 1512132803 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\salesmanmenucotroller.h
 
-1512132756 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\adminmenucontroller.cpp
-	"AdminMenuController .h"
+1512134854 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\adminmenucontroller.cpp
+	"AdminMenuController.h"
 
-1512132756 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\adminmenucontroller.h
+1512134748 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\adminmenucontroller.h
+	<iostream>
+	"GlobalTools.h"
+	"GlobalView.h"
 
 1512133294 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\costumermenucontroller.h
 
-1512133294 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\costumermenucontroller.cpp
+1512134688 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\costumermenucontroller.cpp
 	"CostumerMenuController.h"
 
 1512133742 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\salesmanmenucontroller.h
@@ -112,4 +115,9 @@
 
 1512134012 source:c:\users\notandi\documents\github\vln1\paelingar\petsa\view\globalview.cpp
 	"GlobalView.h"
+
+1512134684 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\view\costumermenuview.cpp
+	"CostumerMenuView.h"
+
+1512134684 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\view\costumermenuview.h
 

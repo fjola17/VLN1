@@ -2,8 +2,8 @@
 
 AdminMenuController ::AdminMenuController ()
 {
+    clearScrean();
     displayHeader();
-    displayAdminMenu();
     init();
 }
 
@@ -12,6 +12,8 @@ AdminMenuController ::~AdminMenuController ()
     //dtor
 }
 void AdminMenuController::displayAdminMenu(){
+    cout <<"\tAdmin Menu" << endl;
+
     cout << "What do you want to do?" << endl;
     cout << "d: Display your favorite pizza" << endl;
     cout << "p: Create a new pizza" << endl;

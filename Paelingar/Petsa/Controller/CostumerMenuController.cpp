@@ -2,7 +2,7 @@
 
 CostumerMenuController::CostumerMenuController()
 {
-    //ctor
+    //CostumerMenuView();
 }
 
 CostumerMenuController::~CostumerMenuController()
