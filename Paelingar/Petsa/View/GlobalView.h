@@ -7,6 +7,7 @@ class GlobalView
     public:
         GlobalView();
         virtual ~GlobalView();
+        void displayHeader();
 
     protected:
 
