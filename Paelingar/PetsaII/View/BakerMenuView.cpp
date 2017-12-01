@@ -1,9 +1,6 @@
 #include "BakerMenuView.h"
 
-BakerMenuView::BakerMenuView()
-{
-    //ctor
-}
+
 void BakerMenuView::Bakermenu(){
     cout << "Baker menu" << endl;
     cout << "What do you want to do? ";

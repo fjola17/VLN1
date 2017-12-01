@@ -4,7 +4,7 @@
 #include "SalesmanMenuView.h"
 
 using namespace std;
-using namespace SalesmanMenuView
+using namespace SalesmanMenuView;
 
 class SalesmanMenuController
 {

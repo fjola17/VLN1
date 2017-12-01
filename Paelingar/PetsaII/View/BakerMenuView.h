@@ -4,15 +4,10 @@
 #include <iostream>
 using namespace std;
 
-class BakerMenuView
+namespace BakerMenuView
 {
-    public:
-        BakerMenuView();
-        virtual ~BakerMenuView();
+    void Bakermenu();
 
-    protected:
-
-    private:
 };
 
 #endif // BAKERMENUVIEW_H

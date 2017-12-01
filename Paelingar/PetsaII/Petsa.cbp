@@ -56,10 +56,14 @@
 		<Unit filename="Model/Pizza.h" />
 		<Unit filename="Model/Toppings.cpp" />
 		<Unit filename="Model/Toppings.h" />
+		<Unit filename="SalesmanMenuView.cpp" />
+		<Unit filename="SalesmanMenuView.h" />
 		<Unit filename="Tools/GlobalTools.cpp" />
 		<Unit filename="Tools/GlobalTools.h" />
 		<Unit filename="View/AdminMenuView.cpp" />
 		<Unit filename="View/AdminMenuView.h" />
+		<Unit filename="View/BakerMenuView.cpp" />
+		<Unit filename="View/BakerMenuView.h" />
 		<Unit filename="View/CostumerMenuView.cpp" />
 		<Unit filename="View/CostumerMenuView.h" />
 		<Unit filename="View/GlobalView.cpp" />
