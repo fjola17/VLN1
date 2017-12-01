@@ -16,6 +16,7 @@
 					<Add directory="Controllers" />
 					<Add directory="Views" />
 					<Add directory="Helpers" />
+					<Add directory="Models" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -28,6 +29,7 @@
 					<Add directory="Controllers" />
 					<Add directory="Views" />
 					<Add directory="Helpers" />
+					<Add directory="Models" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -50,6 +52,12 @@
 		<Unit filename="Controllers/SalesmanMenuCotroller.h" />
 		<Unit filename="Helpers/GlobalHelpers.cpp" />
 		<Unit filename="Helpers/GlobalHelpers.h" />
+		<Unit filename="Models/Pizza.cpp" />
+		<Unit filename="Models/Pizza.h" />
+		<Unit filename="Views/AdminMenuView.cpp" />
+		<Unit filename="Views/AdminMenuView.h" />
+		<Unit filename="Views/GlobalView.cpp" />
+		<Unit filename="Views/GlobalView.h" />
 		<Unit filename="Views/MainMenuView.cpp" />
 		<Unit filename="Views/MainMenuView.h" />
 		<Unit filename="main.cpp" />

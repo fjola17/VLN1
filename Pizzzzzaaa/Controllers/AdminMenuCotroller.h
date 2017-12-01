@@ -10,6 +10,7 @@
 #include "CustomerMenuCotroller.h"
 #include "SalesmanMenuCotroller.h"
 #include "AdminMenuView.h"
+#include "MainMenuController.h"
 #include "Pizza.h"
 
 using namespace std;
