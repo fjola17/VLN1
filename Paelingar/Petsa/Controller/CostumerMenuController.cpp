@@ -2,7 +2,9 @@
 
 CostumerMenuController::CostumerMenuController()
 {
-    //CostumerMenuView();
+   clearScrean();
+   displayHeader();
+   costumerMenu();
 }
 
 CostumerMenuController::~CostumerMenuController()
