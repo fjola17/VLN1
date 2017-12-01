@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Pizzzzzaaa" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Pizzzzzaaa" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="Controllers" />
+					<Add directory="Views" />
+					<Add directory="Helpers" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Pizzzzzaaa" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="Controllers" />
+					<Add directory="Views" />
+					<Add directory="Helpers" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Controllers/AdminMenuCotroller.cpp" />
+		<Unit filename="Controllers/AdminMenuCotroller.h" />
+		<Unit filename="Controllers/BakerMenuCotroller.cpp" />
+		<Unit filename="Controllers/BakerMenuCotroller.h" />
+		<Unit filename="Controllers/CustomerMenuCotroller.cpp" />
+		<Unit filename="Controllers/CustomerMenuCotroller.h" />
+		<Unit filename="Controllers/MainMenuController.cpp" />
+		<Unit filename="Controllers/MainMenuController.h" />
+		<Unit filename="Controllers/SalesmanMenuCotroller.cpp" />
+		<Unit filename="Controllers/SalesmanMenuCotroller.h" />
+		<Unit filename="Helpers/GlobalHelpers.cpp" />
+		<Unit filename="Helpers/GlobalHelpers.h" />
+		<Unit filename="Views/MainMenuView.cpp" />
+		<Unit filename="Views/MainMenuView.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
