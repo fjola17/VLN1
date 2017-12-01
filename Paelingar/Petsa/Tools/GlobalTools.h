@@ -2,15 +2,9 @@
 #define GLOBALTOOLS_H
 
 
-class GlobalTools
+namespace GlobalTools
 {
-    public:
-        GlobalTools();
-        virtual ~GlobalTools();
 
-    protected:
-
-    private:
 };
 
 #endif // GLOBALTOOLS_H
