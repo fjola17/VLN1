@@ -13,6 +13,9 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="Controller" />
+					<Add directory="Tools" />
+					<Add directory="View" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +25,9 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="Controller" />
+					<Add directory="Tools" />
+					<Add directory="View" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,6 +38,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Controller/MainMenuController.cpp" />
+		<Unit filename="Controller/MainMenuController.h" />
+		<Unit filename="Tools/GlobalTools.cpp" />
+		<Unit filename="Tools/GlobalTools.h" />
+		<Unit filename="View/GlobalView.cpp" />
+		<Unit filename="View/GlobalView.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

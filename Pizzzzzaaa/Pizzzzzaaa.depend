@@ -82,3 +82,86 @@
 1512129424 source:c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\views\adminmenuview.cpp
 	"AdminMenuView.h"
 
+1512130577 source:c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\controllers\adminmenucotroller.cpp
+	"AdminMenuCotroller.h"
+
+1512130577 c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\controllers\adminmenucotroller.h
+	<iostream>
+	<string>
+	"MainMenuView.h"
+	"GlobalView.h"
+	"GlobalHelpers.h"
+	"BakerMenuCotroller.h"
+	"CustomerMenuCotroller.h"
+	"SalesmanMenuCotroller.h"
+	"AdminMenuView.h"
+	"MainMenuController.h"
+	"Pizza.h"
+
+1512130181 c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\views\mainmenuview.h
+	<iostream>
+
+1512130181 c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\views\globalview.h
+	<iostream>
+
+1512130181 c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\helpers\globalhelpers.h
+	<stdlib.h>
+	<cstdlib>
+
+1512130181 c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\controllers\bakermenucotroller.h
+
+1512130181 c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\controllers\customermenucotroller.h
+
+1512130181 c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\controllers\salesmanmenucotroller.h
+
+1512130181 c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\views\adminmenuview.h
+	"Pizza.h"
+	<iostream>
+	<string>
+
+1512130181 c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\models\pizza.h
+	<iostream>
+	<string>
+
+1512130181 c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\controllers\mainmenucontroller.h
+	<iostream>
+	<string>
+	"MainMenuView.h"
+	"GlobalView.h"
+	"GlobalHelpers.h"
+	"AdminMenuCotroller.h"
+	"BakerMenuCotroller.h"
+	"CustomerMenuCotroller.h"
+	"SalesmanMenuCotroller.h"
+
+1512130181 source:c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\controllers\bakermenucotroller.cpp
+	"BakerMenuCotroller.h"
+
+1512130181 source:c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\controllers\customermenucotroller.cpp
+	"CustomerMenuCotroller.h"
+
+1512130181 source:c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\controllers\mainmenucontroller.cpp
+	"MainMenuController.h"
+
+1512130181 source:c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\controllers\salesmanmenucotroller.cpp
+	"SalesmanMenuCotroller.h"
+
+1512130181 source:c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\helpers\globalhelpers.cpp
+	"GlobalHelpers.h"
+
+1512130181 source:c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\main.cpp
+	<iostream>
+	"MainMenuController.h"
+
+1512130181 source:c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\models\pizza.cpp
+	"Pizza.h"
+
+1512130181 source:c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\views\adminmenuview.cpp
+	"AdminMenuView.h"
+
+1512130181 source:c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\views\globalview.cpp
+	"GlobalView.h"
+
+1512130181 source:c:\users\halldór valberg\documents\github\vln1\pizzzzzaaa\views\mainmenuview.cpp
+	"MainMenuView.h"
+
