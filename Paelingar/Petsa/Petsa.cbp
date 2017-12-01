@@ -38,6 +38,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Controller/AdminMenuController.cpp" />
+		<Unit filename="Controller/AdminMenuController.h" />
+		<Unit filename="Controller/BakerMenuController.cpp" />
+		<Unit filename="Controller/BakerMenuController.h" />
 		<Unit filename="Controller/MainMenuController.cpp" />
 		<Unit filename="Controller/MainMenuController.h" />
 		<Unit filename="Tools/GlobalTools.cpp" />
