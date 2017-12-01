@@ -1,0 +1,80 @@
+# depslib dependency file v1.0
+1512128509 source:c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\controllers\mainmenucontroller.cpp
+	"MainMenuController.h"
+
+1512128329 c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\controllers\mainmenucontroller.h
+	<iostream>
+	<string>
+	"MainMenuView.h"
+	"GlobalView.h"
+	"GlobalHelpers.h"
+	"AdminMenuCotroller.h"
+	"BakerMenuCotroller.h"
+	"CustomerMenuCotroller.h"
+	"SalesmanMenuCotroller.h"
+
+1512127042 c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\views\mainmenuview.h
+	<iostream>
+
+1512127720 c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\helpers\globalhelpers.h
+	<stdlib.h>
+	<cstdlib>
+
+1512127705 source:c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\helpers\globalhelpers.cpp
+	"GlobalHelpers.h"
+
+1512126336 source:c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\main.cpp
+	<iostream>
+	"MainMenuController.h"
+
+1512127004 source:c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\views\mainmenuview.cpp
+	"MainMenuView.h"
+
+1512129077 source:c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\controllers\adminmenucotroller.cpp
+	"AdminMenuCotroller.h"
+
+1512129448 c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\controllers\adminmenucotroller.h
+	<iostream>
+	<string>
+	"MainMenuView.h"
+	"GlobalView.h"
+	"GlobalHelpers.h"
+	"BakerMenuCotroller.h"
+	"CustomerMenuCotroller.h"
+	"SalesmanMenuCotroller.h"
+	"AdminMenuView.h"
+	"Pizza.h"
+
+1512127471 source:c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\controllers\bakermenucotroller.cpp
+	"BakerMenuCotroller.h"
+
+1512127470 c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\controllers\bakermenucotroller.h
+
+1512127483 source:c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\controllers\customermenucotroller.cpp
+	"CustomerMenuCotroller.h"
+
+1512127483 c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\controllers\customermenucotroller.h
+
+1512127503 c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\controllers\salesmanmenucotroller.h
+
+1512127504 source:c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\controllers\salesmanmenucotroller.cpp
+	"SalesmanMenuCotroller.h"
+
+1512128476 c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\views\globalview.h
+	<iostream>
+
+1512128454 source:c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\views\globalview.cpp
+	"GlobalView.h"
+
+1512129055 c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\models\pizza.h
+	<iostream>
+	<string>
+
+1512129101 source:c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\models\pizza.cpp
+	"Pizza.h"
+
+1512129487 c:\users\notandi\desktop\pizzzzzaaa\pizzzzzaaa\views\adminmenuview.h
+	"Pizza.h"
+	<iostream>
+	<string>
+
