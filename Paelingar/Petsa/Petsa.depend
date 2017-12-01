@@ -74,7 +74,7 @@
 1512133742 source:c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\controller\salesmanmenucontroller.cpp
 	"SalesmanMenuController.h"
 
-1512134012 source:c:\users\notandi\documents\github\vln1\paelingar\petsa\controller\mainmenucontroller.cpp
+1512134492 source:c:\users\notandi\documents\github\vln1\paelingar\petsa\controller\mainmenucontroller.cpp
 	"MainMenuController.h"
 
 1512134012 c:\users\notandi\documents\github\vln1\paelingar\petsa\controller\mainmenucontroller.h
@@ -94,7 +94,7 @@
 1512134012 c:\users\notandi\documents\github\vln1\paelingar\petsa\view\globalview.h
 	<iostream>
 
-1512134012 c:\users\notandi\documents\github\vln1\paelingar\petsa\tools\globaltools.h
+1512134492 c:\users\notandi\documents\github\vln1\paelingar\petsa\tools\globaltools.h
 	<stdlib.h>
 	<cstdlib>
 
@@ -103,17 +103,20 @@
 	"GlobalTools.h"
 	"GlobalView.h"
 
-1512134012 c:\users\notandi\documents\github\vln1\paelingar\petsa\controller\bakermenucontroller.h
+1512137734 c:\users\notandi\documents\github\vln1\paelingar\petsa\controller\bakermenucontroller.h
 
 1512134012 c:\users\notandi\documents\github\vln1\paelingar\petsa\controller\salesmanmenucontroller.h
 
-1512134012 c:\users\notandi\documents\github\vln1\paelingar\petsa\controller\costumermenucontroller.h
+1512137636 c:\users\notandi\documents\github\vln1\paelingar\petsa\controller\costumermenucontroller.h
+	"GlobalTools.h"
+	"GlobalView.h"
+	"CostumerMenuView.h"
 
 1512134012 source:c:\users\notandi\documents\github\vln1\paelingar\petsa\main.cpp
 	<iostream>
 	"MainMenuController.h"
 
-1512134012 source:c:\users\notandi\documents\github\vln1\paelingar\petsa\tools\globaltools.cpp
+1512134492 source:c:\users\notandi\documents\github\vln1\paelingar\petsa\tools\globaltools.cpp
 	"GlobalTools.h"
 
 1512134012 source:c:\users\notandi\documents\github\vln1\paelingar\petsa\view\globalview.cpp
@@ -123,5 +126,11 @@
 	"CostumerMenuView.h"
 
 1512135293 c:\users\halldór valberg\documents\github\vln1\paelingar\petsa\view\costumermenuview.h
+	<iostream>
+
+1512137636 source:c:\users\notandi\documents\github\vln1\paelingar\petsa\controller\adminmenucontroller.cpp
+	"AdminMenuController.h"
+
+1512137636 c:\users\notandi\documents\github\vln1\paelingar\petsa\view\costumermenuview.h
 	<iostream>
 
