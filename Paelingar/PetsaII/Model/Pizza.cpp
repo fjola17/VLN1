@@ -19,3 +19,17 @@ Pizza::~Pizza()
 {
     //dtor
 }
+
+istream& operator >> (istream& in, Pizza& pizza){
+    in >> pizza.name;
+    in >> pizza.price;
+    in >> pizza.size;
+    return in;
+}
+
+ostream& operator << (ostream& out, Pizza& pizza){
+    out << pizza.name;
+    out << pizza.price;
+    out << pizza.size;
+    return out;
+}
