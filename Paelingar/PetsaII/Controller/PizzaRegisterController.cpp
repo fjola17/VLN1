@@ -4,6 +4,7 @@ PizzaRegisterController::PizzaRegisterController()
 {
     clearScrean();
     displayHeader();
+
     init();
 }
 
@@ -14,8 +15,7 @@ PizzaRegisterController::~PizzaRegisterController()
 
 void PizzaRegisterController::RegisterNewPizza()
 {
-
-
+    PizzaRegisterMenu();
 }
 
 void PizzaRegisterController::init()
