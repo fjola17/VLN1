@@ -39,7 +39,7 @@ void BakerMenuController::init(){
     else if (input == "m"){
         location = getLocation();
         cout << endl << "Mark which pizzas are in progress and ready" << endl;
-        selectPizza(); //fer inn í annað fall og velur hvaða pizza um ræðir og merkja hvort hún sé tilbúin eða í vinnslu
+//        selectPizza(); //fer inn í annað fall og velur hvaða pizza um ræðir og merkja hvort hún sé tilbúin eða í vinnslu
     }
     else if (input == "q"){
 

@@ -20,7 +20,7 @@ class Controller : private Model
 
         bool getExit();
 
-        void checkState();
+        //void checkState();
 
     private:
         //Living, breathing child of Controller
