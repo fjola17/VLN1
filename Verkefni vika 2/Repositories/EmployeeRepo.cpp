@@ -21,15 +21,14 @@ void EmployeeRepo::addNewEmployee(Employee employee){
     }
 }
 
-void ReadAllEmployees(){
+void EmployeeRepo::ReadAllEmployees(Employee employee){
     string str;
     ifstream fout;
     fout.open("Employees.txt", ios::app);
     if(fout.is_open()){
-        Employee employee;
         while(!fout.eof()){
-//            getline(fout, str);
-            cout << str;
+            getline(fout, str);
+            cout << str << endl;
         }
     }
 }

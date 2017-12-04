@@ -20,6 +20,8 @@ class Employee
         string name;
         int social_number;
         double salary;
+        int month;
+        int year;
 };
 
 #endif // EMPLOYEE_H

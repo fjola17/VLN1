@@ -33,7 +33,8 @@ void SalaryUI::getoptions(){
         }
         else if(input == '2'){
             cout << "Please select your employee" << endl;
-            //goes soemwhere
+            SalaryServices salary;
+            salary.DisplaySalary(employee);
 
         }
         else if(input == '3'){

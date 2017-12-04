@@ -13,7 +13,7 @@ class EmployeeRepo
         EmployeeRepo();
         virtual ~EmployeeRepo();
         void addNewEmployee(Employee employee);
-        void ReadAllemployees();
+        void ReadAllEmployees(Employee employee);
 
     protected:
 

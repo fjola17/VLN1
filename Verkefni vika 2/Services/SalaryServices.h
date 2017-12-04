@@ -10,6 +10,7 @@ class SalaryServices
         SalaryServices();
         virtual ~SalaryServices();
         void CreateSalary(Employee employee);
+        void DisplaySalary(Employee employee);
 
     protected:
 
