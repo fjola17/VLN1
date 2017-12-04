@@ -1,71 +1,36 @@
 # depslib dependency file v1.0
-1512406074 source:c:\users\notandi\desktop\hr\verklegt námskeið 1\verkefni vika 2\main.cpp
+1512415451 source:c:\users\user\documents\github\vln1\verkefni vika 2\main.cpp
 	<iostream>
 	"SalaryUI.h"
 
-1512407502 c:\users\notandi\desktop\hr\verklegt námskeið 1\verkefni vika 2\models\employee.h
-	<string>
-	<iostream>
-
-1512407613 source:c:\users\notandi\desktop\hr\verklegt námskeið 1\verkefni vika 2\models\employee.cpp
-	"Employee.h"
-
-1512408030 source:c:\users\notandi\desktop\hr\verklegt námskeið 1\verkefni vika 2\repositories\employeerepo.cpp
-	"EmployeeRepo.h"
-
-1512408007 c:\users\notandi\desktop\hr\verklegt námskeið 1\verkefni vika 2\repositories\employeerepo.h
-	"Employee.h"
-	<fstream>
-	<iostream>
-
-1512406763 source:c:\users\notandi\desktop\hr\verklegt námskeið 1\verkefni vika 2\services\salaryservices.cpp
-	"SalaryServices.h"
-
-1512408007 c:\users\notandi\desktop\hr\verklegt námskeið 1\verkefni vika 2\services\salaryservices.h
-	"EmployeeRepo.h"
-	"Employee.h"
-
-1512408008 c:\users\notandi\desktop\hr\verklegt námskeið 1\verkefni vika 2\ui\salaryui.h
+1512415451 c:\users\user\documents\github\vln1\verkefni vika 2\ui\salaryui.h
 	<iostream>
 	<cstdlib>
 	"SalaryServices.h"
 	"Employee.h"
 
-1512406937 source:c:\users\notandi\desktop\hr\verklegt námskeið 1\verkefni vika 2\ui\salaryui.cpp
-	"SalaryUI.h"
-
-1512406074 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\main.cpp
-	<iostream>
-	"SalaryUI.h"
-
-1512408008 c:\users\notandi\documents\github\vln1\verkefni vika 2\ui\salaryui.h
-	<iostream>
-	<cstdlib>
-	"SalaryServices.h"
-	"Employee.h"
-
-1512409017 c:\users\notandi\documents\github\vln1\verkefni vika 2\services\salaryservices.h
+1512415451 c:\users\user\documents\github\vln1\verkefni vika 2\services\salaryservices.h
 	"EmployeeRepo.h"
 	"Employee.h"
 
-1512409017 c:\users\notandi\documents\github\vln1\verkefni vika 2\repositories\employeerepo.h
+1512415451 c:\users\user\documents\github\vln1\verkefni vika 2\repositories\employeerepo.h
 	"Employee.h"
 	<fstream>
 	<iostream>
 
-1512409206 c:\users\notandi\documents\github\vln1\verkefni vika 2\models\employee.h
+1512415837 c:\users\user\documents\github\vln1\verkefni vika 2\models\employee.h
 	<string>
 	<iostream>
 
-1512407613 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\models\employee.cpp
+1512415451 source:c:\users\user\documents\github\vln1\verkefni vika 2\models\employee.cpp
 	"Employee.h"
 
-1512409122 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\repositories\employeerepo.cpp
+1512415451 source:c:\users\user\documents\github\vln1\verkefni vika 2\repositories\employeerepo.cpp
 	"EmployeeRepo.h"
 
-1512409017 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\services\salaryservices.cpp
+1512415451 source:c:\users\user\documents\github\vln1\verkefni vika 2\services\salaryservices.cpp
 	"SalaryServices.h"
 
-1512409017 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\ui\salaryui.cpp
+1512415451 source:c:\users\user\documents\github\vln1\verkefni vika 2\ui\salaryui.cpp
 	"SalaryUI.h"
 

@@ -42,8 +42,14 @@
 		</Compiler>
 		<Unit filename="Models/Employee.cpp" />
 		<Unit filename="Models/Employee.h" />
+		<Unit filename="Models/Salary.cpp" />
+		<Unit filename="Models/Salary.h" />
 		<Unit filename="Repositories/EmployeeRepo.cpp" />
 		<Unit filename="Repositories/EmployeeRepo.h" />
+		<Unit filename="Repositories/SalaryRepo.cpp" />
+		<Unit filename="Repositories/SalaryRepo.h" />
+		<Unit filename="Services/EmployeeServices.cpp" />
+		<Unit filename="Services/EmployeeServices.h" />
 		<Unit filename="Services/SalaryServices.cpp" />
 		<Unit filename="Services/SalaryServices.h" />
 		<Unit filename="UI/SalaryUI.cpp" />
