@@ -4,6 +4,7 @@
 #include "Toppings.h"
 #include <iostream>
 #include <string>
+#include <fstream>
 
 using namespace std;
 
@@ -15,8 +16,8 @@ class Pizza
         virtual ~Pizza();
 
         //overwriting cin og cout fyrir petsu til að skrifa inn í skrá og birta pizzur
-        friend istream& operator >> (istream& in, Pizza& pizza);
-        friend ostream& operator << (ostream& out, Pizza& pizza);
+        friend ifstream& operator >> (ifstream& in, Pizza& pizza);
+        friend ofstream& operator << (ofstream& out, Pizza& pizza);
 
         string name;
         int price;

@@ -10,6 +10,7 @@
 #include "PizzaRegisterView.h"
 #include "MainMenuController.h"
 #include "Pizza.h"
+#include "PizzaRepo.h"
 
 using namespace std;
 using namespace GlobalTools;

@@ -17,6 +17,7 @@
 					<Add directory="Tools" />
 					<Add directory="View" />
 					<Add directory="Model" />
+					<Add directory="Repo" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -30,6 +31,7 @@
 					<Add directory="Tools" />
 					<Add directory="View" />
 					<Add directory="Model" />
+					<Add directory="Repo" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -58,6 +60,10 @@
 		<Unit filename="Model/Pizza.h" />
 		<Unit filename="Model/Toppings.cpp" />
 		<Unit filename="Model/Toppings.h" />
+		<Unit filename="Repo/PizzaRepo.cpp" />
+		<Unit filename="Repo/PizzaRepo.h" />
+		<Unit filename="Repo/ToppingsRepo.cpp" />
+		<Unit filename="Repo/ToppingsRepo.h" />
 		<Unit filename="Tools/GlobalTools.cpp" />
 		<Unit filename="Tools/GlobalTools.h" />
 		<Unit filename="View/AdminMenuView.cpp" />

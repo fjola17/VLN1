@@ -27,7 +27,7 @@ void AdminMenuController::init(){
 
     if( input == "d"){
         cout << "Displaying your favorite pizza" << endl;
-      //  Pizza myFave("Hawaiian", 1700);
+        //Pizza myFave("Hawaiian", 1700);
     }
     else if( input == "p"){
         PizzaRegisterController prc;

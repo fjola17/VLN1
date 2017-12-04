@@ -2,6 +2,7 @@
 #define TOPPINGS_H
 
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 class Toppings
@@ -11,7 +12,6 @@ class Toppings
         virtual ~Toppings();
         Toppings(string name, int price);
 
-        //overwriting cin and cout to be able to write toppings into a file (might be needed later)
         friend istream& operator >> (istream& in, Toppings& toppping);
         friend ostream& operator << (ostream& out, Toppings& topping);
 

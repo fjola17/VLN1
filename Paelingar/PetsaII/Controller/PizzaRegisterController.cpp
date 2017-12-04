@@ -34,13 +34,7 @@ void PizzaRegisterController::init()
     cin >> size;
 
     Pizza pizza(name, price, size);
-    ofstream fout;
-
-    fout.open("Pizza_Menu_file.txt", ios::app);
-
-    fout << name << " " << price << " " << size;
-
-    fout.close();
+//    writeNewPizza(pizza);
 
     cout << "(temp)Pizza registered ";
 
