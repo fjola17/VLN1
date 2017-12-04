@@ -9,15 +9,27 @@ EmployeeRepo::~EmployeeRepo()
 {
     //dtor
 }
-void EmployeeRepo::addNewEmployee(){
-    ofstream fout;
-    fout.open("Employees.txt", ios::app);
-    if(fout.is_open()){
-        Employee employee;
-        fout << employee;
-        fout.close();
+void EmployeeRepo::addNewEmployee(Employee employee){
+    ofstream fin;
+    fin.open("Employees.txt", ios::app);
+    if(fin.is_open()){
+        fin << employee;
+        fin.close();
     }
     else{
         cout << "File is not open!" << endl;
+    }
+}
+
+void ReadAllEmployees(){
+    string str;
+    ifstream fout;
+    fout.open("Employees.txt", ios::app);
+    if(fout.is_open()){
+        Employee employee;
+        while(!fout.eof()){
+//            getline(fout, str);
+            cout << str;
+        }
     }
 }
