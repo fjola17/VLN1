@@ -21,8 +21,6 @@ string SalesmanMenuController::getlocation(){
 }
 void SalesmanMenuController::init(){
     string location, input;
-
-    cin >> input;
     do{
         SalesmanMenu();
         cin >> input;
