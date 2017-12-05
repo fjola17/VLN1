@@ -2,6 +2,7 @@
 
 Salary::Salary()
 {
+    this->month = 1;
     this->year = 0;
     this->salary = 0;
 }
@@ -17,18 +18,17 @@ istream& operator >> (istream&in, Salary& money){
     return in;
 }
 ostream& operator >> (ostream&out, Salary& money){
-    if(money.month <= 12 && money.month >= 1){
-        out << money.month;
-    }
-    else{
-        cout << "Invalid input" << endl;
-    }
+    out << money.month;
     out << money.year;
-    if(money.salary >= 0){
-        out << money.salary;
-    }
-    else{
-        cout << "invalid input" << endl;
-    }
+    out << money.salary;
     return out;
+}
+int Salary::getmonth(){
+    return this->month;
+}
+int Salary::getyear(){
+    return this->year;
+}
+double Salary::getsalary(){
+    return this->salary;
 }

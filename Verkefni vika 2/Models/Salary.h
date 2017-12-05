@@ -12,6 +12,9 @@ class Salary
         virtual ~Salary();
         friend istream& operator >> (istream&in, Salary& money);
         friend ostream& operator >> (ostream&out, Salary& money);
+        int getmonth();
+        int getyear();
+        double getsalary();
 
     protected:
 

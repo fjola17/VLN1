@@ -9,17 +9,18 @@ class Employee
 {
     public:
         Employee();
-        Employee(string name, int social_number, double salary);
+        Employee(string name, string social_number);
         friend ostream& operator << (ostream& out, Employee& emploee);
         friend istream& operator >> (istream& in, Employee& employee);
         virtual ~Employee();
+        string getname();
+        string get_SocialNumber();
 
     protected:
 
     private:
         string name;
-        int social_number;
-        double salary;
+        string social_number;
 
 };
 

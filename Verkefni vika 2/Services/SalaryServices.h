@@ -3,6 +3,7 @@
 
 #include "EmployeeRepo.h"
 #include "Employee.h"
+#include "Salary.h"
 
 class SalaryServices
 {
@@ -11,6 +12,7 @@ class SalaryServices
         virtual ~SalaryServices();
         void CreateSalary(Employee employee);
         void DisplaySalary(Employee employee);
+        bool validSalary(Salary& salary);
 
     protected:
 
