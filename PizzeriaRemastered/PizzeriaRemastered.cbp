@@ -17,6 +17,7 @@
 					<Add directory="Models" />
 					<Add directory="Views" />
 					<Add directory="Templates" />
+					<Add directory="C:/Users/Danilkant/Documents/GitHub/VLN1/PizzeriaRemastered/Templates" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -30,6 +31,7 @@
 					<Add directory="Models" />
 					<Add directory="Views" />
 					<Add directory="Templates" />
+					<Add directory="C:/Users/Danilkant/Documents/GitHub/VLN1/PizzeriaRemastered/Templates" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -48,8 +50,8 @@
 		<Unit filename="Models/ordermodel.h" />
 		<Unit filename="Models/pizzamodel.cpp" />
 		<Unit filename="Models/pizzamodel.h" />
-		<Unit filename="Models/toppingmodel.cpp" />
-		<Unit filename="Models/toppingmodel.h" />
+		<Unit filename="Templates/order.cpp" />
+		<Unit filename="Templates/order.h" />
 		<Unit filename="Templates/pizza.cpp" />
 		<Unit filename="Templates/pizza.h" />
 		<Unit filename="Templates/topping.cpp" />
