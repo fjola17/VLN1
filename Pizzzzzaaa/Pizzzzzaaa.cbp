@@ -56,6 +56,10 @@
 		<Unit filename="Helpers/GlobalHelpers.h" />
 		<Unit filename="Models/Pizza.cpp" />
 		<Unit filename="Models/Pizza.h" />
+		<Unit filename="Order.cpp" />
+		<Unit filename="Order.h" />
+		<Unit filename="User.cpp" />
+		<Unit filename="User.h" />
 		<Unit filename="View/MainMenuView.cpp" />
 		<Unit filename="View/MainMenuView.h" />
 		<Unit filename="Views/AdminMenuView.cpp" />

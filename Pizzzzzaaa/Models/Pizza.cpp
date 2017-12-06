@@ -1,13 +1,10 @@
 #include "Pizza.h"
 
-Pizza::Pizza()
-{
-    //ctor
-}
-Pizza::Pizza(string name, int price)
+Pizza::Pizza(string name, int price, vector<Topping> toppings)
 {
     this->name = name;
     this->price = price;
+    this->toppings.swap(toppings);
 }
 
 
