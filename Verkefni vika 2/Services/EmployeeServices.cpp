@@ -9,3 +9,6 @@ EmployeeServices::~EmployeeServices()
 {
     //dtor
 }
+
+void LookForEmployeeSSN(){
+}

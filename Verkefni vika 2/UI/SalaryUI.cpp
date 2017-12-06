@@ -32,7 +32,7 @@ void SalaryUI::getoptions(){
             salary.CreateSalary(employee);
         }
         else if(input == '2'){
-            cout << "Please select your employee" << endl;
+            cout << "Please select your employee's SSN" << endl;
             SalaryServices salary;
             salary.DisplaySalary(employee);
 

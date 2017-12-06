@@ -9,3 +9,6 @@ InvalidMonth::~InvalidMonth()
 {
     //dtor
 }
+string InvalidMonth::getmessage(){
+    return this->message;
+}

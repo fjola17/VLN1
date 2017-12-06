@@ -9,6 +9,7 @@ class InvalidSalary
 {
     public:
         InvalidSalary(string message);
+        string getmessage();
 
     protected:
 

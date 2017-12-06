@@ -1,7 +1,9 @@
 #ifndef SALARY_H
 #define SALARY_H
 
+#include "Employee.h"
 #include <iostream>
+#include <vector>
 using namespace std;
 
 
@@ -22,6 +24,7 @@ class Salary
         int month;
         int year;
         double salary;
+        vector<Employee> employee;
 };
 
 #endif // SALARY_H

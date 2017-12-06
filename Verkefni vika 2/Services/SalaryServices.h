@@ -4,6 +4,9 @@
 #include "EmployeeRepo.h"
 #include "Employee.h"
 #include "Salary.h"
+#include "InvalidSalary.h"
+#include "InvalidMonth.h"
+#include "InvalidYear.h"
 
 class SalaryServices
 {
@@ -12,7 +15,7 @@ class SalaryServices
         virtual ~SalaryServices();
         void CreateSalary(Employee employee);
         void DisplaySalary(Employee employee);
-        bool validSalary(Salary& salary);
+        void validSalary(Salary& salary);
 
     protected:
 

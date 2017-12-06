@@ -9,6 +9,7 @@ class InvalidMonth
     public:
         InvalidMonth(string message);
         virtual ~InvalidMonth();
+        string getmessage();
 
     protected:
 

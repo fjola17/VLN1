@@ -11,7 +11,7 @@ EmployeeRepo::~EmployeeRepo()
 }
 void EmployeeRepo::addNewEmployee(Employee employee){
     ofstream fin;
-    fin.open("Employees.txt", ios::app);
+    fin.open("Employees.txt");
     if(fin.is_open()){
         fin << employee;
         fin.close();

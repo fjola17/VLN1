@@ -7,6 +7,8 @@ class SalaryRepo
     public:
         SalaryRepo();
         virtual ~SalaryRepo();
+        void getSalary();
+        void displaySalary();
 
     protected:
 
