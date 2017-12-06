@@ -5,6 +5,8 @@ Salary::Salary()
     this->month = 1;
     this->year = 0;
     this->salary = 0;
+    this->name = "";
+    this->social_number[0] = '\0';
 }
 
 Salary::~Salary()
@@ -25,8 +27,8 @@ istream& operator >> (istream&in, Salary& money){
     return in;
 }
 ostream& operator >> (ostream&out, Salary& money){
-    out << money.name;
-    out << money.social_number;
+    out << "Name: " << money.name;
+    out << "Social number: " << money.social_number;
     out << "Month: "<< money.month << " ";
     out << "Year: " << money.year << " ";
     out << "Salary: " << money.salary << " " << endl;

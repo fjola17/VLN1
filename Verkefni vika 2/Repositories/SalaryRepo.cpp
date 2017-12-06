@@ -11,11 +11,10 @@ SalaryRepo::~SalaryRepo()
 }
 void SalaryRepo::getSalary(){
     Salary salary;
-
     ofstream fout;
     fout.open("Salary.txt");
     if(fout.is_open()){
-        fout << salary.getmonth() << salary.getyear() << salary.getsalary();
+        fout << salary.getname() << salary.get_SocialNumber() << salary.getyear() << salary.getmonth() << salary.getsalary() << endl;
         fout.close();
     }
     else{

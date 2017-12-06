@@ -36,11 +36,16 @@ void SalaryUI::getoptions(){
             cout << "Please select your employee's SSN" << endl;
             cin >> ssn;
             salary.LookForEmployeeSSN(ssn);
-            cout << "I do nothing, replace me!" << endl;
+            cout << "All salaries with that ssn!" << endl;
 
         }
         else if(input == '3'){
+            int year;
+            string ssn;
             cout << "Please enter a year" << endl;
+            cin >> year;
+            cout << "Please enter a Social number" << endl;
+            cin >> ssn;
             cout << "I do nothing, replace me!" << endl;
         }
         else if(input == '4'){

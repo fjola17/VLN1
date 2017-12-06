@@ -14,7 +14,6 @@ class SalaryRepo
         virtual ~SalaryRepo();
         void getSalary();
         void displaySalary();
-        void lookForSalarySSN();
         void lookForSalaryMonth(int n, string ssn);
 
     protected:
