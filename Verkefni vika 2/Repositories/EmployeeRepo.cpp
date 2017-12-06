@@ -30,5 +30,22 @@ void EmployeeRepo::ReadAllEmployees(Employee employee){
             getline(fout, str);
             cout << str << endl;
         }
+        fout.close();
+    }
+}
+void searchForSSN(string sn){
+    string str;
+    Salary salary;
+    sn = salary.get_SocialNumber();
+    ifstream fout;
+    fout.open("Salary.txt", ios::app);
+    if(fout.is_open()){
+        while(!fout.eof()){
+            if(sn == str){ //ef strings are equal
+                getline(fout, str);
+                cout << str << endl;
+            }
+        }
+        fout.close();
     }
 }

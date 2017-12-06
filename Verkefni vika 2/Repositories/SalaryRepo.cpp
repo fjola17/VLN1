@@ -36,10 +36,7 @@ void SalaryRepo::displaySalary(){
     }
 
 }
-void SalaryRepo::lookForSalarySSN(){
-  //  es.LookForEmployeeSSN(employee);
 
-}
-void SalaryRepo::lookForSalaryMonth(){
+void SalaryRepo::lookForSalaryMonth(int n, string ssn){
 
 }

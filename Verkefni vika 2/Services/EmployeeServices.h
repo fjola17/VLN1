@@ -2,8 +2,7 @@
 #define EMPLOYEESERVICES_H
 
 #include "EmployeeRepo.h"
-#include "InvalidName.h"
-#include "InvalidSSN.h"
+#include <string>
 
 class EmployeeServices
 {
@@ -11,7 +10,8 @@ class EmployeeServices
         EmployeeServices();
         virtual ~EmployeeServices();
         void displayEmployees();
-        void LookForEmployeeSSN(Employee employee);
+        void LookForEmployeeSSN(string ssn);
+        void calculateSalary();
 
     protected:
 

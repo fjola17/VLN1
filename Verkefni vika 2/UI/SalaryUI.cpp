@@ -17,12 +17,10 @@ void SalaryUI::SalaryMenu(){
     cout << "2: Get all salary records for a certain employee" << endl;
     cout << "3: Get salary records for a certain year for selected employee" << endl;
     cout << "4: Get the name of the employee with highest salary for a given year" << endl;
-    cout << "5: Modify employees" << endl;
     cout << "q: Quit the program" << endl;
 }
 void SalaryUI::getoptions(){
     char input;
-    Employee employee;
     Salary newsalary;
     do{
         SalaryMenu();
@@ -34,10 +32,10 @@ void SalaryUI::getoptions(){
         }
         else if(input == '2'){
             string ssn;
-            SalaryServices salary;
-            salary.DisplaySalary(employee);
+            EmployeeServices salary;
             cout << "Please select your employee's SSN" << endl;
             cin >> ssn;
+            salary.LookForEmployeeSSN(ssn);
             cout << "I do nothing, replace me!" << endl;
 
         }
@@ -50,14 +48,11 @@ void SalaryUI::getoptions(){
             cout << "The highest paid employee is: ";
             cout << "I do nothing replace me!" << endl;
         }
-        else if(input == '5'){
-            EmployeeUI ui;
-        }
         else if(input == 'q'){
             exit(0);
         }
         else{
             cout << "Invalid input!" << endl;
         }
-    }while(input != '1' && input != '2' && input != '3' && input != '4' && input != '5');
+    }while(input != '1' && input != '2' && input != '3' && input != '4' && input != 'q');
 }

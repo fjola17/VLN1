@@ -26,13 +26,11 @@ void EmployeeUI::employeeMenu(){
             cout << "Add a new employee" << endl;
             SalaryServices emp;
             cin >> employee;
-            emp.CreateSalary(employee);
             EmployeeUI ui;
         }
         else if(input == '2'){
             cout << "view all Employees" << endl;
             SalaryServices salary;
-            salary.DisplaySalary(employee);
             EmployeeUI ui;
         }
         else if(input == 'q'){

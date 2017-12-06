@@ -15,7 +15,7 @@ class SalaryRepo
         void getSalary();
         void displaySalary();
         void lookForSalarySSN();
-        void lookForSalaryMonth();
+        void lookForSalaryMonth(int n, string ssn);
 
     protected:
 

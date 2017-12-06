@@ -46,8 +46,12 @@
 		<Unit filename="Exceptions/InvalidMonth.h" />
 		<Unit filename="Exceptions/InvalidName.cpp" />
 		<Unit filename="Exceptions/InvalidName.h" />
+		<Unit filename="Exceptions/InvalidSSN.cpp" />
+		<Unit filename="Exceptions/InvalidSSN.h" />
 		<Unit filename="Exceptions/InvalidSalary.cpp" />
 		<Unit filename="Exceptions/InvalidSalary.h" />
+		<Unit filename="Exceptions/InvalidYear.cpp" />
+		<Unit filename="Exceptions/InvalidYear.h" />
 		<Unit filename="Models/Employee.cpp" />
 		<Unit filename="Models/Employee.h" />
 		<Unit filename="Models/Salary.cpp" />
@@ -60,6 +64,8 @@
 		<Unit filename="Services/EmployeeServices.h" />
 		<Unit filename="Services/SalaryServices.cpp" />
 		<Unit filename="Services/SalaryServices.h" />
+		<Unit filename="UI/EmployeeUI.cpp" />
+		<Unit filename="UI/EmployeeUI.h" />
 		<Unit filename="UI/SalaryUI.cpp" />
 		<Unit filename="UI/SalaryUI.h" />
 		<Unit filename="main.cpp" />

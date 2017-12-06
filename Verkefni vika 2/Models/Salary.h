@@ -17,14 +17,17 @@ class Salary
         int getmonth();
         int getyear();
         double getsalary();
+        string getname();
+        string get_SocialNumber();
 
     protected:
 
     private:
+        string name;
+        char social_number[10];
         int month;
         int year;
         double salary;
-        vector<Employee> employee;
 };
 
 #endif // SALARY_H

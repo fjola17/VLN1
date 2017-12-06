@@ -12,6 +12,10 @@ Salary::~Salary()
     //dtor
 }
 istream& operator >> (istream&in, Salary& money){
+    cout << "Name: ";
+    in >> money.name;
+    cout << "Social number: ";
+    in >> money.social_number;
     cout << "Month: ";
     in >> money.month;
     cout << "Year: ";
@@ -21,6 +25,8 @@ istream& operator >> (istream&in, Salary& money){
     return in;
 }
 ostream& operator >> (ostream&out, Salary& money){
+    out << money.name;
+    out << money.social_number;
     out << "Month: "<< money.month << " ";
     out << "Year: " << money.year << " ";
     out << "Salary: " << money.salary << " " << endl;
@@ -34,4 +40,10 @@ int Salary::getyear(){
 }
 double Salary::getsalary(){
     return this->salary;
+}
+string Salary::getname(){ //bara bókstafir
+    return this->name;
+}
+string Salary::get_SocialNumber(){ //á bara að vera tölustafir
+    return this->social_number;
 }

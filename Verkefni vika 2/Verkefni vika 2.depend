@@ -38,41 +38,46 @@
 	<iostream>
 	"SalaryUI.h"
 
-1512569000 c:\users\notandi\documents\github\vln1\verkefni vika 2\ui\salaryui.h
+1512576165 c:\users\notandi\documents\github\vln1\verkefni vika 2\ui\salaryui.h
 	<iostream>
 	<cstdlib>
 	"SalaryServices.h"
+	"EmployeeServices.h"
 	"Employee.h"
 	"Salary.h"
 	"EmployeeUI.h"
 
-1512567218 c:\users\notandi\documents\github\vln1\verkefni vika 2\services\salaryservices.h
+1512575402 c:\users\notandi\documents\github\vln1\verkefni vika 2\services\salaryservices.h
 	"EmployeeRepo.h"
 	"Employee.h"
 	"Salary.h"
+	"SalaryRepo.h"
 	"InvalidSalary.h"
 	"InvalidMonth.h"
 	"InvalidYear.h"
+	"InvalidName.h"
+	"InvalidSSN.h"
 
-1512474433 c:\users\notandi\documents\github\vln1\verkefni vika 2\repositories\employeerepo.h
+1512575849 c:\users\notandi\documents\github\vln1\verkefni vika 2\repositories\employeerepo.h
 	"Employee.h"
+	"Salary.h"
 	<fstream>
 	<iostream>
 
-1512477613 c:\users\notandi\documents\github\vln1\verkefni vika 2\models\employee.h
+1512571839 c:\users\notandi\documents\github\vln1\verkefni vika 2\models\employee.h
 	<string>
 	<iostream>
 
-1512478381 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\models\employee.cpp
+1512571839 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\models\employee.cpp
 	"Employee.h"
 
-1512563197 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\repositories\employeerepo.cpp
+1512575849 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\repositories\employeerepo.cpp
 	"EmployeeRepo.h"
 
-1512570192 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\services\salaryservices.cpp
+1512575561 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\services\salaryservices.cpp
 	"SalaryServices.h"
 
-1512569381 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\ui\salaryui.cpp
+1512575849 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\ui\salaryui.cpp
 	"SalaryUI.h"
 
 1512564360 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\exceptions\invalidmonth.cpp
@@ -87,29 +92,28 @@
 1512564252 c:\users\notandi\documents\github\vln1\verkefni vika 2\exceptions\invalidsalary.h
 	<string>
 
-1512568943 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\models\salary.cpp
+1512572982 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\models\salary.cpp
 	"Salary.h"
 
-1512564088 c:\users\notandi\documents\github\vln1\verkefni vika 2\models\salary.h
+1512572983 c:\users\notandi\documents\github\vln1\verkefni vika 2\models\salary.h
 	"Employee.h"
 	<iostream>
 	<vector>
 
-1512567020 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\repositories\salaryrepo.cpp
+1512576001 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\repositories\salaryrepo.cpp
 	"SalaryRepo.h"
 
-1512566741 c:\users\notandi\documents\github\vln1\verkefni vika 2\repositories\salaryrepo.h
+1512576001 c:\users\notandi\documents\github\vln1\verkefni vika 2\repositories\salaryrepo.h
 	<Salary.h>
 	<iostream>
 	<fstream>
 
-1512570833 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\services\employeeservices.cpp
+1512576021 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\services\employeeservices.cpp
 	"EmployeeServices.h"
 
-1512570753 c:\users\notandi\documents\github\vln1\verkefni vika 2\services\employeeservices.h
+1512575900 c:\users\notandi\documents\github\vln1\verkefni vika 2\services\employeeservices.h
 	"EmployeeRepo.h"
-	"InvalidName.h"
-	"InvalidSSN.h"
+	<string>
 
 1512478055 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\exceptions\invalidname.cpp
 	"InvalidName.h"
@@ -126,7 +130,7 @@
 	"SalaryUI.h"
 	"Employee.h"
 
-1512569501 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\ui\employeeui.cpp
+1512575622 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\ui\employeeui.cpp
 	"EmployeeUI.h"
 
 1512570192 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\exceptions\invalidssn.cpp

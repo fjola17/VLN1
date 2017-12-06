@@ -2,6 +2,7 @@
 #define EMPLOYEEREPO_H
 
 #include "Employee.h"
+#include "Salary.h"
 
 #include <fstream>
 #include <iostream>
@@ -14,6 +15,7 @@ class EmployeeRepo
         virtual ~EmployeeRepo();
         void addNewEmployee(Employee employee);
         void ReadAllEmployees(Employee employee);
+        void searchForSSN(string sn);
 
     protected:
 
