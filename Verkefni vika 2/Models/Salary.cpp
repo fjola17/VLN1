@@ -12,8 +12,11 @@ Salary::~Salary()
     //dtor
 }
 istream& operator >> (istream&in, Salary& money){
+    cout << "Month: ";
     in >> money.month;
+    cout << "Year: ";
     in >> money.year;
+    cout << "Salary: ";
     in >> money.salary;
     return in;
 }

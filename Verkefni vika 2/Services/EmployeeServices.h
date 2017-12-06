@@ -2,6 +2,8 @@
 #define EMPLOYEESERVICES_H
 
 #include "EmployeeRepo.h"
+#include "InvalidName.h"
+#include "InvalidSSN.h"
 
 class EmployeeServices
 {

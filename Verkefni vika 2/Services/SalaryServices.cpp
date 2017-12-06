@@ -26,10 +26,10 @@ void SalaryServices::validSalary(){
         if(salary.getsalary() < 0){
             throw(InvalidSalary("Invalid salary! has to be more than 0!!"));
         }
-        if(salary.getmonth() < 1 && salary.getmonth()> 12){
+        else if(salary.getmonth() < 1 && salary.getmonth()> 12){
             throw(InvalidMonth("Incorrect month!"));
         }
-        if(salary.getyear() < 1940){
+        else if(salary.getyear() != 2017){
             throw(InvalidYear("Incorrect year, computer didn't exist during that time!"));
         }
     }

@@ -6,6 +6,8 @@
 
 #include "SalaryServices.h"
 #include "Employee.h"
+#include "Salary.h"
+#include "EmployeeUI.h"
 
 using namespace std;
 class SalaryUI

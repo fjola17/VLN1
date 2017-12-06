@@ -38,11 +38,13 @@
 	<iostream>
 	"SalaryUI.h"
 
-1512474433 c:\users\notandi\documents\github\vln1\verkefni vika 2\ui\salaryui.h
+1512569000 c:\users\notandi\documents\github\vln1\verkefni vika 2\ui\salaryui.h
 	<iostream>
 	<cstdlib>
 	"SalaryServices.h"
 	"Employee.h"
+	"Salary.h"
+	"EmployeeUI.h"
 
 1512567218 c:\users\notandi\documents\github\vln1\verkefni vika 2\services\salaryservices.h
 	"EmployeeRepo.h"
@@ -67,10 +69,10 @@
 1512563197 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\repositories\employeerepo.cpp
 	"EmployeeRepo.h"
 
-1512564405 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\services\salaryservices.cpp
+1512570192 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\services\salaryservices.cpp
 	"SalaryServices.h"
 
-1512563197 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\ui\salaryui.cpp
+1512569381 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\ui\salaryui.cpp
 	"SalaryUI.h"
 
 1512564360 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\exceptions\invalidmonth.cpp
@@ -85,7 +87,7 @@
 1512564252 c:\users\notandi\documents\github\vln1\verkefni vika 2\exceptions\invalidsalary.h
 	<string>
 
-1512566586 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\models\salary.cpp
+1512568943 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\models\salary.cpp
 	"Salary.h"
 
 1512564088 c:\users\notandi\documents\github\vln1\verkefni vika 2\models\salary.h
@@ -101,11 +103,13 @@
 	<iostream>
 	<fstream>
 
-1512566387 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\services\employeeservices.cpp
+1512570833 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\services\employeeservices.cpp
 	"EmployeeServices.h"
 
-1512566387 c:\users\notandi\documents\github\vln1\verkefni vika 2\services\employeeservices.h
+1512570753 c:\users\notandi\documents\github\vln1\verkefni vika 2\services\employeeservices.h
 	"EmployeeRepo.h"
+	"InvalidName.h"
+	"InvalidSSN.h"
 
 1512478055 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\exceptions\invalidname.cpp
 	"InvalidName.h"
@@ -117,4 +121,17 @@
 
 1512564011 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\exceptions\invalidyear.cpp
 	"InvalidYear.h"
+
+1512568182 c:\users\notandi\documents\github\vln1\verkefni vika 2\ui\employeeui.h
+	"SalaryUI.h"
+	"Employee.h"
+
+1512569501 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\ui\employeeui.cpp
+	"EmployeeUI.h"
+
+1512570192 source:c:\users\notandi\documents\github\vln1\verkefni vika 2\exceptions\invalidssn.cpp
+	"InvalidSSN.h"
+
+1512570276 c:\users\notandi\documents\github\vln1\verkefni vika 2\exceptions\invalidssn.h
+	<string>
 
