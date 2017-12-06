@@ -29,6 +29,7 @@ void SalaryUI::getoptions(){
             cout << "Add a new salary" << endl;
             SalaryServices salary;
             cin >> employee;
+            salary.validSalary();
             salary.CreateSalary(employee);
         }
         else if(input == '2'){

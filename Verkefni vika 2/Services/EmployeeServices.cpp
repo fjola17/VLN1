@@ -10,5 +10,9 @@ EmployeeServices::~EmployeeServices()
     //dtor
 }
 
-void LookForEmployeeSSN(){
+void EmployeeServices::LookForEmployeeSSN(Employee employee){
+    employee.get_SocialNumber();
+
+}
+void EmployeeServices::displayEmployees(){
 }

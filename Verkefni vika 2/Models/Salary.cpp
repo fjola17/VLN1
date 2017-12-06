@@ -18,9 +18,9 @@ istream& operator >> (istream&in, Salary& money){
     return in;
 }
 ostream& operator >> (ostream&out, Salary& money){
-    out << money.month;
-    out << money.year;
-    out << money.salary;
+    out << "Month: "<< money.month << " ";
+    out << "Year: " << money.year << " ";
+    out << "Salary: " << money.salary << " " << endl;
     return out;
 }
 int Salary::getmonth(){

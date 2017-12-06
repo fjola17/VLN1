@@ -15,7 +15,7 @@ class SalaryServices
         virtual ~SalaryServices();
         void CreateSalary(Employee employee);
         void DisplaySalary(Employee employee);
-        void validSalary(Salary& salary);
+        void validSalary();
 
     protected:
 

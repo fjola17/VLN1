@@ -19,7 +19,8 @@ void SalaryServices::DisplaySalary(Employee employee){
     emp.ReadAllEmployees(employee);
 }
 
-void SalaryServices::validSalary(Salary& salary){
+void SalaryServices::validSalary(){
+    Salary salary;
     try{
         cin >> salary;
         if(salary.getsalary() < 0){
