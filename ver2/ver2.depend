@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1512579524 source:c:\users\danilkant\desktop\gamex\ver2\main.cpp
+	<iostream>
+	"salary_ui.h"
+
+1512581840 c:\users\danilkant\desktop\gamex\ver2\ui\salary_ui.h
+	<string>
+	<iostream>
+	<limits>
+	"salary_service.h"
+
+1512583813 source:c:\users\danilkant\desktop\gamex\ver2\models\salary_model.cpp
+	"Salary_model.h"
+
+1512583567 c:\users\danilkant\desktop\gamex\ver2\models\salary_model.h
+	<string>
+	<iostream>
+
+1512594124 source:c:\users\danilkant\desktop\gamex\ver2\ui\salary_ui.cpp
+	"Salary_ui.h"
+
+1512592721 c:\users\danilkant\desktop\gamex\ver2\services\salary_service.h
+	<iostream>
+	<string>
+	<vector>
+	"salary_model.h"
+	"salary_repo.h"
+
+1512583091 c:\users\danilkant\desktop\gamex\ver2\repositories\salary_repo.h
+	"salary_model.h"
+	<iostream>
+	<fstream>
+	<vector>
+
+1512583081 source:c:\users\danilkant\desktop\gamex\ver2\repositories\salary_repo.cpp
+	"salary_repo.h"
+
+1512594523 source:c:\users\danilkant\desktop\gamex\ver2\services\salary_service.cpp
+	"salary_service.h"
+
