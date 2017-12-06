@@ -38,5 +38,22 @@ void SalaryRepo::displaySalary(){
 }
 
 void SalaryRepo::lookForSalaryMonth(int n, string ssn){
-
+    string str;
+    Salary salary;
+    ssn = salary.get_SocialNumber();
+    n = salary.getmonth();
+    ifstream fout;
+    fout.open("Salary.txt", ios::app);
+    if(fout.is_open()){
+        while(!fout.eof()){
+            getline(fout, str);
+            if(ssn == str){ //ef lína inniheldur...
+                cout << str << endl;
+                if(salary.getmonth() == n){
+                    //blablabla
+                }
+            }
+        }
+        fout.close();
+    }
 }
