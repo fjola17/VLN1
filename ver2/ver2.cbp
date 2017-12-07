@@ -17,6 +17,7 @@
 					<Add directory="ui" />
 					<Add directory="services" />
 					<Add directory="repositories" />
+					<Add directory="Exceptations" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -30,6 +31,7 @@
 					<Add directory="ui" />
 					<Add directory="services" />
 					<Add directory="repositories" />
+					<Add directory="Exceptations" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -40,6 +42,16 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Exceptations/InvalidMonth.cpp" />
+		<Unit filename="Exceptations/InvalidMonth.h" />
+		<Unit filename="Exceptations/InvalidName.cpp" />
+		<Unit filename="Exceptations/InvalidName.h" />
+		<Unit filename="Exceptations/InvalidSSN.cpp" />
+		<Unit filename="Exceptations/InvalidSSN.h" />
+		<Unit filename="Exceptations/InvalidSalary.cpp" />
+		<Unit filename="Exceptations/InvalidSalary.h" />
+		<Unit filename="Exceptations/InvalidYear.cpp" />
+		<Unit filename="Exceptations/InvalidYear.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="models/salary_model.cpp" />
 		<Unit filename="models/salary_model.h" />

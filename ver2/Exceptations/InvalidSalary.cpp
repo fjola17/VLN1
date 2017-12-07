@@ -1,11 +1,10 @@
 #include "InvalidSalary.h"
 
-InvalidSalary::InvalidSalary()
+InvalidSalary::InvalidSalary(string message)
 {
-    //ctor
+    this->message = message;
 }
 
-InvalidSalary::~InvalidSalary()
-{
-    //dtor
+string InvalidSalary::send_message(){
+    return this->message;
 }

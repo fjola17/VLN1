@@ -1,6 +1,9 @@
 #include "InvalidMonth.h"
 
-InvalidMonth::InvalidMonth()
+InvalidMonth::InvalidMonth(string message)
 {
-    //ctor
+    this->message = message;
+}
+string InvalidMonth::send_message(){
+    return this->message;
 }

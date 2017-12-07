@@ -8,6 +8,7 @@ class InvalidSSN
 {
     public:
         InvalidSSN(string message);
+        string send_message();
 
     private:
         string message;

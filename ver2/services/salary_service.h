@@ -9,6 +9,10 @@
 
 //throw error classes
 #include "InvalidSalary.h"
+#include "InvalidMonth.h"
+#include "InvalidYear.h"
+#include "InvalidName.h"
+#include "InvalidSSN.h"
 
 using namespace std;
 

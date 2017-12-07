@@ -1,7 +1,9 @@
 #include "InvalidYear.h"
 
-InvalidYear::InvalidYear()
+InvalidYear::InvalidYear(string message)
 {
-    //ctor
+    this->message = message;
 }
-
+string InvalidYear::send_message(){
+    return this->message;
+}
