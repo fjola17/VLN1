@@ -19,9 +19,31 @@ bool Salary_service::validateSalary(){
 
     cout << "*****\n" << "Input as follows :\nName:\nSSN: (example : 123123)\nSalary: (More than 0)\nMonth: (Between 1-12)\nYear: (1900+)\n" << endl;
     cin >> name >> ssn >> salary >> month >> year;
+    /*
+    try{
+        if(salary < 0){
+            throw InvalidSalary("Bad input, invalid salary");
+        }
+        if (month < 0 && month > 12){
+            throw InvalidMonth("Invalid month");
+        }
+        if(year != 2017){
+            throw InvalidYear()
+        }
+    }
+    catch (InvalidSalary s){
+        cout << s << endl;
+    }
+    catch (InvalidMonth m){
+        cout << m << endl;
+    }
+    catch (InvalidYear y){
+        cout << y << endl;
+    }
+    */
 
     //check for bad input
-    if(salary > 0 && (month > 0 && month < 13) && year > 1899){
+    if(salary > 0 && (month > 0 && month < 13) && year == 2017){
         cout << "*****\n" << "Data saved" << endl;
         Salary_repo::writeSalary(name, ssn, salary, month, year);
         return true;
@@ -34,7 +56,7 @@ bool Salary_service::validateSalary(){
 void Salary_service::getSalarySSN(int ssn){
     vector<Salary_model> vec = Salary_repo::readSalary();
 
-    for(int i = 0;i < vec.size();i++){
+    for(unsigned int i = 0;i < vec.size();i++){
         if(vec[i].ssn == ssn){
             cout << "*****\n" << vec[i];
         }
@@ -45,7 +67,7 @@ void Salary_service::getSalarySSN(int ssn){
 void Salary_service::getSalaryForYearSSN(int year, int ssn){
     vector<Salary_model> vec = Salary_repo::readSalary();
     int total = 0;
-    for(int i = 0;i < vec.size();i++){
+    for(unsigned int i = 0;i < vec.size();i++){
         if(vec[i].ssn == ssn && vec[i].year == year){
             total += vec[i].salary;
         }
@@ -58,7 +80,7 @@ void Salary_service::getMaxSalaryYear(int year){
     int max_salary = 0;
     string name = "";
 
-    for(int i = 0;i < vec.size();i++){
+    for(unsigned int i = 0;i < vec.size();i++){
         if(vec[i].year == year && max_salary < vec[i].salary){
             max_salary = vec[i].salary;
             name = vec[i].name;

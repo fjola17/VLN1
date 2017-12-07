@@ -21,4 +21,5 @@ Salary_model::~Salary_model()
 
 ostream& operator << (ostream& out, Salary_model& sm){
     out << "Name\t" << sm.name << "\tSSN\t" << sm.ssn << "\nMonth\t" << sm.month << "\tYear\t" << sm.year << "\nSalary\t" << sm.salary << endl;
+    return out;
 }

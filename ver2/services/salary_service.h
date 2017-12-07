@@ -7,6 +7,9 @@
 #include "salary_model.h"
 #include "salary_repo.h"
 
+//throw error classes
+#include "InvalidSalary.h"
+
 using namespace std;
 
 class Salary_service : private Salary_repo
