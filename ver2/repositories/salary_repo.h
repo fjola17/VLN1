@@ -5,6 +5,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <string>
 
 using namespace std;
 
@@ -14,7 +15,7 @@ class Salary_repo
         Salary_repo();
         virtual ~Salary_repo();
 
-        void writeSalary(string nm, int ssn, double sal, int mon, int yr);
+        void writeSalary(string nm, string ssn, double sal, int mon, int yr);
         vector<Salary_model> readSalary();
 
     protected:

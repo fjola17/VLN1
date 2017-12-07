@@ -4,6 +4,7 @@
 #include <string>
 #include <iostream>
 #include <limits>
+#include <stdlib.h>
 #include "salary_service.h"
 using namespace std;
 

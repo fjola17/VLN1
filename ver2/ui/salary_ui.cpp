@@ -31,6 +31,8 @@ void Salary_ui::getInput(){
     // basically this is a lazy try catch for NAN exception
     // to_string() will return 0 if it failed to convert
     if(to_string(user_input) != "0"){
+    string ssn;
+    int year;
        switch(user_input){
             case 5:
                 //Do nothing, it'll quit
@@ -45,27 +47,24 @@ void Salary_ui::getInput(){
                 }
                 break;
             case 2:
-                int ssn1;
-                cout << "Input:\nSSN: (example : 123123)" << endl;
-                cin >> ssn1;
+                cout << "Input:\nSSN: (Must be 10 characters in length)" << endl;
+                cin >> ssn;
 
-                Salary_service::getSalarySSN(ssn1);
+                Salary_service::getSalarySSN(ssn);
                 this->getInput();
                 break;
             case 3:
-                int ssn2, year1;
-                cout << "Input:\nSSN: (example : 123123)\nYear : (1900+)" << endl;
-                cin >> ssn2 >> year1;
+                cout << "Input:\nSSN: (Must be 10 characters in length)\nYear : (1900+)" << endl;
+                cin >> ssn >> year;
 
-                Salary_service::getSalaryForYearSSN(year1, ssn2);
+                Salary_service::getSalaryForYearSSN(year, ssn);
                 this->getInput();
                 break;
             case 4:
-                int year2;
-                cout << "Input:\nSSN:\nYear : (1900+)" << endl;
-                cin >> year2;
+                cout << "Input:\nSSN: (Must be 10 characters in length)\nYear : (1900+)" << endl;
+                cin >> year;
 
-                Salary_service::getMaxSalaryYear(year2);
+                Salary_service::getMaxSalaryYear(year);
                 this->getInput();
                 break;
             default:

@@ -1,11 +1,11 @@
-#include "Salary_model.h"
+#include "SALARY_MODEL.h"
 
 Salary_model::Salary_model()
 {
 
 }
 
-Salary_model::Salary_model(string nm, int ssn, double sal, int mon, int yr)
+Salary_model::Salary_model(string nm, string ssn, double sal, int mon, int yr)
 {
     this->name = nm;
     this->ssn = ssn;

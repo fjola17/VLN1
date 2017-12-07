@@ -1,4 +1,4 @@
-#include "salary_service.h"
+#include "SALARY_SERVICE.h"
 
 Salary_service::Salary_service()
 {
@@ -12,38 +12,17 @@ Salary_service::~Salary_service()
 
 bool Salary_service::validateSalary(){
     string name;
-    int ssn;
+    string ssn;
     double salary;
     int month;
     int year;
 
-    cout << "*****\n" << "Input as follows :\nName:\nSSN: (example : 123123)\nSalary: (More than 0)\nMonth: (Between 1-12)\nYear: (1900+)\n" << endl;
-    cin >> name >> ssn >> salary >> month >> year;
-    /*
-    try{
-        if(salary < 0){
-            throw InvalidSalary("Bad input, invalid salary");
-        }
-        if (month < 0 && month > 12){
-            throw InvalidMonth("Invalid month");
-        }
-        if(year != 2017){
-            throw InvalidYear()
-        }
-    }
-    catch (InvalidSalary s){
-        cout << s << endl;
-    }
-    catch (InvalidMonth m){
-        cout << m << endl;
-    }
-    catch (InvalidYear y){
-        cout << y << endl;
-    }
-    */
+    cout << "*****\n" << "Input as follows :\nName:\nSSN: (Must be 10 characters in length)\nSalary: (More than 0)\nMonth: (Between 1-12)\nYear: (1900+)\n" << endl;
+    getline(cin, name);
+    cin >> ssn >> salary >> month >> year;
 
     //check for bad input
-    if(salary > 0 && (month > 0 && month < 13) && year == 2017){
+    if(!any_of(name.begin(), name.end(), ::isdigit) && any_of(ssn.begin(), ssn.end(), ::isdigit) && ssn.length() == 10 && salary > 0 && (month > 0 && month < 13) && year <= 1900){
         cout << "*****\n" << "Data saved" << endl;
         Salary_repo::writeSalary(name, ssn, salary, month, year);
         return true;
@@ -53,22 +32,25 @@ bool Salary_service::validateSalary(){
     }
 }
 
-void Salary_service::getSalarySSN(int ssn){
+void Salary_service::getSalarySSN(string ssn){
     vector<Salary_model> vec = Salary_repo::readSalary();
 
     for(unsigned int i = 0;i < vec.size();i++){
         if(vec[i].ssn == ssn){
-            cout << "*****\n" << vec[i];
+            if(vec[i].name != ""){
+                cout << "*****\n" << vec[i];
+            }
+
         }
 
     }
 }
 
-void Salary_service::getSalaryForYearSSN(int year, int ssn){
+void Salary_service::getSalaryForYearSSN(int year, string ssn){
     vector<Salary_model> vec = Salary_repo::readSalary();
     int total = 0;
     for(unsigned int i = 0;i < vec.size();i++){
-        if(vec[i].ssn == ssn && vec[i].year == year){
+        if(vec[i].ssn == ssn && vec[i].year == year && vec[i].name != ""){
             total += vec[i].salary;
         }
     }
@@ -81,7 +63,7 @@ void Salary_service::getMaxSalaryYear(int year){
     string name = "";
 
     for(unsigned int i = 0;i < vec.size();i++){
-        if(vec[i].year == year && max_salary < vec[i].salary){
+        if(vec[i].year == year && max_salary < vec[i].salary && vec[i].name != ""){
             max_salary = vec[i].salary;
             name = vec[i].name;
         }

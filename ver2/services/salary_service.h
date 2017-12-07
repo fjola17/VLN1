@@ -4,15 +4,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <algorithm>
 #include "salary_model.h"
 #include "salary_repo.h"
-
-//throw error classes
-#include "InvalidSalary.h"
-#include "InvalidMonth.h"
-#include "InvalidYear.h"
-#include "InvalidName.h"
-#include "InvalidSSN.h"
 
 using namespace std;
 
@@ -24,8 +18,8 @@ class Salary_service : private Salary_repo
 
         bool validateSalary();
 
-        void getSalarySSN(int ssn);
-        void getSalaryForYearSSN(int year, int ssn);
+        void getSalarySSN(string ssn);
+        void getSalaryForYearSSN(int year, string ssn);
         void getMaxSalaryYear(int year);
 
     protected:

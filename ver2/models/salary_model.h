@@ -10,13 +10,13 @@ class Salary_model
 {
     public:
         Salary_model();
-        Salary_model(string nm, int ssn, double sal, int mon, int yr);
+        Salary_model(string nm, string ssn, double sal, int mon, int yr);
         virtual ~Salary_model();
 
         friend ostream& operator << (ostream& out, Salary_model& sm);
 
         string name;
-        int ssn;
+        string ssn;
         double salary;
         int month;
         int year;

@@ -1,4 +1,6 @@
-#include "salary_repo.h"
+#include "SALARY_REPO.h"
+
+using namespace std;
 
 Salary_repo::Salary_repo()
 {
@@ -10,7 +12,7 @@ Salary_repo::~Salary_repo()
     //dtor
 }
 
-void Salary_repo::writeSalary(string nm, int ssn, double sal, int mon, int yr){
+void Salary_repo::writeSalary(string nm, string ssn, double sal, int mon, int yr){
     ofstream fout;
     fout.open("Salary.txt", ios::app);
     if(fout.is_open()){
@@ -23,11 +25,12 @@ void Salary_repo::writeSalary(string nm, int ssn, double sal, int mon, int yr){
 }
 
 vector<Salary_model> Salary_repo::readSalary(){
-    string name;
-    int ssn;
+    string name = "";
+    string ssn;
     double salary;
     int month;
     int year;
+    string test = "a";
 
     vector<Salary_model> to_return;
 
@@ -35,8 +38,15 @@ vector<Salary_model> Salary_repo::readSalary(){
     fin.open("Salary.txt");
     if(fin.is_open()){
         while(!fin.eof()){
-            fin >> name;
-            fin >> ssn;
+            name = "";
+            fin.clear();
+            do{
+                fin >> test;
+                if(atoi(test.c_str()) == 0){
+                    name += test + " ";
+                }
+            }while(atoi(test.c_str()) == 0);
+            ssn = test;
             fin >> salary;
             fin >> month;
             fin >> year;
