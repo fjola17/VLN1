@@ -23,12 +23,20 @@ bool Salary_service::validateSalary(){
     int month;
     int year;
 
-    cout << "*****\n" << "Input as follows :\nName:\nSSN: (Must be 10 characters in length)\nSalary: (More than 0)\nMonth: (Between 1-12)\nYear: (1900+)\n" << endl;
+    cout << "*****\n" << "Input as follows" << endl;
+    cout << "Name: ";
     getline(cin, name);
-    cin >> ssn >> salary >> month >> year;
+    cout << "SSN: (Must be 10 characters in length) ";
+    cin >> ssn;
+    cout << "Salary: (More than 0): ";
+    cin >> salary;
+    cout << "Month: (Between 1-12): ";
+    cin >> month;
+    cout << "Year: (1900+)";
+    cin>> year;
 
     //check for bad input
-    if(!any_of(name.begin(), name.end(), ::isdigit) && any_of(ssn.begin(), ssn.end(), ::isdigit) && ssn.length() == 10 && salary > 0 && (month > 0 && month < 13) && year <= 1900){
+    if(!any_of(name.begin(), name.end(), ::isdigit) && any_of(ssn.begin(), ssn.end(), ::isdigit) && ssn.length() == 10 && salary > 0 && (month > 0 && month < 13) && year >= 1900){
         cout << "*****\n" << "Data saved" << endl;
         Salary_repo::writeSalary(name, ssn, salary, month, year);
         return true;
