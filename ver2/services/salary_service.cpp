@@ -1,5 +1,11 @@
 #include "SALARY_SERVICE.h"
 
+
+#include <map>
+#include <string>
+
+using namespace std;
+
 Salary_service::Salary_service()
 {
     //ctor
@@ -62,11 +68,25 @@ void Salary_service::getMaxSalaryYear(int year){
     int max_salary = 0;
     string name = "";
 
+    map<string, int> names_salary;
+
     for(unsigned int i = 0;i < vec.size();i++){
-        if(vec[i].year == year && max_salary < vec[i].salary && vec[i].name != ""){
-            max_salary = vec[i].salary;
-            name = vec[i].name;
+        if(vec[i].year == year && vec[i].name != ""){
+            names_salary[vec[i].ssn] += vec[i].salary;
         }
     }
+
+    for(auto& x: names_salary){
+        if(max_salary < x.second){
+            max_salary = x.second;
+
+            for(int i = 0; i < vec.size(); i++){
+                if(vec[i].ssn == x.first){
+                    name = vec[i].name;
+                }
+            }
+        }
+    }
+
     cout << "*****\n" << "Name\t" << name << "\tYear\t" << year << "\nMax Salary\t" << max_salary << endl;
 }
