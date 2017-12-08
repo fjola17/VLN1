@@ -1,5 +1,5 @@
-#ifndef Salary_model_H
-#define Salary_model_H
+#ifndef SALARY_MODEL_H
+#define SALARY_MODEL_H
 
 #include <string>
 #include <iostream>

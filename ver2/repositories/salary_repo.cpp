@@ -53,10 +53,6 @@ vector<Salary_model> Salary_repo::readSalary(){
 
             to_return.push_back(Salary_model(name, ssn, salary, month, year));
         }
-        string line;
-        while(getline(fin, line)){
-            cout << line << endl;
-        }
         fin.close();
 
 
