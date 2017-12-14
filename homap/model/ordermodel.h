@@ -18,14 +18,14 @@
     Template
 
 */
-#include <order.h>
-#include <location.h>
+#include "../template/order.h"
+#include "../template/location.h"
 /*
 
     Global Tools
 
 */
-#include <globaltools.h>
+#include "../global/globaltools.h"
 
 using namespace std;
 using namespace GlobalTools;

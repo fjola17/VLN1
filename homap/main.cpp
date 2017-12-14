@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include <mainmenucontroller.h>
+#include "controller/mainmenucontroller.h"
 
 using namespace std;
 

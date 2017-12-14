@@ -17,19 +17,19 @@
     Template
 
 */
-#include <topping.h>
+#include "../template/topping.h"
 /*
 
     View
 
 */
-#include <adminview.h>
+#include "../view/adminview.h"
 /*
 
     Global Tools
 
 */
-#include <globaltools.h>
+#include "../global/globaltools.h"
 
 using namespace std;
 using namespace GlobalTools;

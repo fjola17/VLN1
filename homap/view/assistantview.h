@@ -17,9 +17,9 @@
     Template
 
 */
-#include <order.h>
-#include <pizza.h>
-#include <item.h>
+#include "../template/order.h"
+#include "../template/pizza.h"
+#include "../template/item.h"
 
 using namespace std;
 

@@ -17,13 +17,13 @@
     Template
 
 */
-#include <topping.h>
+#include "topping.h"
 /*
 
     Global Tools
 
 */
-#include <globaltools.h>
+#include "../global/globaltools.h"
 
 using namespace std;
 using namespace GlobalTools;

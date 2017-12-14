@@ -17,17 +17,17 @@
     Template
 
 */
-#include <location.h>
-#include <order.h>
-#include <pizza.h>
-#include <topping.h>
-#include <item.h>
+#include "../template/location.h"
+#include "../template/order.h"
+#include "../template/pizza.h"
+#include "../template/topping.h"
+#include "../template/item.h"
 /*
 
     Global Tools
 
 */
-#include <globaltools.h>
+#include "../global/globaltools.h"
 
 using namespace std;
 using namespace GlobalTools;

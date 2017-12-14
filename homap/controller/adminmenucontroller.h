@@ -17,39 +17,39 @@
     Controller
 
 */
-#include <mainmenucontroller.h>
+#include "mainmenucontroller.h"
 /*
 
     Model
 
 */
-#include <locationmodel.h>
-#include <ordermodel.h>
-#include <pizzamodel.h>
-#include <toppingmodel.h>
-#include <itemmodel.h>
+#include "../model/locationmodel.h"
+#include "../model/ordermodel.h"
+#include "../model/pizzamodel.h"
+#include "../model/toppingmodel.h"
+#include "../model/itemmodel.h"
 /*
 
     Template
 
 */
-#include <location.h>
-#include <order.h>
-#include <pizza.h>
-#include <topping.h>
-#include <item.h>
+#include "../template/location.h"
+#include "../template/order.h"
+#include "../template/pizza.h"
+#include "../template/topping.h"
+#include "../template/item.h"
 /*
 
     View
 
 */
-#include <adminview.h>
+#include "../view/adminview.h"
 /*
 
     Global Tools
 
 */
-#include <globaltools.h>
+#include "../global/globaltools.h"
 
 using namespace std;
 using namespace GlobalTools;
