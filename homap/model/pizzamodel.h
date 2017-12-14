@@ -38,6 +38,7 @@ class PizzaModel
         void writePizza(Pizza piz);
         int selectInches();
         vector<Pizza> readPizzaMenu();
+        void cleanPizza();
 
     protected:
 

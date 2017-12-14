@@ -609,10 +609,10 @@
 	"../template/pizza.h"
 	"../template/item.h"
 
-1513258736 source:c:\users\halldór valberg\documents\github\vln1\homap\controller\adminmenucontroller.cpp
+1513266050 source:c:\users\halldór valberg\documents\github\vln1\homap\controller\adminmenucontroller.cpp
 	"adminmenucontroller.h"
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\controller\adminmenucontroller.h
+1513264809 c:\users\halldór valberg\documents\github\vln1\homap\controller\adminmenucontroller.h
 	<string>
 	<iostream>
 	<fstream>
@@ -767,7 +767,7 @@
 	"../template/location.h"
 	"../global/globaltools.h"
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\model\pizzamodel.h
+1513261916 c:\users\halldór valberg\documents\github\vln1\homap\model\pizzamodel.h
 	<string>
 	<iostream>
 	<fstream>
@@ -778,7 +778,7 @@
 	"../template/topping.h"
 	"../global/globaltools.h"
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\model\toppingmodel.h
+1513262805 c:\users\halldór valberg\documents\github\vln1\homap\model\toppingmodel.h
 	<string>
 	<iostream>
 	<fstream>
@@ -789,7 +789,7 @@
 	"../view/adminview.h"
 	"../global/globaltools.h"
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\model\itemmodel.h
+1513263446 c:\users\halldór valberg\documents\github\vln1\homap\model\itemmodel.h
 	<string>
 	<iostream>
 	<fstream>
@@ -859,7 +859,7 @@
 	<iostream>
 	"controller/mainmenucontroller.h"
 
-1513259449 source:c:\users\halldór valberg\documents\github\vln1\homap\model\itemmodel.cpp
+1513263499 source:c:\users\halldór valberg\documents\github\vln1\homap\model\itemmodel.cpp
 	"itemmodel.h"
 	<iostream>
 	<stdio.h>
@@ -875,10 +875,10 @@
 1513258736 source:c:\users\halldór valberg\documents\github\vln1\homap\model\ordermodel.cpp
 	"ordermodel.h"
 
-1513258736 source:c:\users\halldór valberg\documents\github\vln1\homap\model\pizzamodel.cpp
+1513265798 source:c:\users\halldór valberg\documents\github\vln1\homap\model\pizzamodel.cpp
 	"pizzamodel.h"
 
-1513259481 source:c:\users\halldór valberg\documents\github\vln1\homap\model\toppingmodel.cpp
+1513263087 source:c:\users\halldór valberg\documents\github\vln1\homap\model\toppingmodel.cpp
 	"toppingmodel.h"
 	<string.h>
 	<stdlib.h>
@@ -898,7 +898,7 @@
 1513258736 source:c:\users\halldór valberg\documents\github\vln1\homap\template\topping.cpp
 	"topping.h"
 
-1513258736 source:c:\users\halldór valberg\documents\github\vln1\homap\view\adminview.cpp
+1513263446 source:c:\users\halldór valberg\documents\github\vln1\homap\view\adminview.cpp
 	"adminview.h"
 
 1513258736 source:c:\users\halldór valberg\documents\github\vln1\homap\view\assistantview.cpp

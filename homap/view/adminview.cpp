@@ -10,6 +10,9 @@ void AdminView::displayAdminMenu(){
     cout << ++counter << ".\tTo register new Topping" << endl;
     cout << ++counter << ".\tTo register new Item" << endl;
     cout << ++counter << ".\tTo register new Location" << endl;
+    cout << ++counter << ".\tTo remove Pizza from menu" << endl;
+    cout << ++counter << ".\tTo remove Topping from menu" << endl;
+    cout << ++counter << ".\tTo remove Item from menu" << endl;
     cout << ++counter << ".\tTo return to Main Menu" << endl;
 }
 

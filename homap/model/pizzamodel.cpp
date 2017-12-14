@@ -17,7 +17,6 @@ void PizzaModel::writePizza(Pizza piz){
         fout.write((char*)(&piz), sizeof(Pizza));
 
         fout.close();
-        GlobalTools::attention("The Pizza has been written to PizzaMenu.dat");
     }
     else{
         GlobalTools::error("Could not open file PizzaMenu.dat");
@@ -77,4 +76,10 @@ int PizzaModel::selectInches(){
             PizzaModel::selectInches();
             break;
     }
+}
+
+void PizzaModel::cleanPizza(){
+    ofstream fout;
+    fout.open("PizzaMenu.dat", ios::out | ios::trunc);
+    fout.close();
 }

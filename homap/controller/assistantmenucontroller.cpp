@@ -22,6 +22,7 @@ void AssistantMenuController::init(){
     AssistantView::displayAssistantMenu();
     // Main
     cin >> user_input;
+
     GlobalTools::clearCin();
 
     if(user_input == 1){
@@ -57,6 +58,7 @@ void AssistantMenuController::pushOrder(){
     while(exit != true){
         GlobalTools::clearConsole();
         AssistantView::displayPushOrderMenu(newOrder);
+
 
         cin >> user_input;
         GlobalTools::clearCin();
@@ -159,7 +161,7 @@ void AssistantMenuController::pushOrder(){
             // Return to Assistant Menu
             exit = true;
         }else{
-            GlobalTools::optionWarning();
+            //Do nothing
         }
     }
 }

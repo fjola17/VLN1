@@ -55,7 +55,7 @@ using namespace std;
 using namespace GlobalTools;
 using namespace AdminView;
 
-class AdminMenuController : public LocationModel, public PizzaModel, public ToppingModel, public ItemModel
+class AdminMenuController : public LocationModel, public PizzaModel, public ToppingModel, public ItemModel, public OrderModel
 {
     public:
         AdminMenuController();
@@ -63,6 +63,12 @@ class AdminMenuController : public LocationModel, public PizzaModel, public Topp
 
         void init();
         Pizza userNewPizza();
+
+        void removefrommenu();
+        void removefromtoppings();
+        void removefromitem();
+
+        void analytics();
 };
 
 #endif // ADMINMENUCONTROLLER_H

@@ -43,6 +43,8 @@ class ToppingModel
         void writeTopping(Topping top);
         vector<Topping> selectTopping();
         vector<Topping> readToppings();
+
+        void cleanTopping();
 };
 
 #endif // TOPPINGMODEL_H

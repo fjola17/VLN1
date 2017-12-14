@@ -20,7 +20,6 @@ void ToppingModel::writeTopping(Topping top){
         fout << top.name << endl << top.price << endl;
         fout.close();
 
-        GlobalTools::attention("The topping has been written to Toppings.txt");
     }
     else{
         GlobalTools::error("Could not open file Toppings.txt");
@@ -76,6 +75,10 @@ vector<Topping> ToppingModel::selectTopping(){
             return to_return;
         }
     }
+}
 
-
+void ToppingModel::cleanTopping(){
+    ofstream fout;
+    fout.open("Toppings.txt", ios::out | ios::trunc);
+    fout.close();
 }

@@ -43,6 +43,7 @@ class ItemModel
         void writeItem(Item ite);
         vector<Item> selectItem();
         vector<Item> readItems();
+        void cleanItem();
 };
 
 #endif // ITEMMODEL_H

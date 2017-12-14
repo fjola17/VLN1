@@ -24,8 +24,6 @@ void ItemModel::writeItem(Item ite){
     if(fout.is_open()){
         fout << ite.name << endl << ite.price << endl;
         fout.close();
-
-        GlobalTools::attention("The Item has been written to Items.txt");
     }
     else{
         GlobalTools::error("Could not open file Items.txt");
@@ -80,6 +78,10 @@ vector<Item> ItemModel::selectItem(){
             return to_return;
         }
     }
+}
 
-
+void ItemModel::cleanItem(){
+    ofstream fout;
+    fout.open("Items.txt", ios::out | ios::trunc);
+    fout.close();
 }
