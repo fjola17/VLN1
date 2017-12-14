@@ -35,6 +35,7 @@ using namespace GlobalTools;
 namespace AdminView
 {
     void displayAdminMenu();
+    void displayRemoveMenu();
     void displayToppings(vector<Topping> topVector);
     void displayItems(vector<Item> iteVector);
     void displayLocations(vector<Location> locVector);

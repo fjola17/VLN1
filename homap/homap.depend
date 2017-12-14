@@ -609,10 +609,10 @@
 	"../template/pizza.h"
 	"../template/item.h"
 
-1513266050 source:c:\users\halldór valberg\documents\github\vln1\homap\controller\adminmenucontroller.cpp
+1513267687 source:c:\users\halldór valberg\documents\github\vln1\homap\controller\adminmenucontroller.cpp
 	"adminmenucontroller.h"
 
-1513264809 c:\users\halldór valberg\documents\github\vln1\homap\controller\adminmenucontroller.h
+1513267578 c:\users\halldór valberg\documents\github\vln1\homap\controller\adminmenucontroller.h
 	<string>
 	<iostream>
 	<fstream>
@@ -713,7 +713,7 @@
 	<vector>
 	<stdlib.h>
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\view\adminview.h
+1513267669 c:\users\halldór valberg\documents\github\vln1\homap\view\adminview.h
 	<string>
 	<iostream>
 	<fstream>
@@ -843,7 +843,7 @@
 	<vector>
 	<stdlib.h>
 
-1513258736 source:c:\users\halldór valberg\documents\github\vln1\homap\controller\assistantmenucontroller.cpp
+1513266435 source:c:\users\halldór valberg\documents\github\vln1\homap\controller\assistantmenucontroller.cpp
 	"assistantmenucontroller.h"
 
 1513258736 source:c:\users\halldór valberg\documents\github\vln1\homap\controller\bakermenucontroller.cpp
@@ -898,7 +898,7 @@
 1513258736 source:c:\users\halldór valberg\documents\github\vln1\homap\template\topping.cpp
 	"topping.h"
 
-1513263446 source:c:\users\halldór valberg\documents\github\vln1\homap\view\adminview.cpp
+1513267715 source:c:\users\halldór valberg\documents\github\vln1\homap\view\adminview.cpp
 	"adminview.h"
 
 1513258736 source:c:\users\halldór valberg\documents\github\vln1\homap\view\assistantview.cpp

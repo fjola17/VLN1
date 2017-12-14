@@ -69,18 +69,10 @@ void AdminMenuController::init(){
         LocationModel::writeLocation(newLocation);
         AdminMenuController::init();
     }else if(user_input == 6){
-        //Remove element from menu
-        AdminMenuController::removefrommenu();
+        // Remove from Menu menu
+        AdminMenuController::removefromMenu();
         AdminMenuController::init();
     }else if(user_input == 7){
-        //Remove element from toppings
-        AdminMenuController::removefromtoppings();
-        AdminMenuController::init();
-        }else if(user_input == 8){
-        //Remove element from items
-        AdminMenuController::removefromitem();
-        AdminMenuController::init();
-    }else if(user_input == 9){
         // Return To Main Menu
         MainMenuController MMC;
     }else{
@@ -107,13 +99,52 @@ Pizza AdminMenuController::userNewPizza(){
     return newPizza;
 }
 
+void AdminMenuController::removefromMenu()
+{
+    GlobalTools::clearConsole();
+    GlobalTools::displayHeader();
+    AdminView::displayRemoveMenu();
+    int user_input;
+
+    cin >> user_input;
+    GlobalTools::clearCin();
+
+     if(user_input == 1){
+            //Remove from Pizza Menu
+        AdminMenuController::removefrommenu();
+        AdminMenuController::init();
+    }else if(user_input == 2){
+            //Remove from Toppings menu
+        AdminMenuController::removefromtoppings();
+        AdminMenuController::init();
+    }else if(user_input == 3){
+            //Remove from Items
+        AdminMenuController::removefromitem();
+        AdminMenuController::init();
+    }else if(user_input == 4){
+            //Exit to Admin Controller
+        AdminMenuController::init();
+    }else{
+        //ERROR state
+        GlobalTools::optionWarning();
+        AdminMenuController::init();
+    }
+
+
+
+
+}
+
 void AdminMenuController::removefrommenu()
 {
     vector<Pizza> menu = PizzaModel::readPizzaMenu();
 
+    GlobalTools::clearConsole();
+
     AdminView::displayPizzaMenu(menu);
 
     int user_input;
+    cout << endl << "HINT : Input 0 or anything out side of scope to return to previous menu" << endl;
     cout << "Select element to remove from menu" << endl;
     cin >> user_input;
 
@@ -132,9 +163,12 @@ void AdminMenuController::removefromtoppings()
 {
     vector<Topping> toppings = ToppingModel::readToppings();
 
+    GlobalTools::clearConsole();
+
     AdminView::displayToppings(toppings);
 
     int user_input;
+    cout << endl << "HINT : Input 0 or anything out side of scope to return to previous menu" << endl;
     cout << "Select element to remove from menu" << endl;
     cin >> user_input;
 
@@ -152,10 +186,11 @@ void AdminMenuController::removefromtoppings()
 void AdminMenuController::removefromitem()
 {
     vector<Item> item = ItemModel::readItems();
-
+    GlobalTools::clearConsole();
     AdminView::displayItems(item);
 
     int user_input;
+    cout << endl << "HINT : Input 0 or anything out side of scope to return to previous menu" << endl;
     cout << "Select element to remove from menu" << endl;
     cin >> user_input;
 
@@ -192,10 +227,14 @@ void AdminMenuController::analytics()
     cout << "The average order price: " << average << endl << endl;
 
 }
-//
-//void AdminMenuController::baseprice();
-//{
-//    cout << ""
-//
-//
-//}
+
+void AdminMenuController::baseprice()
+{
+    ofstream fout;
+    fout.open("Baseprice.txt");
+    fout.close();
+
+    cout << "";
+
+
+}

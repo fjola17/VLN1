@@ -63,12 +63,13 @@ class AdminMenuController : public LocationModel, public PizzaModel, public Topp
 
         void init();
         Pizza userNewPizza();
-
+        void removefromMenu();
         void removefrommenu();
         void removefromtoppings();
         void removefromitem();
 
         void analytics();
+        void baseprice();
 };
 
 #endif // ADMINMENUCONTROLLER_H

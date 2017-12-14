@@ -10,10 +10,17 @@ void AdminView::displayAdminMenu(){
     cout << ++counter << ".\tTo register new Topping" << endl;
     cout << ++counter << ".\tTo register new Item" << endl;
     cout << ++counter << ".\tTo register new Location" << endl;
+    cout << ++counter << ".\tTo remove from menus" << endl;
+    cout << ++counter << ".\tTo return to Main Menu" << endl;
+}
+
+void AdminView::displayRemoveMenu()
+{   int counter = 0;
+    cout << "From what Menu do you wish to remove from" << endl << endl;
     cout << ++counter << ".\tTo remove Pizza from menu" << endl;
     cout << ++counter << ".\tTo remove Topping from menu" << endl;
     cout << ++counter << ".\tTo remove Item from menu" << endl;
-    cout << ++counter << ".\tTo return to Main Menu" << endl;
+    cout << ++counter << ".\tTo return to Admin Menu" << endl;
 }
 
 void AdminView::displayToppings(vector<Topping> topVector){
