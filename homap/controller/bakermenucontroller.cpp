@@ -37,10 +37,11 @@ void BakerMenuController::init(){
         BakerMenuController::init();
     }
 }
-//Processes order from baker
+
+//Processes order from baker, make it ready
 void BakerMenuController::processOrder(){
     vector<Order> orders = OrderModel::readOrderMenuBaker(BakerMenuController::currentLocation);
-    int user_input;
+    unsigned int user_input;
 
     BakerView::displayOrders(orders);
 
@@ -51,7 +52,7 @@ void BakerMenuController::processOrder(){
         vector<Order> over_write = OrderModel::readNonConditionalOrderMenu();
 
         OrderModel::cleanOrder();
-        for(int i = 0; i < over_write.size(); i++){
+        for(unsigned int i = 0; i < over_write.size(); i++){
            if(over_write[i].state == orders[user_input - 1].state && (string)over_write[i].phoneNumber == (string)orders[user_input - 1].phoneNumber && over_write[i].sizeOfPizzas == orders[user_input - 1].sizeOfPizzas){
                 //Taken care of
                 over_write[i].state = 1;
@@ -59,7 +60,6 @@ void BakerMenuController::processOrder(){
 
            OrderModel::writeOrder(over_write[i]);
         }
-
 
         GlobalTools::attention("The selected Order has been processed");
     }

@@ -46,7 +46,6 @@ void AdminMenuController::init(){
         // Register Pizza
         newPizza = AdminMenuController::userNewPizza();
 
-        //bilað
         PizzaModel::writePizza(newPizza);
         GlobalTools::attention("The Pizza has been written to PizzaMenu.dat");
         AdminMenuController::init();

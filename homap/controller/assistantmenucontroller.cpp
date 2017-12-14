@@ -188,6 +188,7 @@ void AssistantMenuController::deliverOrder(){
     if(user_input > 0 && user_input < (orders.size() + 1)){
         vector<Order> over_write = OrderModel::readNonConditionalOrderMenu();
 
+        //clear out order
         OrderModel::cleanOrder();
         for(unsigned int i = 0; i < over_write.size(); i++){
            if((string)over_write[i].name == (string)orders[user_input - 1].name && over_write[i].state == orders[user_input - 1].state && (string)over_write[i].phoneNumber == (string)orders[user_input - 1].phoneNumber && over_write[i].sizeOfPizzas == orders[user_input - 1].sizeOfPizzas){
