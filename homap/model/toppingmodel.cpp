@@ -1,6 +1,7 @@
 #include "toppingmodel.h"
 
 #include <string.h>
+#include <stdlib.h>
 
 ToppingModel::ToppingModel()
 {
@@ -39,7 +40,7 @@ vector<Topping> ToppingModel::readToppings(){
             strcpy(name, line.c_str());
             if(name != ""){
             getline(fin, line);
-            price = stoi(line);
+            price = atoi(line.c_str());
 
                 to_return.push_back(Topping(name, price));
             }

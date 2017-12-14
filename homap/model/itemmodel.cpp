@@ -1,6 +1,12 @@
 #include "itemmodel.h"
 
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string>
+#include "string.h"
 #include <string.h>
+#include <cstdlib>
 
 ItemModel::ItemModel()
 {
@@ -37,9 +43,9 @@ vector<Item> ItemModel::readItems(){
     if(fin.is_open()){
         while(getline(fin, line)){
             strcpy(name, line.c_str());
-            if(name != ""){
+            if(name != '\0'){
             getline(fin, line);
-            price = stoi(line);
+            price = atoi(line.c_str());
                 to_return.push_back(Item(name, price));
             }
         }
