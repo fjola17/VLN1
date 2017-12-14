@@ -19,10 +19,10 @@ void ToppingModel::writeTopping(Topping top){
         fout << top.name << endl << top.price << endl;
         fout.close();
 
-        GlobalTools::attention("The topping has been written to Toppings.txt");
+        attention("The topping has been written to Toppings.txt");
     }
     else{
-        GlobalTools::error("Could not open file Toppings.txt");
+        error("Could not open file Toppings.txt");
     }
 }
 
@@ -47,7 +47,7 @@ vector<Topping> ToppingModel::readToppings(){
         fin.close();
     }
     else{
-        GlobalTools::error("Could not open file Toppings.txt");
+        error("Could not open file Toppings.txt");
     }
     return to_return;
 }
@@ -59,13 +59,13 @@ vector<Topping> ToppingModel::selectTopping(){
     bool exit = false;
 
     while(exit != true){
-        GlobalTools::clearConsole();
-        AdminView::displayToppings(topVector);
+        clearConsole();
+        displayToppings(topVector);
 
         cout << "HINT:\tInput 0 or outside the options to finalize\nMaximum:\t20\nYou have added:\t" << to_return.size() << endl;
         cin >> user_input;
 
-        GlobalTools::clearCin();
+        clearCin();
 
         if(user_input > 0 && user_input < (topVector.size() + 1) && to_return.size() <= 20){
             to_return.push_back(topVector[user_input - 1]);

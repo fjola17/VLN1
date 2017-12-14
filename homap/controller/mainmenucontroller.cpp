@@ -14,13 +14,13 @@ void MainMenuController::init(){
     // Pre
     int user_input;
 
-    GlobalTools::clearConsole();
-    GlobalTools::displayHeader();
-    MainMenuView::displayMainMenu();
+    clearConsole();
+    displayHeader();
+    displayMainMenu();
     // Main
     cin >> user_input;
 
-    GlobalTools::clearCin();
+    clearCin();
 
     if(user_input == 1){
         AdminMenuController AMC;
@@ -29,9 +29,9 @@ void MainMenuController::init(){
     }else if(user_input == 3){
         AssistantMenuController ASMC;
     }else if(user_input == 4){
-        GlobalTools::exitApplication();
+        exitApplication();
     }else{
-        GlobalTools::optionWarning();
-        MainMenuController::init();
+        optionWarning();
+        init();
     }
 }

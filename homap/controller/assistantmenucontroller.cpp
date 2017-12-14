@@ -17,27 +17,27 @@ void AssistantMenuController::init(){
     // Pre
     int user_input;
 
-    GlobalTools::clearConsole();
-    GlobalTools::displayHeader();
-    AssistantView::displayAssistantMenu();
+    clearConsole();
+    displayHeader();
+    displayAssistantMenu();
     // Main
     cin >> user_input;
-    GlobalTools::clearCin();
+    clearCin();
 
     if(user_input == 1){
         // Push Order
-        AssistantMenuController::pushOrder();
-        AssistantMenuController::init();
+        pushOrder();
+        init();
     }else if(user_input == 2){
         // Deliver Pending Order
-        AssistantMenuController::deliverOrder();
-        AssistantMenuController::init();
+        deliverOrder();
+        init();
     }else if(user_input == 3){
         // Return to Main Menu
         MainMenuController MMC;
     }else{
-        GlobalTools::optionWarning();
-        AssistantMenuController::init();
+        optionWarning();
+        init();
     }
 }
 
@@ -51,32 +51,32 @@ void AssistantMenuController::pushOrder(){
     cin.getline(newOrder.name, 50);
     cout << "Phone Number (10):\t";
     cin.getline(newOrder.phoneNumber, 10);
-    newOrder.address = AssistantMenuController::currentLocation;
+    newOrder.address = currentLocation;
     cout << endl;
 
     while(exit != true){
-        GlobalTools::clearConsole();
-        AssistantView::displayPushOrderMenu(newOrder);
+        clearConsole();
+        displayPushOrderMenu(newOrder);
 
         cin >> user_input;
-        GlobalTools::clearCin();
+        clearCin();
 
         if(user_input == 1){
             // Select From Menu
             if(newOrder.sizeOfPizzas != 20){
                 vector<Pizza> selection = PizzaModel::readPizzaMenu();
 
-                GlobalTools::clearConsole();
-                AssistantView::displayPizzaMenu(selection);
+                clearConsole();
+                displayPizzaMenu(selection);
 
                 cin >> user_input;
-                GlobalTools::clearCin();
+                clearCin();
 
                 newOrder.pizzas[newOrder.sizeOfPizzas] = selection[user_input - 1];
                 newOrder.pizzas[newOrder.sizeOfPizzas].inches = PizzaModel::selectInches();
                 newOrder.sizeOfPizzas++;
             }else{
-                GlobalTools::warning("You have already reached the limit for maximum Pizzas");
+                warning("You have already reached the limit for maximum Pizzas");
             }
 
         }else if(user_input == 2){
@@ -84,7 +84,7 @@ void AssistantMenuController::pushOrder(){
             Pizza newPizza;
             vector<Topping> selected_toppings;
 
-            GlobalTools::clearConsole();
+            clearConsole();
 
             cout << "Creating custom pizza ..." << endl;
 
@@ -113,22 +113,22 @@ void AssistantMenuController::pushOrder(){
             if(newOrder.sizeOfItems != 20){
                 vector<Item> selection = ItemModel::readItems();
 
-                GlobalTools::clearConsole();
-                AssistantView::displayItemMenu(selection);
+                clearConsole();
+                displayItemMenu(selection);
 
                 cin >> user_input;
-                GlobalTools::clearCin();
+                clearCin();
 
                 newOrder.items[newOrder.sizeOfItems] = selection[user_input - 1];
                 newOrder.sizeOfItems++;
             }else{
-                GlobalTools::warning("You have already reached the limit for maximum Items");
+                warning("You have already reached the limit for maximum Items");
             }
         }else if(user_input == 4){
             // Finalize Order
-            GlobalTools::clearConsole();
+            clearConsole();
             cout << "This is the final order ..." << endl;
-            AssistantView::displayCurrentOrder(newOrder);
+            displayCurrentOrder(newOrder);
             //calculate total price
             for(int i = 0; i < newOrder.sizeOfPizzas;i++){
                 newOrder.price += newOrder.pizzas[i].price;
@@ -141,14 +141,14 @@ void AssistantMenuController::pushOrder(){
             cout << "You may confirm your order now (1. Yes,  (Any). Return to Selection) :\t" << endl;
 
             cin >> user_input;
-            GlobalTools::clearCin();
+            clearCin();
 
             if(user_input == 1){
                 // 0 === In Process
                 newOrder.state = 0;
 
                 OrderModel::writeOrder(newOrder);
-                GlobalTools::attention("The Order has been written to OrderList.dat");
+                attention("The Order has been written to OrderList.dat");
                 exit = true;
             }else{
                 // Null the price
@@ -159,7 +159,7 @@ void AssistantMenuController::pushOrder(){
             // Return to Assistant Menu
             exit = true;
         }else{
-            GlobalTools::optionWarning();
+            optionWarning();
         }
     }
 }
@@ -168,7 +168,7 @@ void AssistantMenuController::deliverOrder(){
     vector<Order> orders = OrderModel::readOrderMenu(AssistantMenuController::currentLocation);
     int user_input;
 
-    AssistantView::displayDeliverOrderMenu(orders);
+    displayDeliverOrderMenu(orders);
 
     cout << "Choose an order to deliver :\t" << endl;
     cin >> user_input;
@@ -185,6 +185,6 @@ void AssistantMenuController::deliverOrder(){
            OrderModel::writeOrder(over_write[i]);
         }
 
-        GlobalTools::attention("The selected Delivery has been cleared");
+        attention("The selected Delivery has been cleared");
     }
 }

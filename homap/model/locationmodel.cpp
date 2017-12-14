@@ -19,10 +19,10 @@ void LocationModel::writeLocation(Location loc){
         fout << loc.address << endl;
         fout.close();
 
-        GlobalTools::attention("The topping has been written to Locations.txt");
+        attention("The topping has been written to Locations.txt");
     }
     else{
-        GlobalTools::error("Could not open file Locations.txt");
+        error("Could not open file Locations.txt");
     }
 }
 
@@ -51,18 +51,18 @@ Location LocationModel::selectLocation(){
     vector<Location> locVector;
     int user_input;
 
-    locVector = LocationModel::readLocations();
+    locVector = readLocations();
 
-    AdminView::displayLocations(locVector);
+    displayLocations(locVector);
 
     cin >> user_input;
 
-    GlobalTools::clearCin();
+    clearCin();
 
     if(user_input > 0 && user_input < (locVector.size() + 1)){
         return locVector[user_input - 1];
     }else{
-        GlobalTools::optionWarning();
-        LocationModel::selectLocation();
+        optionWarning();
+        selectLocation();
     }
 }

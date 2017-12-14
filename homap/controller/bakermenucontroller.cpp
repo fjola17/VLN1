@@ -15,23 +15,23 @@ void BakerMenuController::init(){
     // Pre
     int user_input;
 
-    GlobalTools::clearConsole();
-    GlobalTools::displayHeader();
-    BakerView::displayBakerMenu();
+    clearConsole();
+    displayHeader();
+    displayBakerMenu();
     // Main
     cin >> user_input;
-    GlobalTools::clearCin();
+    clearCin();
 
     if(user_input == 1){
         // Process Order
-        BakerMenuController::processOrder();
-        BakerMenuController::init();
+        processOrder();
+        init();
     }else if(user_input == 2){
         // Return to Main Menu
         MainMenuController MMC;
     }else{
-        GlobalTools::optionWarning();
-        BakerMenuController::init();
+        optionWarning();
+        init();
     }
 }
 
@@ -39,7 +39,7 @@ void BakerMenuController::processOrder(){
     vector<Order> orders = OrderModel::readOrderMenuBaker(BakerMenuController::currentLocation);
     int user_input;
 
-    BakerView::displayOrders(orders);
+    displayOrders(orders);
 
     cout << "Choose an order to process :\t" << endl;
     cin >> user_input;
@@ -58,6 +58,6 @@ void BakerMenuController::processOrder(){
         }
 
 
-        GlobalTools::attention("The selected Order has been processed");
+        attention("The selected Order has been processed");
     }
 }

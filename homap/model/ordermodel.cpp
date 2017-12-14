@@ -19,7 +19,7 @@ void OrderModel::writeOrder(Order ord){
         fout.close();
     }
     else{
-        GlobalTools::error("Could not open file OrderList.dat");
+        error("Could not open file OrderList.dat");
     }
 }
 
@@ -50,7 +50,7 @@ vector<Order> OrderModel::readNonConditionalOrderMenu(){
         fin.close();
     }
     else{
-        GlobalTools::error("Could not open file OrderList.dat");
+        error("Could not open file OrderList.dat");
     }
     return to_return;
 }
@@ -79,7 +79,7 @@ vector<Order> OrderModel::readOrderMenu(Location loc){
         fin.close();
     }
     else{
-        GlobalTools::error("Could not open file OrderList.dat");
+        error("Could not open file OrderList.dat");
     }
     return to_return;
 }
@@ -108,7 +108,7 @@ vector<Order> OrderModel::readOrderMenuBaker(Location loc){
         fin.close();
     }
     else{
-        GlobalTools::error("Could not open file OrderList.dat");
+        error("Could not open file OrderList.dat");
     }
     return to_return;
 }

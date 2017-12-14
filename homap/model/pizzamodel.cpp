@@ -17,10 +17,10 @@ void PizzaModel::writePizza(Pizza piz){
         fout.write((char*)(&piz), sizeof(Pizza));
 
         fout.close();
-        GlobalTools::attention("The Pizza has been written to PizzaMenu.dat");
+        attention("The Pizza has been written to PizzaMenu.dat");
     }
     else{
-        GlobalTools::error("Could not open file PizzaMenu.dat");
+        error("Could not open file PizzaMenu.dat");
     }
 }
 
@@ -45,7 +45,7 @@ vector<Pizza> PizzaModel::readPizzaMenu(){
         fin.close();
     }
     else{
-        GlobalTools::error("Could not open file PizzaMenu.dat");
+        error("Could not open file PizzaMenu.dat");
     }
     return to_return;
 }
@@ -73,8 +73,8 @@ int PizzaModel::selectInches(){
             return 8;
             break;
         default :
-            GlobalTools::optionWarning();
-            PizzaModel::selectInches();
+            optionWarning();
+            selectInches();
             break;
     }
 }

@@ -16,49 +16,49 @@ void AdminMenuController::init(){
     Item newItem;
     Pizza newPizza;
     Location newLocation;
-    //Item newItem;
     int user_input;
 
-    GlobalTools::clearConsole();
-    GlobalTools::displayHeader();
-    AdminView::displayAdminMenu();
+    clearConsole();
+    displayHeader();
+    displayAdminMenu();
+
     // Main
     cin >> user_input;
-    GlobalTools::clearCin();
+    clearCin();
 
     if(user_input == 1){
         // Display All
-        AdminView::displayToppings(ToppingModel::readToppings());
-        AdminView::displayItems(ItemModel::readItems());
-        AdminView::displayLocations(LocationModel::readLocations());
-        AdminView::displayPizzaMenu(PizzaModel::readPizzaMenu());
+        displayToppings(ToppingModel::readToppings());
+        displayItems(ItemModel::readItems());
+        displayLocations(LocationModel::readLocations());
+        displayPizzaMenu(PizzaModel::readPizzaMenu());
         system("pause");
-        AdminMenuController::init();
+        init();
 
     }else if(user_input == 2){
         // Register Pizza
-        newPizza = AdminMenuController::userNewPizza();
+        newPizza = userNewPizza();
 
         PizzaModel::writePizza(newPizza);
-        AdminMenuController::init();
+        init();
     }else if(user_input == 3){
         // Register Topping
         cin >> newTopping;
 
         ToppingModel::writeTopping(newTopping);
-        AdminMenuController::init();
+        init();
     }else if(user_input == 4){
         // Register Item
         cin >> newItem;
 
         ItemModel::writeItem(newItem);
-        AdminMenuController::init();
+        init();
     }else if(user_input == 5){
         // Register Location
         cin >> newLocation;
 
         LocationModel::writeLocation(newLocation);
-        AdminMenuController::init();
+        init();
     }else if(user_input == 6){
         // Return To Main Menu
         MainMenuController MMC;

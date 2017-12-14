@@ -19,10 +19,10 @@ void ItemModel::writeItem(Item ite){
         fout << ite.name << endl << ite.price << endl;
         fout.close();
 
-        GlobalTools::attention("The Item has been written to Items.txt");
+        attention("The Item has been written to Items.txt");
     }
     else{
-        GlobalTools::error("Could not open file Items.txt");
+        error("Could not open file Items.txt");
     }
 }
 
@@ -46,7 +46,7 @@ vector<Item> ItemModel::readItems(){
         fin.close();
     }
     else{
-        GlobalTools::error("Could not open file Items.txt");
+        error("Could not open file Items.txt");
     }
     return to_return;
 }
@@ -58,13 +58,13 @@ vector<Item> ItemModel::selectItem(){
     bool exit = false;
 
     while(exit != true){
-        GlobalTools::clearConsole();
-        AdminView::displayItems(iteVector);
+        clearConsole();
+        displayItems(iteVector);
 
         cout << "HINT:\tInput 0 or outside the options to finalize\nMaximum:\t20\nYou have added:\t" << to_return.size() << endl;
         cin >> user_input;
 
-        GlobalTools::clearCin();
+        clearCin();
 
         if(user_input > 0 && user_input < (iteVector.size() + 1) && to_return.size() <= 20){
             to_return.push_back(iteVector[user_input - 1]);
