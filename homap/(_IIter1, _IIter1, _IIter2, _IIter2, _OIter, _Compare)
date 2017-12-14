@@ -1,0 +1,42 @@
+#include "mainmenucontroller.h"
+
+MainMenuController::MainMenuController()
+{
+    MainMenuController::init();
+}
+
+MainMenuController::~MainMenuController()
+{
+    //dtor
+}
+
+void MainMenuController::init(){
+    // Pre
+    int user_input;
+
+    GlobalTools::clearConsole();
+    MainMenuView::displayMainMenu();
+    // Main
+    cin >> user_input;
+
+    GlobalTools::clearCin();
+
+    switch(user_input){
+        case 1 :
+            AdminMenuController AMC();
+            break;
+        case 2 :
+
+            break;
+        case 3 :
+
+            break;
+        case 4 :
+            GlobalTools::exitApplication();
+            break;
+        default :
+            GlobalTools::optionWarning();
+            MainMenuController::init();
+            break;
+    }
+}
