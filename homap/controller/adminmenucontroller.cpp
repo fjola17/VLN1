@@ -46,6 +46,7 @@ void AdminMenuController::init(){
         // Register Pizza
         newPizza = AdminMenuController::userNewPizza();
 
+        //bilað
         PizzaModel::writePizza(newPizza);
         GlobalTools::attention("The Pizza has been written to PizzaMenu.dat");
         AdminMenuController::init();
@@ -99,6 +100,7 @@ Pizza AdminMenuController::userNewPizza(){
     cin.getline(newPizza.name, 50);
     cout << "Input Pizza price:\t";
     cin >> newPizza.price;
+
     selected_toppings = ToppingModel::selectTopping();
     for(unsigned int i = 0; i < selected_toppings.size();i++){
         newPizza.toppings[i] = selected_toppings[i];

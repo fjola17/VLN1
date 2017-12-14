@@ -2,7 +2,7 @@
 
 Pizza::Pizza()
 {
-    //ctor
+    this->sizeOfToppings = 0;
 }
 
 Pizza::~Pizza()

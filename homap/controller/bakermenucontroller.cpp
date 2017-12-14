@@ -11,6 +11,7 @@ BakerMenuController::~BakerMenuController()
     //dtor
 }
 
+//baker menu, shows what to do
 void BakerMenuController::init(){
     // Pre
     int user_input;
@@ -36,7 +37,7 @@ void BakerMenuController::init(){
         BakerMenuController::init();
     }
 }
-
+//Processes order from baker
 void BakerMenuController::processOrder(){
     vector<Order> orders = OrderModel::readOrderMenuBaker(BakerMenuController::currentLocation);
     int user_input;

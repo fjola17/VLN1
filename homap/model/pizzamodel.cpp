@@ -10,6 +10,8 @@ PizzaModel::~PizzaModel()
     //dtor
 }
 
+
+
 //Creates a new pizza on the menu and writes it in a binary file
 void PizzaModel::writePizza(Pizza piz){
     ofstream fout;
@@ -24,6 +26,7 @@ void PizzaModel::writePizza(Pizza piz){
         GlobalTools::error("Could not open file PizzaMenu.dat");
     }
 }
+
 
 //Reads pizza menu from binary file
 vector<Pizza> PizzaModel::readPizzaMenu(){

@@ -2,10 +2,13 @@
 
 Order::Order()
 {
-    //ctor
+
 }
 
 Order::~Order()
 {
     //dtor
+}
+istream& operator >> (istream& in, Order order){
+    return in;
 }

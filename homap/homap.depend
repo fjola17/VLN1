@@ -1211,3 +1211,304 @@
 1513268186 source:c:\users\notandi\documents\github\vln1\homap\view\mainmenuview.cpp
 	"mainmenuview.h"
 
+1513287489 source:c:\users\user\documents\github\vln1\homap\controller\assistantmenucontroller.cpp
+	"assistantmenucontroller.h"
+
+1513287489 c:\users\user\documents\github\vln1\homap\controller\assistantmenucontroller.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+	"mainmenucontroller.h"
+	"../model/locationmodel.h"
+	"../model/ordermodel.h"
+	"../model/pizzamodel.h"
+	"../model/toppingmodel.h"
+	"../model/itemmodel.h"
+	"../template/location.h"
+	"../template/order.h"
+	"../template/item.h"
+	"../view/assistantview.h"
+	"../global/globaltools.h"
+
+1513287489 c:\users\user\documents\github\vln1\homap\controller\mainmenucontroller.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+	"adminmenucontroller.h"
+	"assistantmenucontroller.h"
+	"bakermenucontroller.h"
+	"../model/locationmodel.h"
+	"../model/ordermodel.h"
+	"../model/pizzamodel.h"
+	"../model/toppingmodel.h"
+	"../template/location.h"
+	"../template/order.h"
+	"../template/pizza.h"
+	"../template/topping.h"
+	"../view/adminview.h"
+	"../view/assistantview.h"
+	"../view/bakerview.h"
+	"../view/mainmenuview.h"
+	"../global/globaltools.h"
+
+1513287489 c:\users\user\documents\github\vln1\homap\controller\adminmenucontroller.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+	"mainmenucontroller.h"
+	"../model/locationmodel.h"
+	"../model/ordermodel.h"
+	"../model/pizzamodel.h"
+	"../model/toppingmodel.h"
+	"../model/itemmodel.h"
+	"../template/location.h"
+	"../template/order.h"
+	"../template/pizza.h"
+	"../template/topping.h"
+	"../template/item.h"
+	"../view/adminview.h"
+	"../global/globaltools.h"
+
+1513287489 c:\users\user\documents\github\vln1\homap\model\locationmodel.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+	"../template/location.h"
+	"../view/adminview.h"
+	"../global/globaltools.h"
+
+1513287489 c:\users\user\documents\github\vln1\homap\template\location.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+	"topping.h"
+	"../global/globaltools.h"
+
+1513287489 c:\users\user\documents\github\vln1\homap\template\topping.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+
+1513287489 c:\users\user\documents\github\vln1\homap\global\globaltools.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+
+1513287489 c:\users\user\documents\github\vln1\homap\view\adminview.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+	"../template/location.h"
+	"../template/order.h"
+	"../template/pizza.h"
+	"../template/topping.h"
+	"../template/item.h"
+	"../global/globaltools.h"
+
+1513287489 c:\users\user\documents\github\vln1\homap\template\order.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+	"location.h"
+	"pizza.h"
+	"item.h"
+
+1513287489 c:\users\user\documents\github\vln1\homap\template\pizza.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+	"topping.h"
+
+1513287489 c:\users\user\documents\github\vln1\homap\template\item.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+
+1513287489 c:\users\user\documents\github\vln1\homap\model\ordermodel.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+	<stdio.h>
+	"../template/order.h"
+	"../template/location.h"
+	"../global/globaltools.h"
+
+1513287489 c:\users\user\documents\github\vln1\homap\model\pizzamodel.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+	"../template/pizza.h"
+	"../template/topping.h"
+	"../global/globaltools.h"
+
+1513287489 c:\users\user\documents\github\vln1\homap\model\toppingmodel.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+	"../template/topping.h"
+	"../view/adminview.h"
+	"../global/globaltools.h"
+
+1513287489 c:\users\user\documents\github\vln1\homap\model\itemmodel.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+	"../template/item.h"
+	"../view/adminview.h"
+	"../global/globaltools.h"
+
+1513287489 c:\users\user\documents\github\vln1\homap\controller\bakermenucontroller.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+	"mainmenucontroller.h"
+	"../model/ordermodel.h"
+	"../model/locationmodel.h"
+	"../template/location.h"
+	"../template/order.h"
+	"../view/bakerview.h"
+	"../global/globaltools.h"
+
+1513287489 c:\users\user\documents\github\vln1\homap\view\bakerview.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+	"../template/order.h"
+
+1513287489 c:\users\user\documents\github\vln1\homap\view\assistantview.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+	"../template/order.h"
+	"../template/pizza.h"
+	"../template/item.h"
+
+1513287489 c:\users\user\documents\github\vln1\homap\view\mainmenuview.h
+	<string>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<vector>
+	<stdlib.h>
+
+1513287489 source:c:\users\user\documents\github\vln1\homap\controller\mainmenucontroller.cpp
+	"mainmenucontroller.h"
+
+1513287489 source:c:\users\user\documents\github\vln1\homap\global\globaltools.cpp
+	"globaltools.h"
+
+1513287489 source:c:\users\user\documents\github\vln1\homap\main.cpp
+	<iostream>
+	"controller/mainmenucontroller.h"
+
+1513287489 source:c:\users\user\documents\github\vln1\homap\model\itemmodel.cpp
+	"itemmodel.h"
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string>
+	"string.h"
+	<string.h>
+	<cstdlib>
+
+1513287489 source:c:\users\user\documents\github\vln1\homap\model\locationmodel.cpp
+	"locationmodel.h"
+
+1513287489 source:c:\users\user\documents\github\vln1\homap\model\ordermodel.cpp
+	"ordermodel.h"
+
+1513287489 source:c:\users\user\documents\github\vln1\homap\model\toppingmodel.cpp
+	"toppingmodel.h"
+	<string.h>
+	<stdlib.h>
+
+1513287489 source:c:\users\user\documents\github\vln1\homap\template\item.cpp
+	"item.h"
+
+1513287489 source:c:\users\user\documents\github\vln1\homap\template\location.cpp
+	"location.h"
+
+1513287489 source:c:\users\user\documents\github\vln1\homap\template\topping.cpp
+	"topping.h"
+
+1513287489 source:c:\users\user\documents\github\vln1\homap\view\adminview.cpp
+	"adminview.h"
+
+1513287489 source:c:\users\user\documents\github\vln1\homap\view\assistantview.cpp
+	"assistantview.h"
+
+1513287489 source:c:\users\user\documents\github\vln1\homap\view\bakerview.cpp
+	"bakerview.h"
+
+1513287489 source:c:\users\user\documents\github\vln1\homap\view\mainmenuview.cpp
+	"mainmenuview.h"
+
+1513288176 source:c:\users\user\documents\github\vln1\homap\controller\adminmenucontroller.cpp
+	"adminmenucontroller.h"
+
+1513287980 source:c:\users\user\documents\github\vln1\homap\controller\bakermenucontroller.cpp
+	"bakermenucontroller.h"
+
+1513288176 source:c:\users\user\documents\github\vln1\homap\model\pizzamodel.cpp
+	"pizzamodel.h"
+
+1513288101 source:c:\users\user\documents\github\vln1\homap\template\order.cpp
+	"order.h"
+
+1513288101 source:c:\users\user\documents\github\vln1\homap\template\pizza.cpp
+	"pizza.h"
+
