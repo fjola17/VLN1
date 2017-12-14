@@ -12,6 +12,7 @@ LocationModel::~LocationModel()
     //dtor
 }
 
+//Writes location into a file
 void LocationModel::writeLocation(Location loc){
     ofstream fout;
     fout.open("Locations.txt", ios::app);
@@ -26,12 +27,14 @@ void LocationModel::writeLocation(Location loc){
     }
 }
 
+//Reads all locations from file
 vector<Location> LocationModel::readLocations(){
     char address[50];
     vector<Location> to_return;
 
     ifstream fin;
     fin.open("Locations.txt");
+
     if(fin.is_open()){
         while(!fin.eof()){
             fin.getline(address, 50);
@@ -47,9 +50,10 @@ vector<Location> LocationModel::readLocations(){
     return to_return;
 }
 
+//Selects location from file
 Location LocationModel::selectLocation(){
     vector<Location> locVector;
-    int user_input;
+    unsigned int user_input;
 
     locVector = LocationModel::readLocations();
 
@@ -59,10 +63,13 @@ Location LocationModel::selectLocation(){
 
     GlobalTools::clearCin();
 
+    //if input larger than 0 and smaller than locations then it returns the location, otherwise throws error
     if(user_input > 0 && user_input < (locVector.size() + 1)){
         return locVector[user_input - 1];
-    }else{
+    }
+    else{
         GlobalTools::optionWarning();
         LocationModel::selectLocation();
     }
+    return locVector[user_input - 1];
 }

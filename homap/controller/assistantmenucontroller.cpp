@@ -13,6 +13,7 @@ AssistantMenuController::~AssistantMenuController()
     //dtor
 }
 
+//Selects what to do
 void AssistantMenuController::init(){
     // Pre
     int user_input;
@@ -29,24 +30,29 @@ void AssistantMenuController::init(){
         // Push Order
         AssistantMenuController::pushOrder();
         AssistantMenuController::init();
-    }else if(user_input == 2){
+    }
+    else if(user_input == 2){
         // Deliver Pending Order
         AssistantMenuController::deliverOrder();
         AssistantMenuController::init();
-    }else if(user_input == 3){
+    }
+    else if(user_input == 3){
         // Return to Main Menu
         MainMenuController MMC;
-    }else{
+    }
+    else{
         GlobalTools::optionWarning();
         AssistantMenuController::init();
     }
 }
 
+//gets a new order
 void AssistantMenuController::pushOrder(){
     Order newOrder;
-    int user_input;
+    int user_input, input;
     bool exit = false;
 
+    //Information about the person which is ordering
     cout << "Personal Information:\t" << endl;
     cout << "Name (50):\t";
     cin.getline(newOrder.name, 50);
@@ -59,11 +65,11 @@ void AssistantMenuController::pushOrder(){
         GlobalTools::clearConsole();
         AssistantView::displayPushOrderMenu(newOrder);
 
-
-        cin >> user_input;
+        //get user input
+        cin >> input;
         GlobalTools::clearCin();
 
-        if(user_input == 1){
+        if(input == 1){
             // Select From Menu
             if(newOrder.sizeOfPizzas != 20){
                 vector<Pizza> selection = PizzaModel::readPizzaMenu();
@@ -77,11 +83,13 @@ void AssistantMenuController::pushOrder(){
                 newOrder.pizzas[newOrder.sizeOfPizzas] = selection[user_input - 1];
                 newOrder.pizzas[newOrder.sizeOfPizzas].inches = PizzaModel::selectInches();
                 newOrder.sizeOfPizzas++;
-            }else{
+            }
+            else{
                 GlobalTools::warning("You have already reached the limit for maximum Pizzas");
             }
 
-        }else if(user_input == 2){
+        }
+        else if(input == 2){
             // Make Custom
             Pizza newPizza;
             vector<Topping> selected_toppings;
@@ -110,7 +118,8 @@ void AssistantMenuController::pushOrder(){
 
             newOrder.pizzas[newOrder.sizeOfPizzas] = newPizza;
             newOrder.sizeOfPizzas++;
-        }if(user_input == 3){
+        }
+        if(input == 3){
             // Select Item from Menu
             if(newOrder.sizeOfItems != 20){
                 vector<Item> selection = ItemModel::readItems();
@@ -126,7 +135,7 @@ void AssistantMenuController::pushOrder(){
             }else{
                 GlobalTools::warning("You have already reached the limit for maximum Items");
             }
-        }else if(user_input == 4){
+        }else if(input == 4){
             // Finalize Order
             GlobalTools::clearConsole();
             cout << "This is the final order ..." << endl;
@@ -157,7 +166,7 @@ void AssistantMenuController::pushOrder(){
                 newOrder.price = 0;
             }
 
-        }else if(user_input == 5){
+        }else if(input == 5){
             // Return to Assistant Menu
             exit = true;
         }else{
@@ -166,9 +175,10 @@ void AssistantMenuController::pushOrder(){
     }
 }
 
+//Deliever the order
 void AssistantMenuController::deliverOrder(){
     vector<Order> orders = OrderModel::readOrderMenu(AssistantMenuController::currentLocation);
-    int user_input;
+    unsigned int user_input;
 
     AssistantView::displayDeliverOrderMenu(orders);
 
@@ -179,7 +189,7 @@ void AssistantMenuController::deliverOrder(){
         vector<Order> over_write = OrderModel::readNonConditionalOrderMenu();
 
         OrderModel::cleanOrder();
-        for(int i = 0; i < over_write.size(); i++){
+        for(unsigned int i = 0; i < over_write.size(); i++){
            if((string)over_write[i].name == (string)orders[user_input - 1].name && over_write[i].state == orders[user_input - 1].state && (string)over_write[i].phoneNumber == (string)orders[user_input - 1].phoneNumber && over_write[i].sizeOfPizzas == orders[user_input - 1].sizeOfPizzas){
                 //Taken care of
                 over_write[i].state = 2;

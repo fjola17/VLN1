@@ -10,9 +10,11 @@ OrderModel::~OrderModel()
     //dtor
 }
 
+//writes order to a binary file
 void OrderModel::writeOrder(Order ord){
     ofstream fout;
     fout.open("OrderList.dat", ios::out | ios::binary | ios::app);
+
     if(fout.is_open()){
         fout.write((char*)(&ord), sizeof(Order));
 
@@ -23,12 +25,14 @@ void OrderModel::writeOrder(Order ord){
     }
 }
 
+//Clears out order from binary file
 void OrderModel::cleanOrder(){
     ofstream fout;
     fout.open("OrderList.dat", ios::out | ios::trunc);
     fout.close();
 }
 
+//Reads order menu án neinna skilyrða
 vector<Order> OrderModel::readNonConditionalOrderMenu(){
     vector<Order> to_return;
 
@@ -55,6 +59,7 @@ vector<Order> OrderModel::readNonConditionalOrderMenu(){
     return to_return;
 }
 
+//Reads order menu
 vector<Order> OrderModel::readOrderMenu(Location loc){
     vector<Order> to_return;
 
@@ -84,6 +89,7 @@ vector<Order> OrderModel::readOrderMenu(Location loc){
     return to_return;
 }
 
+//Reads pizza orders from current location
 vector<Order> OrderModel::readOrderMenuBaker(Location loc){
     vector<Order> to_return;
     ifstream fin;
@@ -101,6 +107,7 @@ vector<Order> OrderModel::readOrderMenuBaker(Location loc){
 
         for(int i = 0; i < records; i++){
             // state 0 === Needs to Cook
+            // adds pizzas to vector if they need to be cooked
             if((string)data[i].address.address == (string)loc.address && data[i].state == 0){
                 to_return.push_back(data[i]);
             }

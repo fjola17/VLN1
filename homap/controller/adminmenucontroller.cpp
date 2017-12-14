@@ -12,13 +12,14 @@ AdminMenuController::~AdminMenuController()
     //dtor
 }
 
+//Get user input
 void AdminMenuController::init(){
     // Pre
     Topping newTopping;
     Item newItem;
     Pizza newPizza;
     Location newLocation;
-    //Item newItem;
+
     int user_input;
 
     GlobalTools::clearConsole();
@@ -40,14 +41,16 @@ void AdminMenuController::init(){
         system("pause");
         AdminMenuController::init();
 
-    }else if(user_input == 2){
+    }
+    else if(user_input == 2){
         // Register Pizza
         newPizza = AdminMenuController::userNewPizza();
 
         PizzaModel::writePizza(newPizza);
         GlobalTools::attention("The Pizza has been written to PizzaMenu.dat");
         AdminMenuController::init();
-    }else if(user_input == 3){
+    }
+    else if(user_input == 3){
         // Register Topping
         cin >> newTopping;
 
@@ -55,33 +58,39 @@ void AdminMenuController::init(){
         GlobalTools::attention("The topping has been written to Toppings.txt");
 
         AdminMenuController::init();
-    }else if(user_input == 4){
+    }
+    else if(user_input == 4){
         // Register Item
         cin >> newItem;
 
         ItemModel::writeItem(newItem);
         GlobalTools::attention("The Item has been written to Items.txt");
         AdminMenuController::init();
-    }else if(user_input == 5){
+    }
+    else if(user_input == 5){
         // Register Location
         cin >> newLocation;
 
         LocationModel::writeLocation(newLocation);
         AdminMenuController::init();
-    }else if(user_input == 6){
+    }
+    else if(user_input == 6){
         // Remove from Menu menu
         AdminMenuController::removefromMenu();
         AdminMenuController::init();
-    }else if(user_input == 7){
+    }
+    else if(user_input == 7){
         // Return To Main Menu
         MainMenuController MMC;
-    }else{
+    }
+    else{
         //ERROR state
         GlobalTools::optionWarning();
         AdminMenuController::init();
     }
 }
 
+//Create a new pizza
 Pizza AdminMenuController::userNewPizza(){
     Pizza newPizza;
     vector<Topping> selected_toppings;
@@ -91,7 +100,7 @@ Pizza AdminMenuController::userNewPizza(){
     cout << "Input Pizza price:\t";
     cin >> newPizza.price;
     selected_toppings = ToppingModel::selectTopping();
-    for(int i = 0; i < selected_toppings.size();i++){
+    for(unsigned int i = 0; i < selected_toppings.size();i++){
         newPizza.toppings[i] = selected_toppings[i];
         newPizza.sizeOfToppings++;
     }
@@ -99,6 +108,7 @@ Pizza AdminMenuController::userNewPizza(){
     return newPizza;
 }
 
+//Select which menu you want to remove from.
 void AdminMenuController::removefromMenu()
 {
     GlobalTools::clearConsole();
@@ -113,28 +123,30 @@ void AdminMenuController::removefromMenu()
             //Remove from Pizza Menu
         AdminMenuController::removefrommenu();
         AdminMenuController::init();
-    }else if(user_input == 2){
+    }
+    else if(user_input == 2){
             //Remove from Toppings menu
         AdminMenuController::removefromtoppings();
         AdminMenuController::init();
-    }else if(user_input == 3){
+    }
+    else if(user_input == 3){
             //Remove from Items
         AdminMenuController::removefromitem();
         AdminMenuController::init();
-    }else if(user_input == 4){
+    }
+    else if(user_input == 4){
             //Exit to Admin Controller
         AdminMenuController::init();
-    }else{
+    }
+    else{
         //ERROR state
         GlobalTools::optionWarning();
         AdminMenuController::init();
     }
 
-
-
-
 }
 
+//Remove pizza from menu
 void AdminMenuController::removefrommenu()
 {
     vector<Pizza> menu = PizzaModel::readPizzaMenu();
@@ -143,14 +155,18 @@ void AdminMenuController::removefrommenu()
 
     AdminView::displayPizzaMenu(menu);
 
-    int user_input;
-    cout << endl << "HINT : Input 0 or anything out side of scope to return to previous menu" << endl;
+    unsigned int user_input;
+
+    //Selecting which pizzs from menu should be removed.
     cout << "Select element to remove from menu" << endl;
+    cout << endl << "HINT : Input 0 or anything out side of scope to return to previous menu" << endl;
+
     cin >> user_input;
 
+    //Checks which pizza from menu should be removed and removes it.
      if(user_input > 0 && user_input < (menu.size() + 1)){
         PizzaModel::cleanPizza();
-        for(int i = 0; i < menu.size(); i++){
+        for(unsigned int i = 0; i < menu.size(); i++){
             if(i != user_input-1) {
                 PizzaModel::writePizza(menu[i]);
             }
@@ -159,6 +175,7 @@ void AdminMenuController::removefrommenu()
     }
 }
 
+//Remove topping from menu.
 void AdminMenuController::removefromtoppings()
 {
     vector<Topping> toppings = ToppingModel::readToppings();
@@ -167,14 +184,17 @@ void AdminMenuController::removefromtoppings()
 
     AdminView::displayToppings(toppings);
 
-    int user_input;
-    cout << endl << "HINT : Input 0 or anything out side of scope to return to previous menu" << endl;
+    unsigned int user_input;
+
+    //Input which topping should be removed
     cout << "Select element to remove from menu" << endl;
+    cout << endl << "HINT : Input 0 or anything out side of scope to return to previous menu" << endl;
     cin >> user_input;
 
+    //Checks which topping should be removed and removes it.
     if(user_input > 0 && user_input < (toppings.size() + 1)){
         ToppingModel::cleanTopping();
-        for(int i = 0; i < toppings.size(); i++){
+        for(unsigned int i = 0; i < toppings.size(); i++){
             if(i != user_input-1) {
                 ToppingModel::writeTopping(toppings[i]);
             }
@@ -183,21 +203,27 @@ void AdminMenuController::removefromtoppings()
     }
 }
 
+
+//Remove item from menu
 void AdminMenuController::removefromitem()
 {
     vector<Item> item = ItemModel::readItems();
     GlobalTools::clearConsole();
     AdminView::displayItems(item);
 
-    int user_input;
-    cout << endl << "HINT : Input 0 or anything out side of scope to return to previous menu" << endl;
+    unsigned int user_input;
+
+    //Input which item should be removed from menu
     cout << "Select element to remove from menu" << endl;
+    cout << endl << "HINT : Input 0 or anything out side of scope to return to previous menu" << endl;
     cin >> user_input;
 
     if(user_input > 0 && user_input < (item.size() + 1)){
         ItemModel::cleanItem();
-        for(int i = 0; i < item.size(); i++){
-            if(i != user_input-1) {
+
+        //Checks which item should be removed and removes it.
+        for(unsigned int i = 0; i < item.size(); i++){
+            if(i != user_input - 1) {
                 ItemModel::writeItem(item[i]);
             }
         }
@@ -206,20 +232,24 @@ void AdminMenuController::removefromitem()
 }
 
 
-
+//Analytics of orders
 void AdminMenuController::analytics()
 {
     vector<Order> allorders = OrderModel::readNonConditionalOrderMenu();
+
     int average;
     int sum = 0;
     int pizzasum = 0;
-    for(int i = 0; i < allorders.size(); i++) {
+
+    for(unsigned int i = 0; i < allorders.size(); i++) {
         sum += allorders[i].price;
         for(int j = 0; j < allorders[i].sizeOfPizzas; j++) {
             pizzasum++;
         }
     }
     average = sum / allorders.size();
+
+    //Displays number of order, total pizzas, total price of all orders and average of each order
     cout << "\tPizza analytics!" << endl;
     cout << "The Total amount of orders: " << allorders.size() << endl;
     cout << "The Total amount of pizzas ordered: " << pizzasum << endl;
@@ -235,6 +265,5 @@ void AdminMenuController::baseprice()
     fout.close();
 
     cout << "";
-
 
 }

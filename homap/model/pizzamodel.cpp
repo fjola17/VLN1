@@ -10,6 +10,7 @@ PizzaModel::~PizzaModel()
     //dtor
 }
 
+//Creates a new pizza on the menu and writes it in a binary file
 void PizzaModel::writePizza(Pizza piz){
     ofstream fout;
     fout.open("PizzaMenu.dat", ios::out | ios::binary | ios::app);
@@ -19,10 +20,12 @@ void PizzaModel::writePizza(Pizza piz){
         fout.close();
     }
     else{
+        //Displays error
         GlobalTools::error("Could not open file PizzaMenu.dat");
     }
 }
 
+//Reads pizza menu from binary file
 vector<Pizza> PizzaModel::readPizzaMenu(){
     vector<Pizza> to_return;
 
@@ -44,15 +47,18 @@ vector<Pizza> PizzaModel::readPizzaMenu(){
         fin.close();
     }
     else{
+        //Displays error
         GlobalTools::error("Could not open file PizzaMenu.dat");
     }
     return to_return;
 }
 
+//Select size on pizza.
 int PizzaModel::selectInches(){
     int counter = 0;
     int user_input;
 
+    //Selects input for size of the pizza.
     cout << "Choose your size:\t" << endl;
 
     cout << ++counter << ".\t 16 Inches" << endl;
@@ -61,6 +67,7 @@ int PizzaModel::selectInches(){
 
     cin >> user_input;
 
+    //Switch statement which checks what input is there and returns which size it is on the pizza
     switch(user_input){
         case 1 :
             return 16;
@@ -78,6 +85,7 @@ int PizzaModel::selectInches(){
     }
 }
 
+//Clears all pizzas out from menu
 void PizzaModel::cleanPizza(){
     ofstream fout;
     fout.open("PizzaMenu.dat", ios::out | ios::trunc);

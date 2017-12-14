@@ -18,6 +18,7 @@ ItemModel::~ItemModel()
     //dtor
 }
 
+//Writes item into a file
 void ItemModel::writeItem(Item ite){
     ofstream fout;
     fout.open("Items.txt", ios::app);
@@ -30,6 +31,7 @@ void ItemModel::writeItem(Item ite){
     }
 }
 
+//reads items from a file
 vector<Item> ItemModel::readItems(){
     string line;
     char name[50];
@@ -38,9 +40,12 @@ vector<Item> ItemModel::readItems(){
 
     ifstream fin;
     fin.open("Items.txt");
+
     if(fin.is_open()){
         while(getline(fin, line)){
             strcpy(name, line.c_str());
+
+            ///if name isn't empy
             if(name != '\0'){
             getline(fin, line);
             price = atoi(line.c_str());
@@ -55,10 +60,11 @@ vector<Item> ItemModel::readItems(){
     return to_return;
 }
 
+//Selects item from item menu
 vector<Item> ItemModel::selectItem(){
     vector<Item> iteVector = ItemModel::readItems();
     vector<Item> to_return;
-    int user_input;
+    unsigned int user_input;
     bool exit = false;
 
     while(exit != true){
@@ -78,6 +84,8 @@ vector<Item> ItemModel::selectItem(){
             return to_return;
         }
     }
+    //Should never execute this code
+    return iteVector;
 }
 
 void ItemModel::cleanItem(){

@@ -18,6 +18,7 @@ Item::~Item()
     //dtor
 }
 
+//Writes in items
 istream& operator >> (istream& in, Item& ite)
 {
     cout << "Input Item name (20):\t" << endl;

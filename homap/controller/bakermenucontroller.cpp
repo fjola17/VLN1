@@ -26,10 +26,12 @@ void BakerMenuController::init(){
         // Process Order
         BakerMenuController::processOrder();
         BakerMenuController::init();
-    }else if(user_input == 2){
+    }
+    else if(user_input == 2){
         // Return to Main Menu
         MainMenuController MMC;
-    }else{
+    }
+    else{
         GlobalTools::optionWarning();
         BakerMenuController::init();
     }

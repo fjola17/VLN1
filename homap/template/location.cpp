@@ -17,11 +17,13 @@ Location::~Location()
     //dtor
 }
 
+//Writes out location of pizzeria
 ostream& operator << (ostream& out, Location& loc){
     out << "Pizzeria Address:\t" << loc.address << endl;
     return out;
 }
 
+//writes in location of pizzeria
 istream& operator >> (istream& in, Location& loc)
 {
     cout << "Input the a Pizzeria Address (50):\t" << endl;

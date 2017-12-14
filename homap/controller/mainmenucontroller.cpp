@@ -24,13 +24,17 @@ void MainMenuController::init(){
 
     if(user_input == 1){
         AdminMenuController AMC;
-    }else if(user_input == 2){
+    }
+    else if(user_input == 2){
         BakerMenuController BMC;
-    }else if(user_input == 3){
+    }
+    else if(user_input == 3){
         AssistantMenuController ASMC;
-    }else if(user_input == 4){
+    }
+    else if(user_input == 4){
         GlobalTools::exitApplication();
-    }else{
+    }
+    else{
         GlobalTools::optionWarning();
         MainMenuController::init();
     }

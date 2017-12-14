@@ -18,6 +18,7 @@ Topping::~Topping()
     //dtor
 }
 
+//Writes in toppings
 istream& operator >> (istream& in, Topping& top)
 {
     cout << "Input Topping name (20):\t" << endl;

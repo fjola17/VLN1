@@ -13,9 +13,11 @@ ToppingModel::~ToppingModel()
     //dtor
 }
 
+//Writes topping into a file
 void ToppingModel::writeTopping(Topping top){
     ofstream fout;
     fout.open("Toppings.txt", ios::app);
+
     if(fout.is_open()){
         fout << top.name << endl << top.price << endl;
         fout.close();
@@ -26,6 +28,7 @@ void ToppingModel::writeTopping(Topping top){
     }
 }
 
+//Reads topping from file
 vector<Topping> ToppingModel::readToppings(){
     string line;
     char name[20];
@@ -34,6 +37,7 @@ vector<Topping> ToppingModel::readToppings(){
 
     ifstream fin;
     fin.open("Toppings.txt");
+
     if(fin.is_open()){
         while(getline(fin, line)){
             strcpy(name, line.c_str());
@@ -52,10 +56,12 @@ vector<Topping> ToppingModel::readToppings(){
     return to_return;
 }
 
+//Selects topping from file
 vector<Topping> ToppingModel::selectTopping(){
     vector<Topping> topVector = ToppingModel::readToppings();
     vector<Topping> to_return;
-    int user_input;
+
+    unsigned int user_input;
     bool exit = false;
 
     while(exit != true){
@@ -67,6 +73,8 @@ vector<Topping> ToppingModel::selectTopping(){
 
         GlobalTools::clearCin();
 
+        //if input is larger than 0 and smaller than toppings available
+        //Size is less than 20.
         if(user_input > 0 && user_input < (topVector.size() + 1) && to_return.size() <= 20){
             to_return.push_back(topVector[user_input - 1]);
         }
@@ -75,8 +83,10 @@ vector<Topping> ToppingModel::selectTopping(){
             return to_return;
         }
     }
+    return topVector;
 }
 
+//Clears toppings from file
 void ToppingModel::cleanTopping(){
     ofstream fout;
     fout.open("Toppings.txt", ios::out | ios::trunc);
