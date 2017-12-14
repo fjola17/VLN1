@@ -66,6 +66,7 @@ void AssistantView::displayDeliverOrderMenu(vector<Order> ordVector){
     }else{
         cout << endl << "It would seem as if there are no Ready Orders yet!" << endl;
     }
+    cout << endl << "HINT : Input 0 or anything out side of scope to return to previous menu" << endl;
 }
 
 void AssistantView::displayPizzaMenu(vector<Pizza> pizVector){
