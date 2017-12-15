@@ -2,7 +2,9 @@
 
 One Paragraph of project description goes here
 
-- [Pizza ordering system](#)
+
+# Table of contents
+
   - [Getting Started](#)
     - [Prerequisites](#)
     - [Installing](#)
