@@ -107,7 +107,7 @@ $$$
 ### Live Examples
 
 [![Video proof of content](https://img.youtube.com/vi/JWcOyCxX3lE/0.jpg)](https://www.youtube.com/watch?v=JWcOyCxX3lE)
-
+ 
 ## Deployment
 
 Should you wish to launch the program through the .exe
