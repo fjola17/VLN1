@@ -5,15 +5,15 @@ One Paragraph of project description goes here
 
 # Table of contents
 
-  - [Getting Started](#1)
-    - [Prerequisites](#a)
-    - [Installing](#b)
-    - [Live Examples](#c)
-  - [Deployment](#2)
-  - [Built With](#3)
-  - [Authors](#4)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installing](#installing)
+    - [Live Examples](#live-examples)
+  - [Deployment](#deployment)
+  - [Built With](#built-with)
+  - [Authors](#authors)
 
-## [Getting Started](#1)
+## Getting Started
 
 These instructions will get you a copy of the project up and running for review
 
@@ -39,7 +39,7 @@ This project utilizes standard MVC naming patterns :
 * Controller - Services
 * Template - Model
 
-### [Prerequisites](#a)
+### Prerequisites
 
 In order to achieve "smooth sailing" with this project
 
@@ -47,7 +47,7 @@ In order to achieve "smooth sailing" with this project
 You will need to flag your Code Blocks compiler to C++11.
 ```
 
-### [Installing](#b)
+### Installing
 
 Here's a step by step on how to get the program to compile
 
@@ -68,28 +68,37 @@ Step 3
 Build the entire project
 ```
 
-Step 3
+Step 4
 
 ```
 You may now feel free to compile the program as you see fit
 ```
+Step 5
 
-### [Live Examples](#c)
+```
+???
+```
+Step 6
+
+```
+$$$
+```
+### Live Examples
 
 
-## [Deployment](#2)
+## Deployment
 
 Should you wish to launch the program through the .exe
 
 You will have to ignore list the libraries that are causing errors, which might warry on system
 
-## [Built With](#3)
+## Built With
 
 * [Code::Blocks](http://www.codeblocks.org/) - open source platform
 * [ASCII Art Generator](http://patorjk.com/software/taag/#p=display&f=Big%20Money-nw&t=Pizza) - converts text to ASCII art
 * [DocToc]((http://doctoc.herokuapp.com/) - table of contents
 
-## [Authors](#4)
+## Authors
 
 * **Danil Kantorovich**
 * **Fjóla Sif Sigvaldadóttir**
