@@ -1,48 +1,82 @@
-Pizza ordering system
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Group 71
-Verklegt Námskeið 1 2017.
-University of Reykjavík
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Authors:
-Danil Kantorovich,
-Fjóla Sif Sigvaldadóttir,
-Halldór Valberg
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Note: model folder for the project writes in files (repos)
-template folder: are model classes
-View folder: General output
-Controller makes
+# Pizza ordering system
 
-You might need to turn on the C++11 flag on your compiler to be able to run this program.
-This program doesn't work for MacOS.
+One Paragraph of project description goes here
 
-Pizza ordering system is capable of with sucess.
+## Getting Started
 
-If you choose admin you can
-  View everything on menu
-  View analytics
-    Total order
-    Total pizzas ordered
-    profit from orders
-    average price for order)
-  Adding new pizza to menu and remove it.
-  Add new topping to menu and remove it.
-  Add new item to menu and remove it.
-  Add a new location.
+These instructions will get you a copy of the project up and running for review
 
-If you choose assistant you can:
-  Select your location
-  Enter your info
-  Add a new order
-  New pizza from menu
-  Custom pizza
-  Add item to order
-  Finish order or cancel it
-  Choose an order to deliver
+```
+The actual project is located in the "homap" folder
 
- If you choose baker you can:
-  Select your location
-  Mark order as ready
+Written By:
 
-You can always go back to main menu.
+* Group 71
+Written For:
+
+* Verklegt Námskeið 1 2017.
+With the guidance of:
+* University of Reykjavík
+
+```
+
+This project utilizes standard MVC naming patterns :
+
+* Model - Repositories
+* View - UI
+* Controller - Services
+* Template - Model
+
+### Prerequisites
+
+In order to achieve "smooth sailing" with this project
+
+```
+You will need to flag your Code Blocks compiler to C++11.
+```
+
+### Installing
+
+Here's a step by step on how to get the program to compile
+
+Step 1
+
+```
+Clean the current build of the project
+```
+Step 2
+
+```
+If you have not set the prerequisites, do so now
+```
+
+Step 3
+
+```
+Build the entire project
+```
+
+Step 3
+
+```
+You may now feel free to compile the program as you see fit
+```
+
+### Live Examples
+
+
+## Deployment
+
+Should you wish to launch the program through the .exe
+You will have to ignore list the libraries that are causing errors, which might warry on system
+
+## Built With
+
+* [Code::Blocks](http://www.codeblocks.org/) - open source platform
+* [ASCII Art Generator](http://patorjk.com/software/taag/#p=display&f=Big%20Money-nw&t=Pizza) - converts text to ASCII art
+
+## Authors
+
+* **Danil Kantorovich**
+* **Fjóla Sif Sigvaldadóttir**
+* **Halldór Valberg**
