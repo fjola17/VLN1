@@ -11,12 +11,13 @@ The actual project is located in the "homap" folder
 
 Written By:
 
-* Group 71
+- Group 71
 Written For:
 
-* Verklegt Námskeið 1 2017.
+- Verklegt Námskeið 1 2017.
 With the guidance of:
-* University of Reykjavík
+
+- University of Reykjavík
 
 ```
 
