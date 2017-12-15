@@ -2,6 +2,15 @@
 
 One Paragraph of project description goes here
 
+- [Pizza ordering system](#)
+  - [Getting Started](#)
+    - [Prerequisites](#)
+    - [Installing](#)
+    - [Live Examples](#)
+  - [Deployment](#)
+  - [Built With](#)
+  - [Authors](#)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running for review
@@ -69,12 +78,14 @@ You may now feel free to compile the program as you see fit
 ## Deployment
 
 Should you wish to launch the program through the .exe
+
 You will have to ignore list the libraries that are causing errors, which might warry on system
 
 ## Built With
 
 * [Code::Blocks](http://www.codeblocks.org/) - open source platform
 * [ASCII Art Generator](http://patorjk.com/software/taag/#p=display&f=Big%20Money-nw&t=Pizza) - converts text to ASCII art
+* [DocToc]((http://doctoc.herokuapp.com/) - table of contents
 
 ## Authors
 
