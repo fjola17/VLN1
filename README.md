@@ -1,10 +1,14 @@
 # Pizza ordering system
 
-One Paragraph of project description goes here
+```
+This project entails the frustrations of owning a retail Pizzeria.
 
+Through this beautiful application we hope to share our tasty Toppings, and magnificent creations. 
+```
 
 # Table of contents
 
+  - [Features](#features)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installing](#installing)
@@ -12,6 +16,23 @@ One Paragraph of project description goes here
   - [Deployment](#deployment)
   - [Built With](#built-with)
   - [Authors](#authors)
+
+## Features
+
+- Administrator
+  - Display all information (Pizzas, Items, Locations)
+  - Register new Pizza
+  - Register new Topping
+  - Register new Item
+  - Register new Location
+  - Remove from menus (Pizza, Topping, Item)
+- Baker
+  - Chooses his #Location (On selection)
+    - Process order (@ #Location)
+- Assistant
+  - Chooses his #Location (On selection)
+    - Push order (@ #Location, makes it visible to Bakers (@ #Location))
+    - Deliver order (@ #Location, orders will only appear here after a Baker has Processed them)
 
 ## Getting Started
 
