@@ -117,7 +117,7 @@ You will have to ignore list the libraries that are causing errors, which might 
 
 * [Code::Blocks](http://www.codeblocks.org/) - open source platform
 * [ASCII Art Generator](http://patorjk.com/software/taag/#p=display&f=Big%20Money-nw&t=Pizza) - converts text to ASCII art
-* [DocToc]((http://doctoc.herokuapp.com/) - table of contents
+* [DocToc](http://doctoc.herokuapp.com/) - table of contents
 
 ## Authors
 
