@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1511879290 source:c:\users\halldór valberg\documents\codeblocks\plgkae\main.cpp
+	<iostream>
+	<fstream>
+
+1511883093 source:c:\users\halldór valberg\documents\codeblocks\superteamb\main.cpp
+	<iostream>
+	<fstream>
+	"Superhero.h"
+
+1511882757 c:\users\halldór valberg\documents\codeblocks\superteamb\include\superhero.h
+	<iostream>
+	<fstream>
+
+1511882757 source:c:\users\halldór valberg\documents\codeblocks\superteamb\src\superhero.cpp
+	<iostream>
+	<fstream>
+	"Superhero.h"
+

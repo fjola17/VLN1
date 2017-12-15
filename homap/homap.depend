@@ -609,10 +609,10 @@
 	"../template/pizza.h"
 	"../template/item.h"
 
-1513267687 source:c:\users\halldór valberg\documents\github\vln1\homap\controller\adminmenucontroller.cpp
+1513339140 source:c:\users\halldór valberg\documents\github\vln1\homap\controller\adminmenucontroller.cpp
 	"adminmenucontroller.h"
 
-1513267578 c:\users\halldór valberg\documents\github\vln1\homap\controller\adminmenucontroller.h
+1513339140 c:\users\halldór valberg\documents\github\vln1\homap\controller\adminmenucontroller.h
 	<string>
 	<iostream>
 	<fstream>
@@ -633,7 +633,7 @@
 	"../view/adminview.h"
 	"../global/globaltools.h"
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\controller\mainmenucontroller.h
+1513339140 c:\users\halldór valberg\documents\github\vln1\homap\controller\mainmenucontroller.h
 	<string>
 	<iostream>
 	<fstream>
@@ -657,7 +657,7 @@
 	"../view/mainmenuview.h"
 	"../global/globaltools.h"
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\controller\assistantmenucontroller.h
+1513339140 c:\users\halldór valberg\documents\github\vln1\homap\controller\assistantmenucontroller.h
 	<string>
 	<iostream>
 	<fstream>
@@ -676,7 +676,7 @@
 	"../view/assistantview.h"
 	"../global/globaltools.h"
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\model\locationmodel.h
+1513339141 c:\users\halldór valberg\documents\github\vln1\homap\model\locationmodel.h
 	<string>
 	<iostream>
 	<fstream>
@@ -687,7 +687,7 @@
 	"../view/adminview.h"
 	"../global/globaltools.h"
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\template\location.h
+1513339141 c:\users\halldór valberg\documents\github\vln1\homap\template\location.h
 	<string>
 	<iostream>
 	<fstream>
@@ -697,7 +697,7 @@
 	"topping.h"
 	"../global/globaltools.h"
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\template\topping.h
+1513339141 c:\users\halldór valberg\documents\github\vln1\homap\template\topping.h
 	<string>
 	<iostream>
 	<fstream>
@@ -705,7 +705,7 @@
 	<vector>
 	<stdlib.h>
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\global\globaltools.h
+1513339140 c:\users\halldór valberg\documents\github\vln1\homap\global\globaltools.h
 	<string>
 	<iostream>
 	<fstream>
@@ -713,7 +713,7 @@
 	<vector>
 	<stdlib.h>
 
-1513267669 c:\users\halldór valberg\documents\github\vln1\homap\view\adminview.h
+1513339141 c:\users\halldór valberg\documents\github\vln1\homap\view\adminview.h
 	<string>
 	<iostream>
 	<fstream>
@@ -727,7 +727,7 @@
 	"../template/item.h"
 	"../global/globaltools.h"
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\template\order.h
+1513339141 c:\users\halldór valberg\documents\github\vln1\homap\template\order.h
 	<string>
 	<iostream>
 	<fstream>
@@ -738,7 +738,7 @@
 	"pizza.h"
 	"item.h"
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\template\pizza.h
+1513339141 c:\users\halldór valberg\documents\github\vln1\homap\template\pizza.h
 	<string>
 	<iostream>
 	<fstream>
@@ -747,7 +747,7 @@
 	<stdlib.h>
 	"topping.h"
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\template\item.h
+1513339141 c:\users\halldór valberg\documents\github\vln1\homap\template\item.h
 	<string>
 	<iostream>
 	<fstream>
@@ -755,7 +755,7 @@
 	<vector>
 	<stdlib.h>
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\model\ordermodel.h
+1513339141 c:\users\halldór valberg\documents\github\vln1\homap\model\ordermodel.h
 	<string>
 	<iostream>
 	<fstream>
@@ -767,7 +767,7 @@
 	"../template/location.h"
 	"../global/globaltools.h"
 
-1513261916 c:\users\halldór valberg\documents\github\vln1\homap\model\pizzamodel.h
+1513339141 c:\users\halldór valberg\documents\github\vln1\homap\model\pizzamodel.h
 	<string>
 	<iostream>
 	<fstream>
@@ -778,7 +778,7 @@
 	"../template/topping.h"
 	"../global/globaltools.h"
 
-1513262805 c:\users\halldór valberg\documents\github\vln1\homap\model\toppingmodel.h
+1513339141 c:\users\halldór valberg\documents\github\vln1\homap\model\toppingmodel.h
 	<string>
 	<iostream>
 	<fstream>
@@ -789,7 +789,7 @@
 	"../view/adminview.h"
 	"../global/globaltools.h"
 
-1513263446 c:\users\halldór valberg\documents\github\vln1\homap\model\itemmodel.h
+1513339141 c:\users\halldór valberg\documents\github\vln1\homap\model\itemmodel.h
 	<string>
 	<iostream>
 	<fstream>
@@ -800,7 +800,7 @@
 	"../view/adminview.h"
 	"../global/globaltools.h"
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\view\assistantview.h
+1513339141 c:\users\halldór valberg\documents\github\vln1\homap\view\assistantview.h
 	<string>
 	<iostream>
 	<fstream>
@@ -811,7 +811,7 @@
 	"../template/pizza.h"
 	"../template/item.h"
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\controller\bakermenucontroller.h
+1513339140 c:\users\halldór valberg\documents\github\vln1\homap\controller\bakermenucontroller.h
 	<string>
 	<iostream>
 	<fstream>
@@ -826,7 +826,7 @@
 	"../view/bakerview.h"
 	"../global/globaltools.h"
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\view\bakerview.h
+1513339141 c:\users\halldór valberg\documents\github\vln1\homap\view\bakerview.h
 	<string>
 	<iostream>
 	<fstream>
@@ -835,7 +835,7 @@
 	<stdlib.h>
 	"../template/order.h"
 
-1513258736 c:\users\halldór valberg\documents\github\vln1\homap\view\mainmenuview.h
+1513339141 c:\users\halldór valberg\documents\github\vln1\homap\view\mainmenuview.h
 	<string>
 	<iostream>
 	<fstream>
